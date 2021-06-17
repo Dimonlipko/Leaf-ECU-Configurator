@@ -15,3 +15,7 @@
 3. После подключения, откроеться основное окно программы. В меня справа выбрать вкладку Custom ниже появиться Leaf_motor.json
 4. В пустом окне ниже появиться надпись Leaf_motor.json, нажать на неё, после чего в окне еще ниже, появиться надпись Parameters
 5. Нажав на Parameters вам будет доступно основное меню конфигуратора.
+
+<img width="247" alt="ddt4all_start" src="https://user-images.githubusercontent.com/59143371/122483083-7785a700-cfda-11eb-992d-a0595c69222d.PNG">
+
+<img width="960" alt="ddt4all" src="https://user-images.githubusercontent.com/59143371/122482928-2b3a6700-cfda-11eb-80e5-947424c3b8d6.PNG">
