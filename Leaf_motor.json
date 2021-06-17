@@ -1,0 +1,3040 @@
+{
+        
+    "obd": {
+		"baudrate": 10400, 
+        "protocol": "CAN", 
+        "recv_id": "7bb", 
+        "funcname": "PEB", 
+        "funcaddr": "93", 
+        "send_id": "79b"
+    }, 
+    "devices": [], 
+    "ecuname": "", 
+    "autoidents": [], 
+    "requests": [
+		{
+            "name": "03.22.01.02",
+            "replybytes": "62220102",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "SOH в Ач": {
+                    "firstbyte": 4
+                }
+            },
+            "minbytes": 4,
+            "sentbytes": "220102"
+        },
+		
+		{
+            "name": "03.22.01.05",
+            "replybytes": "62220105",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "SOC": {
+                    "firstbyte": 4
+                }
+            },
+            "minbytes": 4,
+            "sentbytes": "220105"
+        },
+		
+		{
+            "name": "03.22.01.01",
+            "replybytes": "62220101",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "SOC в Ач": {
+                    "firstbyte": 4
+                }
+            },
+            "minbytes": 4,
+            "sentbytes": "220101"
+        },
+		
+		{
+			"name": "03.22.01.08",
+            "replybytes": "62220108",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+				"Датчик тока состояние": {
+                    "firstbyte": 4
+                },
+                "Потребление в А": {
+                    "firstbyte": 6
+                }
+            },
+            "minbytes": 4,
+            "sentbytes": "220108"
+		},
+		{
+            "name": "03.22.01.09",
+            "replybytes": "62220109",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+				"Датчик тока 1": {
+                    "firstbyte": 4
+                },
+                "Датчик тока 2": {
+                    "firstbyte": 6
+                }
+            },
+            "minbytes": 4,
+            "sentbytes": "220109"
+		},
+		{
+            "name": "03.22.01.10",
+            "replybytes": "62220110",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+				"Напряжение включения контакторов": {
+                    "firstbyte": 4
+                }
+            },
+            "minbytes": 4,
+            "sentbytes": "2201010"
+		}, 
+		{
+            "name": "2e.01.10",
+            "deny_sds": [],
+			"manualsend": true,
+            "receivebyte_dataitems": {
+				"Запись напряжение включения контакторов": {
+                    "firstbyte": 4
+                }
+            },
+            "minbytes": 4,
+            "sentbytes": "2e01100000"
+		},
+		{
+            "name": "22.03.01",
+            "replybytes": "62220301",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "Напряжение на инверторе": {
+                    "firstbyte": 4
+                },
+				"Старт": {
+                    "firstbyte": 6
+                }
+            },
+            "minbytes": 4,
+            "sentbytes": "220301"
+		},
+        {
+            "name": "22.03.02",
+            "replybytes": "62220302",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "Температура инвертора": {
+                    "firstbyte": 4
+                },
+				 "Температура мотора": {
+                    "firstbyte": 5
+                },
+				"Селектор": {
+                    "firstbyte": 6
+                },
+				"Ошибка": {
+                    "firstbyte": 7
+                }
+            },
+            "minbytes": 4,
+            "sentbytes": "220302"
+        },
+		{
+            "name": "22.03.03",
+            "replybytes": "62220303",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "Обороты мотора": {
+                    "firstbyte": 4
+                },
+				"Положение педали газа": {
+                    "firstbyte": 6
+                }
+            },
+            "minbytes": 4,
+            "sentbytes": "220303"
+        },
+		{
+            "name": "22.03.04",
+            "replybytes": "62220304",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "Максимум крутящего момента": {
+                    "firstbyte": 4
+                },
+				"Запрос крутящего момента": {
+                    "firstbyte": 6
+                }
+				
+            },
+            "minbytes": 4,
+            "sentbytes": "220304"
+        },
+		{
+            "name": "22.03.05",
+            "replybytes": "62220305",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "Мин. педали газа": {
+                    "firstbyte": 4
+                },
+				"Макс. педали газа": {
+                    "firstbyte": 6
+                }					
+            },
+            "minbytes": 4,
+            "sentbytes": "220305"
+        },
+		{
+            "name": "22.03.06",
+            "replybytes": "62220306",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "Напряжение минимальной ячейки": {
+                    "firstbyte": 4
+                },
+				"Напряжение максимальной ячейки": {
+                    "firstbyte": 6
+                }					
+            },
+            "minbytes": 4,
+            "sentbytes": "220306"
+        },
+		{
+            "name": "22.06.01",
+            "replybytes": "62220601",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "Target Current": {
+                    "firstbyte": 4
+                },
+				"Target Voltage": {
+                    "firstbyte": 6
+                }					
+            },
+            "minbytes": 4,
+            "sentbytes": "220601"
+        },
+		{
+            "name": "22.06.02",
+            "replybytes": "62220602",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "Asking Current": {
+                    "firstbyte": 4
+                },
+				"faults": {
+                    "firstbyte": 5
+                },
+				"status": {
+                    "firstbyte": 6 
+                },	
+				"chademoState": {
+                    "firstbyte": 7 
+                }	
+            },
+            "minbytes": 4,
+            "sentbytes": "220602"
+        },
+		{
+            "name": "22.06.03",
+            "replybytes": "62220603",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "availVoltage": {
+                    "firstbyte": 4
+                },
+				"availCurrent": {
+                    "firstbyte": 6
+                },
+				"supportWeldCheck": {
+                    "firstbyte": 7 
+                }
+            },
+            "minbytes": 4,
+            "sentbytes": "220603"
+        },
+		{
+            "name": "22.06.04",
+            "replybytes": "62220604",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "thresholdVoltage": {
+                    "firstbyte": 4
+                },
+				"presentVoltage": {
+                    "firstbyte": 5
+                },
+				"minChargeAmperage": {
+                    "firstbyte": 7 
+                }
+            },
+            "minbytes": 4,
+            "sentbytes": "220604"
+        },
+		{
+            "name": "22.06.05",
+            "replybytes": "62220605",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "evse_status": {
+                    "firstbyte": 4
+                },
+				"presentCurrent": {
+                    "firstbyte": 7
+                },
+				"remainingChargeSeconds": {
+                    "firstbyte": 5 
+                }
+            },
+            "minbytes": 4,
+            "sentbytes": "220605"
+        },
+		{
+            "name": "2e.03.04",
+            "deny_sds": [],
+			"manualsend": true,
+            "sendbyte_dataitems": {
+                "Запись максимум крутящего момента": {
+                    "firstbyte": 4
+                }
+            },
+			"minbytes": 4,
+            "sentbytes": "2e03040000"
+        },
+		{
+            "name": "2e.03.05",
+            "deny_sds": [],
+			"manualsend": true,
+            "sendbyte_dataitems": {
+                "Запись мин. педали": {
+                    "firstbyte": 4
+                }
+            },
+			"minbytes": 4,
+            "sentbytes": "2e03050000"
+        },
+		{
+            "name": "2e.03.06",
+            "deny_sds": [],
+			"manualsend": true,
+            "sendbyte_dataitems": {
+                "Запись макс. педали": {
+                    "firstbyte": 4
+                }
+            },
+			"minbytes": 4,
+            "sentbytes": "2e03060000"
+        },
+		
+		{
+            "name": "2e.01.08.01",
+            "deny_sds": [],
+			"manualsend": true,
+            "sendbyte_dataitems": {
+                
+            },
+			"minbytes": 4,
+            "sentbytes": "2e010801"
+        },
+		{
+            "name": "2e.01.08.00",
+            "deny_sds": [],
+			"manualsend": true,
+            "sendbyte_dataitems": {
+                
+            },
+			"minbytes": 4,
+            "sentbytes": "2e010800"
+        },
+		{
+            "name": "2e.04.08",
+            "deny_sds": [],
+			"manualsend": true,
+            "sendbyte_dataitems": {
+				"Запись температуры помпы": {
+                    "firstbyte": 4
+                }
+                
+            },
+			"minbytes": 4,
+            "sentbytes": "2e040800"
+        },
+		{
+            "name": "2e.03.81.01",
+            "deny_sds": [],
+			"manualsend": true,
+            "sendbyte_dataitems": {
+                
+            },
+			"minbytes": 4,
+            "sentbytes": "2e048101"
+        },
+		{
+            "name": "2e.03.81.00",
+            "deny_sds": [],
+			"manualsend": true,
+            "sendbyte_dataitems": {
+                
+            },
+			"minbytes": 4,
+            "sentbytes": "2e048100"
+        },
+		{
+            "name": "2e.04.82",
+            "deny_sds": [],
+			"manualsend": true,
+            "sendbyte_dataitems": {
+				"Запись рекуперации": {
+                    "firstbyte": 4
+                }
+                
+            },
+			"minbytes": 4,
+            "sentbytes": "2e04820000"
+        },
+		{
+            "name": "2e.04.90",
+            "deny_sds": [],
+			"manualsend": true,
+            "sendbyte_dataitems": {
+				"Запись выкл зарядки": {
+                    "firstbyte": 4
+                }
+                
+            },
+			"minbytes": 4,
+            "sentbytes": "2e04900000"
+        },
+		{
+            "name": "2e.04.91",
+            "deny_sds": [],
+			"manualsend": true,
+            "sendbyte_dataitems": {
+				"Запись начала балансировки": {
+                    "firstbyte": 4
+                }
+                
+            },
+			"minbytes": 4,
+            "sentbytes": "2e04910000" 
+        },
+		{
+            "name": "2e.04.10",
+            "deny_sds": [],
+			"manualsend": true,
+            "sendbyte_dataitems": {
+				"Запись черепахи": {
+                    "firstbyte": 4
+                }
+                
+            },
+			"minbytes": 4,
+            "sentbytes": "2e04100000"
+        },
+		{
+            "name": "2e.04.11",
+            "deny_sds": [],
+			"manualsend": true,
+            "sendbyte_dataitems": {
+				"Запись выкл батареи": {
+                    "firstbyte": 4
+                }
+                
+            },
+			"minbytes": 4,
+            "sentbytes": "2e04110000"
+        },
+		
+         {
+            "name": "03.22.01.07",
+            "replybytes": "62220107",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "Напряжение батареи": {
+                    "firstbyte": 4
+                }
+            },
+            "minbytes": 4,
+            "sentbytes": "220107"
+        },
+		 {
+            "name": "03.22.04.07",
+            "replybytes": "62220107",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "Device ID": {
+                    "firstbyte": 4
+                },
+				 "Soft ver": {
+                    "firstbyte": 6
+                }
+            },
+            "minbytes": 4,
+            "sentbytes": "220407"
+        },
+		{
+            "name": "03.22.04.08",
+            "replybytes": "62220408",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "Температура вкл помпы": {
+                    "firstbyte": 4
+                },
+				"Балансировка": {
+                    "firstbyte": 5
+                },
+				"Рекуперация": {
+                    "firstbyte": 6
+                }
+				
+            },
+            "minbytes": 4,
+            "sentbytes": "220408"
+		},
+		{
+            "name": "03.22.04.09",
+            "replybytes": "62220409",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "Напряжение выкл зарядки": {
+                    "firstbyte": 4
+                },
+				"Напряжение начала балансировки": {
+                    "firstbyte": 6
+                }
+				
+            },
+            "minbytes": 4,
+            "sentbytes": "220409"
+		},
+		{
+            "name": "03.22.04.10",
+            "replybytes": "62220410",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "Напряжение черепахи": {
+                    "firstbyte": 4
+                },
+				"Напряжение отключения батареи": {
+                    "firstbyte": 6
+                }
+				
+            },
+            "minbytes": 4,
+            "sentbytes": "220410"
+		},
+		{
+            "name": "03.22.04.11",
+            "replybytes": "62220411",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "ШИМ пистолета": {
+                    "firstbyte": 4
+                },
+				"Статус пистолета": {
+                    "firstbyte": 5
+                },
+				"Температура зарядного блока": {
+                    "firstbyte": 6
+                },
+				"Ток зарядки": {
+                    "firstbyte": 7
+                }
+				
+            },
+            "minbytes": 4,
+            "sentbytes": "220411"
+		},
+		{
+            "name": "03.22.04.01",
+            "replybytes": "62220401",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "12в АЦП": {
+                    "firstbyte": 4
+                },
+				"5в АЦП": {
+                    "firstbyte": 6
+                }
+				
+            },
+            "minbytes": 4,
+            "sentbytes": "220401"
+		},
+		{
+            "name": "03.22.04.02",
+            "replybytes": "62220402",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "А1 АЦП": {
+                    "firstbyte": 4
+                },
+				"А2 АЦП": {
+                    "firstbyte": 6
+                }
+				
+            },
+            "minbytes": 4,
+            "sentbytes": "220402"
+		},
+		{
+            "name": "03.22.04.03",
+            "replybytes": "62220403",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "А4 АЦП": {
+                    "firstbyte": 4
+                },
+				"А5 АЦП": {
+                    "firstbyte": 6
+                }
+				
+            },
+            "minbytes": 4,
+            "sentbytes": "220403"
+		},
+		{
+            "name": "03.22.04.04",
+            "replybytes": "62220404",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "А7 АЦП": {
+                    "firstbyte": 4
+                },
+				"А8 АЦП": {
+                    "firstbyte": 6
+                }
+				
+            },
+            "minbytes": 4,
+            "sentbytes": "220404"
+		},
+		{
+            "name": "03.22.04.05",
+            "replybytes": "62220405",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "А9 АЦП": {
+                    "firstbyte": 4
+                },
+				"D5": {
+                    "firstbyte": 6
+                },
+				"D6": {
+                    "firstbyte": 7
+                }
+				
+            },
+            "minbytes": 4,
+            "sentbytes": "220405"
+		},
+		{
+            "name": "03.22.04.06",
+            "replybytes": "62220406",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "D7": {
+                    "firstbyte": 4
+                },
+				"D48": {
+                    "firstbyte": 5
+                },
+				"D50": {
+                    "firstbyte": 6
+                },
+				"D52": {
+                    "firstbyte": 7
+                }
+				
+            },
+            "minbytes": 4,
+            "sentbytes": "220406"
+		},
+		
+		{
+            "name": "8C",
+            "deny_sds": [],
+            "manualsend": true,
+            "sendbyte_dataitems": {
+                "Педаль мин": {
+                    "firstbyte": 2
+                }
+            },
+            "sentbytes": "8C00"
+        },
+		
+		
+		
+		{
+            "name": "03.22.01.0c",
+            "replybytes": "6222010c",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "Напряжение минимальной ячейки": {
+                    "firstbyte": 5
+                }
+            },
+            "minbytes": 4,
+            "sentbytes": "22010c"
+        },
+		{
+            "name": "03.22.01.0d",
+            "replybytes": "6222010d",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "Напряжение максимальной ячейки": {
+                    "firstbyte": 5
+                }
+            },
+            "minbytes": 4,
+            "sentbytes": "22010d"
+        },
+		{
+            "name": "03.22.01.02",
+            "replybytes": "62220102",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "SOH в Ач": {
+                    "firstbyte": 4
+                }
+            },
+			"sendbyte_dataitems": {
+                "SOH в Ач": {
+                    "firstbyte": 2
+                }
+            },
+            "minbytes": 4,
+            "sentbytes": "220102"
+        },
+		
+		{
+            "name": "03.22.01.05",
+            "replybytes": "62220105",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "SOС": {
+                    "firstbyte": 4
+                }
+            },
+            "minbytes": 4,
+            "sentbytes": "220105"
+        },
+		
+		{
+            "name": "03.22.01.01",
+            "replybytes": "62220101",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "SOС в Ач": {
+                    "firstbyte": 4
+                }
+            },
+            "minbytes": 4,
+            "sentbytes": "220101"
+        },
+		{
+            "name": "2e.01.01",
+            "deny_sds": [],
+			"manualsend": true,
+            "sendbyte_dataitems": {
+                "SOC в Ач запись": {
+                    "firstbyte": 4
+                }
+            },
+			"minbytes": 4,
+            "sentbytes": "2e010100000000"
+        },
+		{
+            "name": "2e.01.02",
+            "deny_sds": [],
+			"manualsend": true,
+            "sendbyte_dataitems": {
+                "SOH запись": {
+                    "firstbyte": 4
+                }
+            },
+			"minbytes": 4,
+            "sentbytes": "2e010200000000"
+        },
+		{
+            "name": "2e.02.03",
+            "deny_sds": [],
+			"manualsend": true,
+            "sendbyte_dataitems": {
+                "Обнуление датчика ток": {
+                    "firstbyte": 4
+                }
+            },
+			"minbytes": 5,
+            "sentbytes": "2e020300"
+        },
+		{
+            "name": "2e.02.01",
+            "deny_sds": [],
+			"manualsend": true,
+            "sendbyte_dataitems": {
+                "Коррекция датчика ток": {
+                    "firstbyte": 4
+                }
+            },
+			"minbytes": 4,
+            "sentbytes": "2e02010000"
+        },
+		{
+            "name": "2e.02.05",
+            "deny_sds": [],
+			"manualsend": true,
+            "sendbyte_dataitems": {
+                "Ток зарядки": {
+                    "firstbyte": 4
+                }
+            },
+			"minbytes": 5,
+            "sentbytes": "2e020500"
+        },
+		{
+            "name": "2e.06.01",
+            "deny_sds": [],
+			"manualsend": true,
+            "sendbyte_dataitems": {
+                "Write Target Current": {
+                    "firstbyte": 4
+                }
+            },
+			"minbytes": 5,
+            "sentbytes": "2e06010000"
+        },
+		{
+            "name": "22.02.01",
+            "replybytes": "62020100000000",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "22.02.01 Коррекция датчика тока": {
+                    "firstbyte": 4
+                }
+            },
+            "minbytes": 5,
+            "sentbytes": "220201"
+        },
+        {
+            "name": "22.02.02",
+            "replybytes": "62020200",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "22.02.02 Вычитывание ячеек": {
+                    "firstbyte": 4
+                }
+            },
+            "minbytes": 4,
+            "sentbytes": "220202"
+        },
+        {
+            "name": "22.02.03",
+            "replybytes": "62020300",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "22.02.03 Обнуление датчика тока в покое": {
+                    "firstbyte": 4
+                }
+            },
+            "minbytes": 4,
+            "sentbytes": "220203"
+        },
+        {
+            "name": "22.02.04",
+            "replybytes": "6202040000",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "22.02.04 Начало балансировки": {
+                    "firstbyte": 4
+                }
+            },
+            "minbytes": 5,
+            "sentbytes": "220204"
+        },
+        {
+            "name": "22.02.05",
+            "replybytes": "62020500",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "22.02.05 Максимальный ток зарядки": {
+                    "firstbyte": 4
+                },
+                "22.02.05 Максимальная мощность зарядки": {
+                    "firstbyte": 4
+                }
+            },
+            "minbytes": 4,
+            "sentbytes": "220205"
+        },
+        {
+            "name": "22.02.06",
+            "replybytes": "62020600",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "22.02.06 Полная последняя зарядка": {
+                    "firstbyte": 4
+                }
+            },
+            "minbytes": 4,
+            "sentbytes": "220206"
+        },
+        {
+            "name": "22.02.07",
+            "replybytes": "62020700000000",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "22.02.07 Датчик 1": {
+                    "firstbyte": 4
+                }
+            },
+            "minbytes": 7,
+            "sentbytes": "220207"
+        },
+        {
+            "name": "22.02.08",
+            "replybytes": "62020800000000",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "22.02.08 Датчик 2": {
+                    "firstbyte": 4
+                }
+            },
+            "minbytes": 7,
+            "sentbytes": "220208"
+        },
+        {
+            "name": "22.02.09",
+            "replybytes": "62020900000000",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "22.02.09 Датчик 3": {
+                    "firstbyte": 4
+                }
+            },
+            "minbytes": 7,
+            "sentbytes": "220209"
+        },
+        {
+            "name": "22.02.0A",
+            "replybytes": "62020A00000000",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "22.02.0A Датчик 4": {
+                    "firstbyte": 4
+                }
+            },
+            "minbytes": 7,
+            "sentbytes": "22020A"
+        },
+        {
+            "name": "22.02.0B",
+            "replybytes": "62020B0000",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "22.02.0B Датчик 1": {
+                    "firstbyte": 4
+                }
+            },
+            "minbytes": 5,
+            "sentbytes": "22020B"
+        },
+        {
+            "name": "22.02.0C",
+            "replybytes": "62020C0000",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "22.02.0C Датчик 2": {
+                    "firstbyte": 4
+                }
+            },
+            "minbytes": 5,
+            "sentbytes": "22020C"
+        },
+        {
+            "name": "22.02.0D",
+            "replybytes": "62020D0000",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "22.02.0D Датчик 3": {
+                    "firstbyte": 4
+                }
+            },
+            "minbytes": 5,
+            "sentbytes": "22020D"
+        },
+        {
+            "name": "22.02.0E",
+            "replybytes": "62020E0000",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "22.02.0E Датчик 4": {
+                    "firstbyte": 4
+                }
+            },
+            "minbytes": 5,
+            "sentbytes": "22020E"
+        },
+        {
+            "name": "22.02.0F",
+            "replybytes": "22020F00",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "22.02.0F Внутреннее сопротивление": {
+                    "firstbyte": 4
+                }
+            },
+            "minbytes": 4,
+            "sentbytes": "22020F"
+        },
+        {
+            "name": "22.02.10",
+            "replybytes": "6202100000",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "22.02.10 АЦП 1": {
+                    "firstbyte": 4
+                }
+            },
+            "minbytes": 5,
+            "sentbytes": "220210"
+        },
+        {
+            "name": "22.02.11",
+            "replybytes": "6202110000",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "22.02.11 АЦП 2": {
+                    "firstbyte": 4
+                }
+            },
+            "minbytes": 5,
+            "sentbytes": "220211"
+        },
+        {
+            "name": "22.02.12",
+            "replybytes": "6202120000",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "22.02.12 АЦП 3": {
+                    "firstbyte": 4
+                }
+            },
+            "minbytes": 5,
+            "sentbytes": "220212"
+        },
+        {
+            "name": "22.02.13",
+            "replybytes": "6202130000",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "22.02.13 АЦП 4": {
+                    "firstbyte": 4
+                }
+            },
+            "minbytes": 5,
+            "sentbytes": "220213"
+        },
+        {
+            "name": "22.02.14",
+            "replybytes": "6202140000",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "22.02.14 АЦП 5": {
+                    "firstbyte": 4
+                }
+            },
+            "minbytes": 5,
+            "sentbytes": "220214"
+        },
+        {
+            "name": "22.02.15",
+            "replybytes": "6202150000",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "22.02.15 АЦП 6": {
+                    "firstbyte": 4
+                }
+            },
+            "minbytes": 5,
+            "sentbytes": "220215"
+        },
+        {
+            "name": "22.02.16",
+            "replybytes": "6202160000",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "22.02.16 АЦП 7": {
+                    "firstbyte": 4
+                }
+            },
+            "minbytes": 5,
+            "sentbytes": "220216"
+        },
+        {
+            "name": "22.02.17",
+            "replybytes": "6202170000",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "22.02.17 АЦП 8": {
+                    "firstbyte": 4
+                }
+            },
+            "minbytes": 5,
+            "sentbytes": "220217"
+        },
+        {
+            "name": "22.02.20",
+            "replybytes": "6202200000",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "Напряжение в покое при 6%": {
+                    "firstbyte": 4
+                }
+            },
+            "minbytes": 5,
+            "sentbytes": "220220"
+        },
+        {
+            "name": "22.02.21",
+            "replybytes": "6202210000",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "Напряжение в покое при 0%": {
+                    "firstbyte": 4
+                }
+            },
+            "minbytes": 5,
+            "sentbytes": "220221"
+        },
+        {
+            "name": "22.02.22",
+            "replybytes": "6202220000",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "22.02.22 Максимум": {
+                    "firstbyte": 4
+                }
+            },
+            "minbytes": 5,
+            "sentbytes": "220222"
+        },
+        {
+            "name": "22.02.23",
+            "replybytes": "6202230000",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "22.02.23 Датчик 1": {
+                    "firstbyte": 4
+                }
+            },
+            "minbytes": 5,
+            "sentbytes": "220223"
+        },
+        {
+            "name": "22.02.24",
+            "replybytes": "6202240000",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "22.02.24 Датчик 2": {
+                    "firstbyte": 4
+                }
+            },
+            "minbytes": 5,
+            "sentbytes": "220224"
+        },
+        {
+            "name": "22.02.25",
+            "replybytes": "6202250000",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "22.02.25 Датчик 3": {
+                    "firstbyte": 4
+                }
+            },
+            "minbytes": 5,
+            "sentbytes": "220225"
+        },
+        {
+            "name": "22.02.26",
+            "replybytes": "6202260000",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "22.02.26 Датчик 4": {
+                    "firstbyte": 4
+                }
+            },
+            "minbytes": 5,
+            "sentbytes": "220226"
+        },
+        {
+            "name": "22.02.27",
+            "replybytes": "6202270000",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "22.02.27 Датчик 1": {
+                    "firstbyte": 4
+                }
+            },
+            "minbytes": 5,
+            "sentbytes": "220227"
+        },
+        {
+            "name": "22.02.28",
+            "replybytes": "6202280000",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "22.02.28 Датчик 2": {
+                    "firstbyte": 4
+                }
+            },
+            "minbytes": 5,
+            "sentbytes": "220228"
+        },
+        {
+            "name": "22.02.29",
+            "replybytes": "6202290000",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "22.02.29 Датчик 3": {
+                    "firstbyte": 4
+                }
+            },
+            "minbytes": 5,
+            "sentbytes": "220229"
+        },
+        {
+            "name": "22.02.2A",
+            "replybytes": "62022A0000",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "22.02.2A Датчик 4": {
+                    "firstbyte": 4
+                }
+            },
+            "minbytes": 5,
+            "sentbytes": "22022A"
+        },
+        {
+            "name": "2E.02.2E",
+            "deny_sds": [],
+            "manualsend": true,
+            "sendbyte_dataitems": {
+                "2E.02.2E Режим": {
+                    "firstbyte": 4
+                },
+                "2E.02.2E Датчик 1": {
+                    "firstbyte": 4,
+                    "bitoffset": 4
+                },
+                "2E.02.2E Датчик 2": {
+                    "firstbyte": 4,
+                    "bitoffset": 5
+                },
+                "2E.02.2E Датчик 3": {
+                    "firstbyte": 4,
+                    "bitoffset": 6
+                },
+                "2E.02.2E Датчик 4": {
+                    "firstbyte": 4,
+                    "bitoffset": 7
+                }
+            },
+            "sentbytes": "2E022E00"
+        },
+        {
+            "name": "31.10",
+            "deny_sds": [],
+            "manualsend": true,
+            "sendbyte_dataitems": {
+                "31.10 Химия": {
+                    "firstbyte": 3
+                }
+            },
+            "sentbytes": "311000"
+        },
+        
+        {
+            "name": "8F",
+            "deny_sds": [],
+            "manualsend": true,
+            "sendbyte_dataitems": {
+                "8F Максимальная температура": {
+                    "firstbyte": 2
+                }
+            },
+            "sentbytes": "8F00"
+        },
+		{
+	"name": "DataRead.2141", 
+	"replybytes": "614100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"Cell Voltage[45]": {
+		"firstbyte": 93
+		}, 
+		"Cell Voltage[53]": {
+		"firstbyte": 109
+		}, 
+		"Cell Voltage[44]": {
+		"firstbyte": 91
+		}, 
+		"Cell Voltage[00]": {
+		"firstbyte": 3
+		}, 
+		"Cell Voltage[23]": {
+		"firstbyte": 49
+		}, 
+		"Cell Voltage[35]": {
+		"firstbyte": 73
+		}, 
+		"Cell Voltage[58]": {
+		"firstbyte": 119
+		}, 
+		"Cell Voltage[32]": {
+		"firstbyte": 67
+		}, 
+		"Cell Voltage[47]": {
+		"firstbyte": 97
+		}, 
+		"Cell Voltage[17]": {
+		"firstbyte": 37
+		}, 
+		"Cell Voltage[30]": {
+		"firstbyte": 63
+		}, 
+		"Cell Voltage[34]": {
+		"firstbyte": 71
+		}, 
+		"Cell Voltage[43]": {
+		"firstbyte": 89
+		}, 
+		"Cell Voltage[40]": {
+		"firstbyte": 83
+		}, 
+		"Cell Voltage[46]": {
+		"firstbyte": 95
+		}, 
+		"Cell Voltage[57]": {
+		"firstbyte": 117
+		}, 
+		"Cell Voltage[41]": {
+		"firstbyte": 85
+		}, 
+		"Cell Voltage[10]": {
+		"firstbyte": 23
+		}, 
+		"Cell Voltage[27]": {
+		"firstbyte": 57
+		}, 
+		"Cell Voltage[05]": {
+		"firstbyte": 13
+		}, 
+		"Cell Voltage[09]": {
+		"firstbyte": 21
+		}, 
+		"Cell Voltage[14]": {
+		"firstbyte": 31
+		}, 
+		"Cell Voltage[24]": {
+		"firstbyte": 51
+		}, 
+		"Cell Voltage[59]": {
+		"firstbyte": 121
+		}, 
+		"Cell Voltage[02]": {
+		"firstbyte": 7
+		}, 
+		"Cell Voltage[22]": {
+		"firstbyte": 47
+		}, 
+		"Cell Voltage[07]": {
+		"firstbyte": 17
+		}, 
+		"Cell Voltage[03]": {
+		"firstbyte": 9
+		}, 
+		"Cell Voltage[36]": {
+		"firstbyte": 75
+		}, 
+		"Cell Voltage[15]": {
+		"firstbyte": 33
+		}, 
+		"Cell Voltage[31]": {
+		"firstbyte": 65
+		}, 
+		"Cell Voltage[29]": {
+		"firstbyte": 61
+		}, 
+		"Cell Voltage[42]": {
+		"firstbyte": 87
+		}, 
+		"Cell Voltage[21]": {
+		"firstbyte": 45
+		}, 
+		"Cell Voltage[16]": {
+		"firstbyte": 35
+		}, 
+		"Cell Voltage[38]": {
+		"firstbyte": 79
+		}, 
+		"Cell Voltage[13]": {
+		"firstbyte": 29
+		}, 
+		"Cell Voltage[12]": {
+		"firstbyte": 27
+		}, 
+		"Cell Voltage[26]": {
+		"firstbyte": 55
+		}, 
+		"Cell Voltage[52]": {
+		"firstbyte": 107
+		}, 
+		"Cell Voltage[28]": {
+		"firstbyte": 59
+		}, 
+		"Cell Voltage[39]": {
+		"firstbyte": 81
+		}, 
+		"Cell Voltage[50]": {
+		"firstbyte": 103
+		}, 
+		"Cell Voltage[54]": {
+		"firstbyte": 111
+		}, 
+		"Cell Voltage[08]": {
+		"firstbyte": 19
+		}, 
+		"Cell Voltage[19]": {
+		"firstbyte": 41
+		}, 
+		"Cell Voltage[06]": {
+		"firstbyte": 15
+		}, 
+		"Cell Voltage[20]": {
+		"firstbyte": 43
+		}, 
+		"Cell Voltage[48]": {
+		"firstbyte": 99
+		}, 
+		"Cell Voltage[18]": {
+		"firstbyte": 39
+		}, 
+		"Cell Voltage[01]": {
+		"firstbyte": 5
+		}, 
+		"Cell Voltage[51]": {
+		"firstbyte": 105
+		}, 
+		"Cell Voltage[55]": {
+		"firstbyte": 113
+		}, 
+		"Cell Voltage[11]": {
+		"firstbyte": 25
+		}, 
+		"Cell Voltage[37]": {
+		"firstbyte": 77
+		}, 
+		"Cell Voltage[33]": {
+		"firstbyte": 69
+		}, 
+		"Cell Voltage[61]": {
+		"firstbyte": 125
+		}, 
+		"Cell Voltage[25]": {
+		"firstbyte": 53
+		}, 
+		"Cell Voltage[56]": {
+		"firstbyte": 115
+		}, 
+		"Cell Voltage[04]": {
+		"firstbyte": 11
+		}, 
+		"Cell Voltage[49]": {
+		"firstbyte": 101
+		}, 
+		"Cell Voltage[60]": {
+		"firstbyte": 123
+		}
+	}, 
+	"minbytes": 126, 
+	"sentbytes": "2141"
+	}, 
+	{
+	"name": "DataRead.2142", 
+	"replybytes": "61420000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+	 
+		"Cell Voltage[88]": {
+		"firstbyte": 55
+		}, 
+		"Cell Voltage[81]": {
+		"firstbyte": 41
+		}, 
+		"Cell Voltage[78]": {
+		"firstbyte": 35
+		}, 
+		"Cell Voltage[75]": {
+		"firstbyte": 29
+		}, 
+		"Cell Voltage[95]": {
+		"firstbyte": 69
+		}, 
+		"Cell Voltage[85]": {
+		"firstbyte": 49
+		}, 
+		"Cell Voltage[63]": {
+		"firstbyte": 5
+		}, 
+		"Cell Voltage[77]": {
+		"firstbyte": 33
+		}, 
+		"Cell Voltage[68]": {
+		"firstbyte": 15
+		}, 
+		"Cell Voltage[74]": {
+		"firstbyte": 27
+		}, 
+		"Cell Voltage[69]": {
+		"firstbyte": 17
+		}, 
+		"Cell Voltage[87]": {
+		"firstbyte": 53
+		},  
+		"Cell Voltage[84]": {
+		"firstbyte": 47
+		}, 
+		"Cell Voltage[73]": {
+		"firstbyte": 25
+		}, 
+		"Cell Voltage[76]": {
+		"firstbyte": 31
+		}, 
+		"Cell Voltage[67]": {
+		"firstbyte": 13
+		}, 
+		"Cell Voltage[64]": {
+		"firstbyte": 7
+		}, 
+		"Cell Voltage[86]": {
+		"firstbyte": 51
+		}, 
+		"Cell Voltage[93]": {
+		"firstbyte": 65
+		}, 
+		"Cell Voltage[83]": {
+		"firstbyte": 45
+		}, 
+		"Cell Voltage[72]": {
+		"firstbyte": 23
+		}, 
+		"Cell Voltage[89]": {
+		"firstbyte": 57
+		}, 
+		"Cell Voltage[80]": {
+		"firstbyte": 39
+		}, 
+		"Cell Voltage[70]": {
+		"firstbyte": 19
+		}, 
+		"Cell Voltage[66]": {
+		"firstbyte": 11
+		}, 
+		"Cell Voltage[94]": {
+		"firstbyte": 67
+		}, 
+		"Cell Voltage[82]": {
+		"firstbyte": 43
+		}, 
+		"Cell Voltage[90]": {
+		"firstbyte": 59
+		}, 
+		"Cell Voltage[79]": {
+		"firstbyte": 37
+		}, 
+		"Cell Voltage[91]": {
+		"firstbyte": 61
+		}, 
+		"Cell Voltage[62]": {
+		"firstbyte": 3
+		}, 
+		"Cell Voltage[71]": {
+		"firstbyte": 21
+		}, 
+		"Cell Voltage[65]": {
+		"firstbyte": 9
+		}, 
+		"Cell Voltage[92]": {
+		"firstbyte": 63
+		}
+	}, 
+	"minbytes": 74, 
+	"sentbytes": "2142"
+	} 
+		
+    ], 
+    "data": {
+		"Напряжение на инверторе": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+            "unit": "В"
+        },
+		"Температура инвертора": {
+           "scaled": true,
+            "unit": "°C"
+        },
+		"Температура мотора": {
+            "scaled": true,
+            "unit": "°C"
+        },
+		"Селектор": {
+            "lists": {
+                "0": "N",
+                "1": "D",
+				"2": "R"
+            }
+        },
+		"Ошибка": {
+            "lists": {
+                "0": "Нет",
+                "1": "Да"				
+            }
+        },
+		"Старт": {
+            "lists": {
+                "0": "Нет",
+                "1": "Да"				
+            }
+        },
+		"Обороты мотора": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+            "unit": "rpm"
+        },
+		"Положение педали газа": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16
+        },
+		"Мин. педали газа": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16
+        },
+		"Запись мин. педали": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16
+        },
+		"Макс. педали газа": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16
+        },
+		"Запись макс. педали": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16
+        },
+		"Запись максимум крутящего момента": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+            "unit": "Нм"
+        },
+		"Максимум крутящего момента": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+            "unit": "Нм"
+        },
+		"Запрос крутящего момента": {
+            "scaled": true,
+			"signed": true,
+            "bytescount": 2,
+            "bitscount":  16,
+            "unit": "Нм"
+        },
+		"Запись температуры помпы": {
+            "scaled": true,
+			"signed": true,
+            "bytescount": 1,
+            "bitscount":  8,
+            "unit": "°C"
+        },
+		"12в АЦП": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+			"divideby": 1000,
+            "unit": "В"
+        },
+		"5в АЦП": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+			"divideby": 1000,
+            "unit": "В"
+        },
+		"А1 АЦП": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+			"divideby": 1000,
+            "unit": "В"
+        },
+		"А2 АЦП": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+			"divideby": 1000,
+            "unit": "В"
+        },
+		"А4 АЦП": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+			"divideby": 1000,
+            "unit": "В"
+        },
+		"А5 АЦП": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+			"divideby": 1000,
+            "unit": "В"
+        },
+		"А7 АЦП": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+			"divideby": 1000,
+            "unit": "В"
+        },
+		"А8 АЦП": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+			"divideby": 1000,
+            "unit": "В"
+        },
+		"А9 АЦП": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+			"divideby": 1000,
+            "unit": "В"
+        },
+		"D5": {
+            "lists": {
+                "1": "High",
+                "0": "Low"				
+            }
+        },
+		"D6": {
+            "lists": {
+                "1": "High",
+                "0": "Low"				
+            }
+        },
+		"D7": {
+            "lists": {
+                "1": "High",
+                "0": "Low"				
+            }
+        },
+		"D48": {
+            "lists": {
+                "1": "High",
+                "0": "Low"				
+            }
+        },
+		"D50": {
+            "lists": {
+                "1": "High",
+                "0": "Low"				
+            }
+        },
+		"D52": {
+            "lists": {
+                "1": "High",
+                "0": "Low"				
+            }
+        },
+		"Device ID": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16
+        },
+		"Soft ver": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16
+        },
+		"Target Current": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16
+        },
+		"Write Target Current": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16
+        },
+		"Target Voltage": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16
+        },
+		"Asking Current": {
+            "scaled": true,
+            "bytescount": 1,
+            "bitscount": 8
+        },
+		"faults": {
+            "scaled": true,
+            "bytescount": 1,
+            "bitscount": 8
+        },
+		"status": {
+            "scaled": true,
+            "bytescount": 1,
+            "bitscount": 8
+        },
+		"chademoState": {
+            "scaled": true,
+            "bytescount": 1,
+            "bitscount": 8
+        },
+		"availVoltage": {
+            "scaled": true,
+            "bytescount": 1,
+            "bitscount": 8
+        },
+		"availCurrent": {
+            "scaled": true,
+            "bytescount": 1,
+            "bitscount": 8
+        },
+		"supportWeldCheck": {
+            "scaled": true,
+            "bytescount": 1,
+            "bitscount": 8
+        },
+		"thresholdVoltage": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16
+        },
+		"presentVoltage": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16
+        },
+		"minChargeAmperage": {
+            "scaled": true,
+            "bytescount": 1,
+            "bitscount": 8
+        },
+		"evse_status": {
+            "scaled": true,
+            "bytescount": 1,
+            "bitscount": 8
+        },
+		"presentCurrent": {
+            "scaled": true,
+            "bytescount": 1,
+            "bitscount": 8
+        },
+		"remainingChargeSeconds": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16
+        },
+		
+		
+		"Педаль мин": {
+            "scaled": true 
+        },
+		"Запись рекуперации": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16
+        },
+		"Запись выкл зарядки": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16
+        },
+		"Запись начала балансировки": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16
+        },
+		"Запись черепахи": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16
+        },
+		"Запись выкл батареи": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16
+        },
+		
+		
+		
+		"Напряжение батареи": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+            "divideby": 100,
+            "unit": "В"
+        },
+		
+		"ШИМ пистолета": {
+           "scaled": true,
+            "unit": "А"
+        },
+		"Статус пистолета": {
+           "lists": {
+                "136": "Вставлен",
+				"132": "Вставлен + нажата кнопка",
+                "144": "Не вставлен"
+            }
+        },
+		"Температура зарядного блока": {
+           "scaled": true,
+            "unit": "°C"
+        },
+		"Ток зарядки": {
+           "scaled": true,
+            "unit": "А"
+        },
+		"Температура вкл помпы": {
+           "scaled": true,
+            "unit": "°C"
+        },
+		"Балансировка": {
+            "lists": {
+                "0": "Нет",
+                "1": "Да"
+            }
+        },
+		"Рекуперация": {
+           "scaled": true,
+		    "bytescount": 2,
+            "bitscount": 16,
+            "unit": "Нм"
+        },
+		"Напряжение выкл зарядки": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+            "divideby": 1000,
+            "unit": "В"
+        },
+		"Напряжение начала балансировки": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+            "divideby": 1000,
+            "unit": "В"
+        }, 
+		"Напряжение включения контакторов": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+            "unit": "В"
+        },
+		"Запись напряжение включения контакторов": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16
+        },
+		"Напряжение черепахи": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+            "divideby": 1000,
+            "unit": "В"
+        },
+		"Напряжение отключения батареи": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+            "divideby": 1000,
+            "unit": "В"
+        },		
+		"Напряжение минимальной ячейки": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+            "divideby": 1000,
+            "unit": "В"
+        },
+		"Напряжение максимальной ячейки": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+            "divideby": 1000,
+            "unit": "В"
+        },
+		"SOH в Ач": {
+            "scaled": true,
+            "bytescount": 4,
+            "bitscount": 32,
+            "divideby": 1000000,
+            "unit": "Ач"
+        },
+		"SOH запись": {
+            "scaled": true,
+            "bytescount": 4,
+            "bitscount": 32,
+			"divideby": 1000000,
+            "unit": "Ач"
+        },
+		"SOС в Ач": {
+            "scaled": true,
+            "bytescount": 4,
+            "bitscount": 32,
+            "divideby": 1000000,
+            "unit": "Ач"
+        },
+		"SOC в Ач запись": {
+            "scaled": true,
+            "bytescount": 4,
+            "bitscount": 32,
+            "divideby": 1000000,
+            "unit": "Ач"
+        },
+		"Ток зарядки": {
+            "scaled": true,
+            "bytescount": 1,
+            "bitscount": 8,
+            "unit": "А"
+        },
+		"SOС": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+            "divideby": 100,
+            "unit": "%"
+        },
+        "22.02.01 Коррекция датчика тока": {
+            "scaled": true,
+            "signed": true,
+            "bytescount": 2,
+            "bitscount": 16,
+            "unit": "А"
+        },
+		"Коррекция датчика ток": {
+            "scaled": true,
+			"signed": true,
+            "bytescount": 2,
+            "bitscount": 16,
+            "unit": "А"
+        },
+        "22.02.02 Вычитывание ячеек": {
+            "lists": {
+                "0": "отк (0)",
+                "1": "вкл (1)",
+                "2": "вкл (2)",
+                "3": "вкл (3)"
+            }
+        },
+        "22.02.03 Обнуление датчика тока в покое": {
+            "lists": {
+                "0": "отк (0)",
+                "1": "вкл (1)"
+            }
+        },
+        "22.02.04 Начало балансировки": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+            "divideby": 1000,
+            "unit": "В"
+        },
+        "22.02.05 Максимальный ток зарядки": {
+            "scaled": true,
+            "unit": "А (?)"
+        },
+        "22.02.05 Максимальная мощность зарядки": {
+            "scaled": true,
+            "step": 380,
+            "divideby": 1000,
+            "unit": "кВт (?)"
+        },
+        "22.02.06 Полная последняя зарядка": {
+            "lists": {
+                "0": "нет (0)",
+                "1": "да (1)"
+            }
+        },
+		"Обнуление датчика ток": {
+            "lists": {
+                "1": "Вкл",
+                "0": "Выкл"
+				
+            }
+        },
+        "22.02.07 Датчик 1": {
+            "scaled": true,
+            "bytescount": 4,
+            "bitscount": 32,
+            "unit": "Ом"
+        },
+        "22.02.08 Датчик 2": {
+            "scaled": true,
+            "bytescount": 4,
+            "bitscount": 32,
+            "unit": "Ом"
+        },
+        "22.02.09 Датчик 3": {
+            "scaled": true,
+            "bytescount": 4,
+            "bitscount": 32,
+            "unit": "Ом"
+        },
+        "22.02.0A Датчик 4": {
+            "scaled": true,
+            "bytescount": 4,
+            "bitscount": 32,
+            "unit": "Ом"
+        },
+        "22.02.0B Датчик 1": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+            "signed": true,
+            "unit": "°C"
+        },
+        "22.02.0C Датчик 2": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+            "signed": true,
+            "unit": "°C"
+        },
+        "22.02.0D Датчик 3": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+            "signed": true,
+            "unit": "°C"
+        },
+        "22.02.0E Датчик 4": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+            "signed": true,
+            "unit": "°C"
+        },
+        "22.02.0F Внутреннее сопротивление": {
+            "scaled": true,
+            "unit": "Ом"
+        },
+        "22.02.10 АЦП 1": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+            "divideby": 1000,
+            "unit": "В"
+        },
+        "22.02.11 АЦП 2": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+            "divideby": 1000,
+            "unit": "В"
+        },
+        "22.02.12 АЦП 3": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+            "divideby": 1000,
+            "unit": "В"
+        },
+        "22.02.13 АЦП 4": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+            "divideby": 1000,
+            "unit": "В"
+        },
+        "22.02.14 АЦП 5": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+            "divideby": 1000,
+            "unit": "В"
+        },
+        "22.02.15 АЦП 6": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+            "divideby": 1000,
+            "unit": "В"
+        },
+        "22.02.16 АЦП 7": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+            "divideby": 1000,
+            "unit": "В"
+        },
+        "22.02.17 АЦП 8": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+            "divideby": 1000,
+            "unit": "В"
+        },
+        "Напряжение в покое при 6%": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+            "divideby": 1000,
+            "unit": "В"
+        },
+        "Напряжение в покое при 0%": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+            "divideby": 1000,
+            "unit": "В"
+        },
+        "22.02.22 Максимум": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+            "divideby": 1000,
+            "unit": "В"
+        },
+        "22.02.23 Датчик 1": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+            "unit": "K"
+        },
+        "22.02.24 Датчик 2": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+            "unit": "K"
+        },
+        "22.02.25 Датчик 3": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+            "unit": "K"
+        },
+        "22.02.26 Датчик 4": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+            "unit": "K"
+        },
+        "22.02.27 Датчик 1": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+            "unit": "Ом"
+        },
+        "22.02.28 Датчик 2": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+            "unit": "Ом"
+        },
+        "22.02.29 Датчик 3": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+            "unit": "Ом"
+        },
+        "22.02.2A Датчик 4": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+            "unit": "Ом"
+        },
+        "2E.02.2E Режим": {
+            "lists": {
+                "0": "Отправлять (Tesla)",
+                "1": "Отправлять",
+                "15": "Не отправлять"
+            },
+            "bitscount": 4
+        },
+        "2E.02.2E Датчик 1": {
+            "lists": {
+                "0": "Отключен",
+                "1": "Включен"
+            },
+            "bitscount": 1
+        },
+        "2E.02.2E Датчик 2": {
+            "lists": {
+                "0": "Отключен",
+                "1": "Включен"
+            },
+            "bitscount": 1
+        },
+        "2E.02.2E Датчик 3": {
+            "lists": {
+                "0": "Отключен",
+                "1": "Включен"
+            },
+            "bitscount": 1
+        },
+        "2E.02.2E Датчик 4": {
+            "lists": {
+                "0": "Отключен",
+                "1": "Включен"
+            },
+            "bitscount": 1
+        },
+		
+        "31.10 Химия": {
+            "lists": {
+                "01": "Leaf",
+                "02": "Tesla",
+				"03": "Volt",
+				"04": "Leaf 40"
+            }
+        },
+        "8C Общая температура": {
+            "scaled": true,
+            "offset": -40,
+            "unit": "°C"
+        },
+		
+		"Потребление в А": {
+            "scaled": true,
+			"signed": true,
+            "bytescount": 2,
+            "bitscount": 16,
+			"divideby": 100,
+            "unit": "А"
+        },		
+		
+		"Датчик тока состояние": {
+            "lists": {
+                "1": "Выкл",
+                "0": "Вкл"
+            }
+        },		
+		"Датчик тока 1": {
+            "scaled": true,
+			"signed": true,
+            "bytescount": 2,
+            "bitscount": 16,
+			"divideby": 100,
+            "unit": "А"
+        },		
+		"Датчик тока 2": {
+            "scaled": true,
+			"signed": true,
+            "bytescount": 2,
+            "bitscount": 16,
+			"divideby": 100,
+            "unit": "А"
+        },
+		
+        "8F Максимальная температура": {
+            "scaled": true,
+            "offset": -40,
+            "unit": "°C"
+        },
+		
+		"Cell Voltage[00]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[01]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[02]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[03]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[04]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		},		
+		"Cell Voltage[05]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[06]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[07]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[08]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[09]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[10]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[11]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[12]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[13]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[14]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[15]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[16]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[17]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[18]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[19]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[20]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[21]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[22]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[23]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[24]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[25]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[26]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[27]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[28]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[29]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[30]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[31]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[32]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[33]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[34]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[35]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[36]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[37]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[38]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[39]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[40]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[41]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[42]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[43]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[44]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[45]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[46]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[47]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[48]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[49]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[50]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[51]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[52]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[53]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[54]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[55]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[56]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[57]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[58]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[59]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[60]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[61]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[62]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[63]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[64]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[65]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[66]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[67]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[68]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[69]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[70]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[71]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[72]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[73]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[74]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[75]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[76]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[77]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[78]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[79]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[80]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[81]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[82]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[83]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[84]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[85]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[86]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[87]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[88]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[89]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[90]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[91]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[92]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[93]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}, 
+		"Cell Voltage[93]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		},
+		"Cell Voltage[94]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		},
+		"Cell Voltage[95]": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.001, 
+			"bitscount": 16, 
+			"unit": "V"
+		}
+		
+		
+    }
+}

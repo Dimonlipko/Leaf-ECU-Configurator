@@ -1,0 +1,4074 @@
+{
+    "screens": {
+        
+        "INV": {
+            "height": 6000, 
+            "width": 12000,
+            "color": "rgb(255,255,255)",
+            "presend": [],
+            "labels": [
+			{
+                    "text": " Параметры инвертора",
+                    "bbox": {
+                        "top": 50,
+                        "left": 0,
+                        "width": 9000,
+                        "height": 300
+                    },
+                    "alignment": 2,
+                    "color": "rgb(255,255,170)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 12
+                    }
+				}
+			],
+				
+            "inputs": [
+				{
+                    "color": "rgb(240,240,240)",
+                    "text": "Запись максимум крутящего момента",
+                    "request": "2e.03.04",
+                    "width": 0,
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    },
+                    "rect": {
+                        "top": 4050,
+                        "left": 5500,
+                        "width": 1200,
+                        "height": 300
+                    }
+                },
+				{
+                    "color": "rgb(240,240,240)",
+                    "text": "Запись мин. педали",
+                    "request": "2e.03.05",
+                    "width": 0,
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    },
+                    "rect": {
+                        "top": 4450,
+                        "left": 5500,
+                        "width": 1200,
+                        "height": 300
+                    }
+                },
+				{
+                    "color": "rgb(240,240,240)",
+                    "text": "Запись макс. педали",
+                    "request": "2e.03.06",
+                    "width": 0,
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    },
+                    "rect": {
+                        "top": 4850,
+                        "left": 5500,
+                        "width": 1200,
+                        "height": 300
+                    }
+                }
+				
+			],
+            "buttons": [
+				{
+                    "color": "rgb(255,128,192)",
+                    "text": "Запись_момент",
+                    "uniquename": "Запись_момент_0",
+                    "messages": [ "" ],
+                    "send": [
+                        {
+                            "Delay": "0",
+                            "RequestName": "2e.03.04"
+                        }
+                    ],
+                    "width": 2000,
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    },
+                    "rect": {
+                        "top": 4050,
+                        "left": 7000,
+                        "width": 2500,
+                        "height": 300
+                    }
+                },
+				{
+                    "color": "rgb(255,128,192)",
+                    "text": "Запись_мин_педали",
+                    "uniquename": "Запись_мин_педали_1",
+                    "messages": [ "" ],
+                    "send": [
+                        {
+                            "Delay": "0",
+                            "RequestName": "2e.03.05"
+                        }
+                    ],
+                    "width": 2000,
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    },
+                    "rect": {
+                        "top": 4450,
+                        "left": 7000,
+                        "width": 2500,
+                        "height": 300
+                    }
+                },
+				{
+                    "color": "rgb(255,128,192)",
+                    "text": "Запись_макс_педали",
+                    "uniquename": "Запись_макс_педали_2",
+                    "messages": [ "" ],
+                    "send": [
+                        {
+                            "Delay": "0",
+                            "RequestName": "2e.03.06"
+                        }
+                    ],
+                    "width": 1000,
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    },
+                    "rect": {
+                        "top": 4850,
+                        "left": 7000,
+                        "width": 2500,
+                        "height": 300
+                    }
+                }
+				
+			],
+            "displays": [
+			    {
+                    "text": "Напряжение на инверторе",
+                    "request": "22.03.01",
+                    "width": 3500,
+                    "rect": {
+                        "top": 450,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "Температура инвертора",
+                    "request": "22.03.02",
+                    "width": 3500,
+                    "rect": {
+                        "top": 850,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "Ошибка",
+                    "request": "22.03.02",
+                    "width": 1000,
+                    "rect": {
+                        "top": 850,
+                        "left": 6500,
+                        "width": 2000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "Старт",
+                    "request": "22.03.01",
+                    "width": 1000,
+                    "rect": {
+                        "top": 1250,
+                        "left": 6500,
+                        "width": 2000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "Температура мотора",
+                    "request": "22.03.02",
+                    "width": 3500,
+                    "rect": {
+                        "top": 1250,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+
+                    "text": "Селектор",
+                    "request": "22.03.02",
+                    "width": 3500,
+                    "rect": {
+                        "top": 1650,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "Обороты мотора",
+                    "request": "22.03.03",
+                    "width": 3500,
+                    "rect": {
+                        "top": 2050,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "Положение педали газа",
+                    "request": "22.03.03",
+                    "width": 3500,
+                    "rect": {
+                        "top": 2450,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "Запрос крутящего момента",
+                    "request": "22.03.04",
+                    "width": 3500,
+                    "rect": {
+                        "top": 2850,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "Максимум крутящего момента",
+                    "request": "22.03.04",
+                    "width": 3500,
+                    "rect": {
+                        "top": 4050,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "Мин. педали газа",
+                    "request": "22.03.05",
+                    "width": 3500,
+                    "rect": {
+                        "top": 4450,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "Макс. педали газа",
+                    "request": "22.03.05",
+                    "width": 3500,
+                    "rect": {
+                        "top": 4850,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                }    				
+            ]
+        },
+		"BMS": {
+            "height": 7000, 
+            "width": 9000,
+            "color": "rgb(255,255,255)",
+            "presend": [],
+            "labels": [
+			{
+                    "text": " Параметры BMS: ",
+                    "bbox": {
+                        "top": 100,
+                        "left": 0,
+                        "width": 9000,
+                        "height": 230
+                    },
+                    "alignment": 2,
+                    "color": "rgb(255,255,170)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 12
+                    }
+				}
+			],
+				
+            "inputs": [
+				{
+                    "color": "rgb(240,240,240)",
+                    "text": "Запись рекуперации",
+                    "request": "2e.04.82",
+                    "width": 0,
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    },
+                    "rect": {
+                        "top": 1700,
+                        "left": 5500,
+                        "width": 1200,
+                        "height": 200
+                    }
+                },
+				{
+                    "color": "rgb(240,240,240)",
+                    "text": "Запись температуры помпы",
+                    "request": "2e.04.08",
+                    "width": 0,
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    },
+                    "rect": {
+                        "top": 2050,
+                        "left": 5500,
+                        "width": 1200,
+                        "height": 200
+                    }
+                },
+				{
+                    "color": "rgb(240,240,240)",
+                    "text": "Запись выкл зарядки",
+                    "request": "2e.04.90",
+                    "width": 0,
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    },
+                    "rect": {
+                        "top": 2350,
+                        "left": 5500,
+                        "width": 1200,
+                        "height": 200
+                    }
+                },
+				{
+                    "color": "rgb(240,240,240)",
+                    "text": "Запись начала балансировки",
+                    "request": "2e.04.91",
+                    "width": 0,
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    },
+                    "rect": {
+                        "top": 2700,
+                        "left": 5500,
+                        "width": 1200,
+                        "height": 200
+                    }
+                },
+				{
+                    "color": "rgb(240,240,240)",
+                    "text": "Запись черепахи",
+                    "request": "2e.04.10",
+                    "width": 0,
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    },
+                    "rect": {
+                        "top": 3000,
+                        "left": 5500,
+                        "width": 1200,
+                        "height": 200
+                    }
+                },
+				{
+                    "color": "rgb(240,240,240)",
+                    "text": "Запись выкл батареи",
+                    "request": "2e.04.11",
+                    "width": 0,
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    },
+                    "rect": {
+                        "top": 3350,
+                        "left": 5500,
+                        "width": 1200,
+                        "height": 200
+                    }
+                },
+				{
+                    "color": "rgb(240,240,240)",
+                    "text": "SOC в Ач запись",
+                    "request": "2e.01.01",
+                    "width": 0,
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    },
+                    "rect": {
+                        "top": 4050,
+                        "left": 5500,
+                        "width": 1200,
+                        "height": 200
+                    }
+                },
+				{
+                    "color": "rgb(240,240,240)",
+                    "text": "SOH запись",
+                    "request": "2e.01.02",
+                    "width": 0,
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    },
+                    "rect": {
+                        "top": 4400,
+                        "left": 5500,
+                        "width": 1200,
+                        "height": 200
+                    }
+                },
+				{
+                    "color": "rgb(240,240,240)",
+                    "text": "Запись напряжение включения контакторов",
+                    "request": "2e.01.10",
+                    "width": 0,
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    },
+                    "rect": {
+                        "top": 6100,
+                        "left": 5500,
+                        "width": 1200,
+                        "height": 200
+                    }
+                }
+			
+			],
+            "buttons": [
+			{
+                    "color": "rgb(255,128,192)",
+                    "text": "Вкл",
+                    "uniquename": "Вкл_0",
+                    "messages": [ "" ],
+                    "send": [
+                        {
+                            "Delay": "0",
+                            "RequestName": "2e.03.81.01"
+                        }
+                    ],
+                    "width": 2000,
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    },
+                    "rect": {
+                        "top": 1350,
+                        "left": 5500,
+                        "width": 1500,
+                        "height": 200
+                    }
+                },
+				{
+                    "color": "rgb(255,128,192)",
+                    "text": "Выкл",
+                    "uniquename": "Выкл_1",
+                    "messages": [ "" ],
+                    "send": [
+                        {
+                            "Delay": "0",
+                            "RequestName": "2e.03.81.00"
+                        }
+                    ],
+                    "width": 2000,
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    },
+                    "rect": {
+                        "top": 1350,
+                        "left": 7000,
+                        "width": 1500,
+                        "height": 200
+                    }
+                },
+				{
+                    "color": "rgb(255,128,192)",
+                    "text": "Запись_рекуперации",
+                    "uniquename": "Запись_рекуперации_2",
+                    "messages": [ "" ],
+                    "send": [
+                        {
+                            "Delay": "0",
+                            "RequestName": "2e.04.82"
+                        }
+                    ],
+                    "width": 2000,
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    },
+                    "rect": {
+                        "top": 1700,
+                        "left": 7000,
+                        "width": 1500,
+                        "height": 200
+                    }
+                },
+				{
+                    "color": "rgb(255,128,192)",
+                    "text": "Запись температуры помпы",
+                    "uniquename": "Запись температуры помпы_3",
+                    "messages": [ "" ],
+                    "send": [
+                        {
+                            "Delay": "0",
+                            "RequestName": "2e.04.08"
+                        }
+                    ],
+                    "width": 2000,
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    },
+                    "rect": {
+                        "top": 2050,
+                        "left": 7000,
+                        "width": 1500,
+                        "height": 200
+                    }
+                },
+				{
+                    "color": "rgb(255,128,192)",
+                    "text": "Запись_выкл_зарядки",
+                    "uniquename": "Запись_выкл_зарядки_4",
+                    "messages": [ "" ],
+                    "send": [
+                        {
+                            "Delay": "0",
+                            "RequestName": "2e.04.90"
+                        }
+                    ],
+                    "width": 2000,
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    },
+                    "rect": {
+                        "top": 2350,
+                        "left": 7000,
+                        "width": 1500,
+                        "height": 200
+                    }
+                },
+				{
+                    "color": "rgb(255,128,192)",
+                    "text": "Запись_начала_балансировки",
+                    "uniquename": "Запись_начала_балансировки_5",
+                    "messages": [ "" ],
+                    "send": [
+                        {
+                            "Delay": "0",
+                            "RequestName": "2e.04.91"
+                        }
+                    ],
+                    "width": 2000,
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    },
+                    "rect": {
+                        "top": 2700,
+                        "left": 7000,
+                        "width": 1500,
+                        "height": 200
+                    }
+                },
+				{
+                    "color": "rgb(255,128,192)",
+                    "text": "Запись_черепахи",
+                    "uniquename": "Запись_черепахи_6",
+                    "messages": [ "" ],
+                    "send": [
+                        {
+                            "Delay": "0",
+                            "RequestName": "2e.04.10"
+                        }
+                    ],
+                    "width": 2000,
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    },
+                    "rect": {
+                        "top": 3000,
+                        "left": 7000,
+                        "width": 1500,
+                        "height": 200
+                    }
+                },
+				{
+                    "color": "rgb(255,128,192)",
+                    "text": "Запись_SOC",
+                    "uniquename": "Запись_SOC_7",
+                    "messages": [ "" ],
+                    "send": [
+                        {
+                            "Delay": "0",
+                            "RequestName": "2e.01.01"
+                        }
+                    ],
+                    "width": 2000,
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    },
+                    "rect": {
+                        "top": 4050,
+                        "left": 7000,
+                        "width": 1500,
+                        "height": 200
+                    }
+                },
+				{
+                    "color": "rgb(255,128,192)",
+                    "text": "Запись_SOH",
+                    "uniquename": "Запись_SOH_8",
+                    "messages": [ "" ],
+                    "send": [
+                        {
+                            "Delay": "0",
+                            "RequestName": "2e.01.02"
+                        }
+                    ],
+                    "width": 2000,
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    },
+                    "rect": {
+                        "top": 4400,
+                        "left": 7000,
+                        "width": 1500,
+                        "height": 200
+                    }
+                },
+				{
+                    "color": "rgb(255,128,192)",
+                    "text": "Запись_выкл_батареи",
+                    "uniquename": "Запись_выкл_батареи_8",
+                    "messages": [ "" ],
+                    "send": [
+                        {
+                            "Delay": "0",
+                            "RequestName": "2e.04.11"
+                        }
+                    ],
+                    "width": 2000,
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    },
+                    "rect": {
+                        "top": 3350,
+                        "left": 7000,
+                        "width": 1500,
+                        "height": 200
+                    }
+                },
+				{
+                    "color": "rgb(255,128,192)",
+                    "text": "Запись_напряжения_вкл_контакторов",
+                    "uniquename": "Запись_напряжения_вкл_контакторов_10",
+                    "messages": [ "" ],
+                    "send": [
+                        {
+                            "Delay": "0",
+                            "RequestName": "2e.01.10"
+                        }
+                    ],
+                    "width": 2000,
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    },
+                    "rect": {
+                        "top": 6100,
+                        "left": 7000,
+                        "width": 1500,
+                        "height": 200
+                    }
+                },
+				{
+                    "color": "rgb(255,128,192)",
+                    "text": "Выкл_ток",
+                    "uniquename": "Выкл_ток",
+                    "messages": [ "" ],
+                    "send": [
+                        {
+                            "Delay": "0",
+                            "RequestName": "2e.01.08.01"
+                        }
+                    ],
+                    "width": 2000,
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    },
+                    "rect": {
+                        "top": 4750,
+                        "left": 7000,
+                        "width": 1500,
+                        "height": 200
+                    }
+                },
+				{
+                    "color": "rgb(255,128,192)",
+                    "text": "Вкл_ток",
+                    "uniquename": "Вкл_ток",
+                    "messages": [ "" ],
+                    "send": [
+                        {
+                            "Delay": "0",
+                            "RequestName": "2e.03.81.01"
+                        }
+                    ],
+                    "width": 2000,
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    },
+                    "rect": {
+                        "top": 4750,
+                        "left": 5500,
+                        "width": 1500,
+                        "height": 200
+                    }
+                }
+			  
+			],
+            "displays": [
+			    {
+                    "text": "Напряжение батареи",
+                    "request": "03.22.01.07",
+                    "width": 3500,
+                    "rect": {
+                        "top": 350,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 200
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "Напряжение минимальной ячейки",
+                    "request": "22.03.06",
+                    "width": 3500,
+                    "rect": {
+                        "top": 650,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 200
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "Напряжение максимальной ячейки",
+                    "request": "22.03.06",
+                    "width": 3500,
+                    "rect": {
+                        "top": 1000,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 200
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "Балансировка",
+                    "request": "03.22.04.08",
+                    "width": 3500,
+                    "rect": {
+                        "top": 1350,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 200
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "Рекуперация",
+                    "request": "03.22.04.08",
+                    "width": 3500,
+                    "rect": {
+                        "top": 1650,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 200
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "Температура вкл помпы",
+                    "request": "03.22.04.08",
+                    "width": 3500,
+                    "rect": {
+                        "top": 2000,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 200
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "Напряжение выкл зарядки",
+                    "request": "03.22.04.09",
+                    "width": 3500,
+                    "rect": {
+                        "top": 2350,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 200
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "Напряжение начала балансировки",
+                    "request": "03.22.04.09",
+                    "width": 3500,
+                    "rect": {
+                        "top": 2650,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 200
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "Напряжение черепахи",
+                    "request": "03.22.04.10",
+                    "width": 3500,
+                    "rect": {
+                        "top": 3000,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 200
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "Напряжение отключения батареи",
+                    "request": "03.22.04.10",
+                    "width": 3500,
+                    "rect": {
+                        "top": 3350,
+                        "left": 150,
+                         "width": 5000,
+                        "height": 200
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "SOС",
+                    "request": "03.22.01.05",
+                    "width": 3500,
+                    "rect": {
+                        "top": 3700,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 200
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "SOС в Ач",
+                    "request": "03.22.01.01",
+                    "width": 3500,
+                    "rect": {
+                        "top": 4050,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 200
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "SOH в Ач",
+                    "request": "03.22.01.02",
+                    "width": 3500,
+                    "rect": {
+                        "top": 4400,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 200
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "Потребление в А",
+                    "request": "03.22.01.08",
+                    "width": 3500,
+                    "rect": {
+                        "top": 4750,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 200
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },       
+				{
+                    "text": "Датчик тока состояние",
+                    "request": "03.22.01.08",
+                    "width": 3500,
+                    "rect": {
+                        "top": 5100,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 200
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "Датчик тока 1",
+                    "request": "03.22.01.09",
+                    "width": 3500,
+                    "rect": {
+                        "top": 5450,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 200
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "Датчик тока 2",
+                    "request": "03.22.01.09",
+                    "width": 3500,
+                    "rect": {
+                        "top": 5800,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 200
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "Напряжение включения контакторов",
+                    "request": "03.22.01.10",
+                    "width": 3500,
+                    "rect": {
+                        "top": 6100,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 200
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                }
+				
+				
+				  
+            ]
+        },
+		"PDM": {
+            "height": 6000, 
+            "width": 9000,
+            "color": "rgb(255,255,255)",
+            "presend": [],
+            "labels": [
+			{
+                    "text": " Параметры PDM: ",
+                    "bbox": {
+                        "top": 50,
+                        "left": 0,
+                        "width": 9000,
+                        "height": 300
+                    },
+                    "alignment": 2,
+                    "color": "rgb(255,255,170)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 12
+                    }
+				}
+			],
+				
+            "inputs": [
+			
+			],
+            "buttons": [
+			  
+			],
+            "displays": [
+			    {
+                    "text": "ШИМ пистолета",
+                    "request": "03.22.04.11",
+                    "width": 3500,
+                    "rect": {
+                        "top": 450,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "Статус пистолета",
+                    "request": "03.22.04.11",
+                    "width": 3500,
+                    "rect": {
+                        "top": 850,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "Температура зарядного блока",
+                    "request": "03.22.04.11",
+                    "width": 3500,
+                    "rect": {
+                        "top": 1250,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "Ток зарядки",
+                    "request": "03.22.04.11",
+                    "width": 3500,
+                    "rect": {
+                        "top": 1650,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                }
+				  
+            ]
+        },
+		"Chademo": {
+            "height": 12000, 
+            "width": 9000,
+            "color": "rgb(255,255,255)",
+            "presend": [],
+            "labels": [
+				{
+                    "text": " Параметры машины ",
+                    "bbox": {
+                        "top": 100,
+                        "left": 0,
+                        "width": 9000,
+                        "height": 300
+                    },
+                    "alignment": 2,
+                    "color": "rgb(255,255,170)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 12
+                    }
+				},
+				{
+                    "text": " Параметры станции ",
+                    "bbox": {
+                        "top": 3000,
+                        "left": 0,
+                        "width": 9000,
+                        "height": 300
+                    },
+                    "alignment": 2,
+                    "color": "rgb(255,255,170)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 12
+                    }
+				}
+				
+			],
+				
+            "inputs": [
+				{
+                    "color": "rgb(240,240,240)",
+                    "text": "Write Target Current",
+                    "request": "2e.06.01",
+                    "width": 0,
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    },
+                    "rect": {
+                        "top": 450,
+                        "left": 5500,
+                        "width": 1200,
+                        "height": 300
+                    }
+                }
+			
+			],
+            "buttons": [
+				{
+			        "color": "rgb(255,128,192)",
+                    "text": "Write",
+                    "uniquename": "Write_0",
+                    "messages": [ "" ],
+                    "send": [
+                        {
+                            "Delay": "0",
+                            "RequestName": "2e.06.01"
+                        }
+                    ],
+                    "width": 2000,
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    },
+                    "rect": {
+                        "top": 450,
+                        "left": 7000,
+                        "width": 1500,
+                        "height": 300
+                    }
+                }
+			  
+			],
+            "displays": [
+			{
+                    "text": "Target Current",
+                    "request": "22.06.01",
+                    "width": 3500,
+                    "rect": {
+                        "top": 450,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+			
+            },
+			{
+                    "text": "Target Voltage",
+                    "request": "22.06.01",
+                    "width": 3500,
+                    "rect": {
+                        "top": 850,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+            },
+			{
+                    "text": "Asking Current",
+                    "request": "22.06.02",
+                    "width": 3500,
+                    "rect": {
+                        "top": 1250,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+            },
+			{
+                    "text": "faults",
+                    "request": "22.06.02",
+                    "width": 3500,
+                    "rect": {
+                        "top": 1650,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+            },
+			{
+                    "text": "status",
+                    "request": "22.06.02",
+                    "width": 3500,
+                    "rect": {
+                        "top": 2050,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+            },
+			{
+                    "text": "chademoState",
+                    "request": "22.06.02",
+                    "width": 3500,
+                    "rect": {
+                        "top": 2450,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+            },
+			{
+                    "text": "availVoltage",
+                    "request": "22.06.03",
+                    "width": 3500,
+                    "rect": {
+                        "top": 4000,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+            },
+			{
+                    "text": "availCurrent",
+                    "request": "22.06.03",
+                    "width": 3500,
+                    "rect": {
+                        "top": 4400,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+            },
+			{
+                    "text": "supportWeldCheck",
+                    "request": "22.06.03",
+                    "width": 3500,
+                    "rect": {
+                        "top": 4800,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+            },
+			{
+                    "text": "thresholdVoltage",
+                    "request": "22.06.04",
+                    "width": 3500,
+                    "rect": {
+                        "top": 5200,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+            },
+			{
+                    "text": "presentVoltage",
+                    "request": "22.06.04",
+                    "width": 3500,
+                    "rect": {
+                        "top": 5600,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+            },
+			{
+                    "text": "minChargeAmperage",
+                    "request": "22.06.04",
+                    "width": 3500,
+                    "rect": {
+                        "top": 6000,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+            },
+			{
+                    "text": "evse_status",
+                    "request": "22.06.05",
+                    "width": 3500,
+                    "rect": {
+                        "top": 6400,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+            },
+			{
+                    "text": "presentCurrent",
+                    "request": "22.06.05",
+                    "width": 3500,
+                    "rect": {
+                        "top": 6800,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+            },
+			{
+                    "text": "remainingChargeSeconds",
+                    "request": "22.06.05",
+                    "width": 3500,
+                    "rect": {
+                        "top": 7200,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+            }
+			   
+				  
+            ]
+        },
+		"Internal": {
+            "height": 6000, 
+            "width": 9000,
+            "color": "rgb(255,255,255)",
+            "presend": [],
+            "labels": [
+			{
+                    "text": " Внутренние параметры: ",
+                    "bbox": {
+                        "top": 100,
+                        "left": 0,
+                        "width": 9000,
+                        "height": 230
+                    },
+                    "alignment": 2,
+                    "color": "rgb(255,255,170)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 12
+                    }
+				}
+			],
+				
+            "inputs": [
+			
+			],
+            "buttons": [
+			  
+			],
+            "displays": [
+			    {
+                    "text": "12в АЦП",
+                    "request": "03.22.04.01",
+                    "width": 3500,
+                    "rect": {
+                        "top": 350,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 200
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "5в АЦП",
+                    "request": "03.22.04.01",
+                    "width": 3500,
+                    "rect": {
+                        "top": 650,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 200
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "А1 АЦП",
+                    "request": "03.22.04.02",
+                    "width": 3500,
+                    "rect": {
+                        "top": 1000,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 200
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "А2 АЦП",
+                    "request": "03.22.04.02",
+                    "width": 3500,
+                    "rect": {
+                        "top": 1350,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 200
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "А4 АЦП",
+                    "request": "03.22.04.03",
+                    "width": 3500,
+                    "rect": {
+                        "top": 1650,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 200
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "А5 АЦП",
+                    "request": "03.22.04.03",
+                    "width": 3500,
+                    "rect": {
+                        "top": 2000,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 200
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "А7 АЦП",
+                    "request": "03.22.04.04",
+                    "width": 3500,
+                    "rect": {
+                        "top": 2350,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 200
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "А8 АЦП",
+                    "request": "03.22.04.04",
+                    "width": 3500,
+                    "rect": {
+                        "top": 2700,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 200
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "А9 АЦП",
+                    "request": "03.22.04.05",
+                    "width": 3500,
+                    "rect": {
+                        "top": 3050,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 200
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "D5",
+                    "request": "03.22.04.05",
+                    "width": 3500,
+                    "rect": {
+                        "top": 3400,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 200
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "D6",
+                    "request": "03.22.04.05",
+                    "width": 3500,
+                    "rect": {
+                        "top": 3750,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 200
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "D7",
+                    "request": "03.22.04.06",
+                    "width": 3500,
+                    "rect": {
+                        "top": 4100,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 200
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "D48",
+                    "request": "03.22.04.06",
+                    "width": 3500,
+                    "rect": {
+                        "top": 4450,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 200
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "D50",
+                    "request": "03.22.04.06",
+                    "width": 3500,
+                    "rect": {
+                        "top": 4800,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 200
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "D52",
+                    "request": "03.22.04.06",
+                    "width": 3500,
+                    "rect": {
+                        "top": 5150,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 200
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "Device ID",
+                    "request": "03.22.04.07",
+                    "width": 3500,
+                    "rect": {
+                        "top": 5700,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 200
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "Soft ver",
+                    "request": "03.22.04.07",
+                    "width": 3500,
+                    "rect": {
+                        "top": 6050,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 200
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                }
+				
+            ]
+        },
+		"Setting": {
+            "height": 6000, 
+            "width": 9000,
+            "color": "rgb(255,255,255)",
+            "presend": [],
+            "labels": [
+			{
+                    "text": " Настройки ECU: ",
+                    "bbox": {
+                        "top": 100,
+                        "left": 0,
+                        "width": 9000,
+                        "height": 230
+                    },
+                    "alignment": 2,
+                    "color": "rgb(255,255,170)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 12
+                    }
+				}
+			],
+				
+            "inputs": [
+			{
+                    "color": "rgb(240,240,240)",
+                    "text": "Педаль мин",
+                    "request": "8C",
+                    "width": 2500,
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    },
+                    "rect": {
+                        "top": 3000,
+                        "left": 150,
+                        "width": 4000,
+                        "height": 150
+                    }
+                }
+				
+			],
+            "buttons": [
+			  {
+                    "color": "rgb(255,128,192)",
+                    "text": "Запись 8C",
+                    "uniquename": "Запись 8C_0",
+                    "messages": [ "" ],
+                    "send": [
+                        {
+                            "Delay": "0",
+                            "RequestName": "8C"
+                        }
+                    ],
+                    "width": 2500,
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    },
+                    "rect": {
+                        "top": 3650,
+                        "left": 4500,
+                        "width": 4000,
+                        "height": 150
+                    }
+                }
+				
+			],
+            "displays": [
+			   
+		      
+            ]
+        },
+		"BMS cell map": {
+		"inputs": [], 
+		"color": "rgb(255,255,255)", 
+		"labels": [], 
+	   "presend": [], 
+	   "height": 7140, 
+	   "buttons": [], 
+	   "width": 9540, 
+	   "displays": [
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[00]", 
+		 "request": "DataRead.2141", 
+		 "width": 1805, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2280, 
+		  "top": 0, 
+		  "height": 199, 
+		  "left": 120
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[01]", 
+		 "request": "DataRead.2141", 
+		 "width": 1805, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2280, 
+		  "top": 199, 
+		  "height": 199, 
+		  "left": 120
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[02]", 
+		 "request": "DataRead.2141", 
+		 "width": 1805, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2280, 
+		  "top": 394, 
+		  "height": 199, 
+		  "left": 120
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[03]", 
+		 "request": "DataRead.2141", 
+		 "width": 1805, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2280, 
+		  "top": 593, 
+		  "height": 199, 
+		  "left": 120
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[04]", 
+		 "request": "DataRead.2141", 
+		 "width": 1805, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2280, 
+		  "top": 791, 
+		  "height": 199, 
+		  "left": 120
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[05]", 
+		 "request": "DataRead.2141", 
+		 "width": 1805, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2280, 
+		  "top": 987, 
+		  "height": 199, 
+		  "left": 120
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[06]", 
+		 "request": "DataRead.2141", 
+		 "width": 1805, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2280, 
+		  "top": 1186, 
+		  "height": 199, 
+		  "left": 120
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[07]", 
+		 "request": "DataRead.2141", 
+		 "width": 1805, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2280, 
+		  "top": 1385, 
+		  "height": 199, 
+		  "left": 120
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[08]", 
+		 "request": "DataRead.2141", 
+		 "width": 1805, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2280, 
+		  "top": 1580, 
+		  "height": 199, 
+		  "left": 120
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[09]", 
+		 "request": "DataRead.2141", 
+		 "width": 1805, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2280, 
+		  "top": 1778, 
+		  "height": 199, 
+		  "left": 120
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[10]", 
+		 "request": "DataRead.2141", 
+		 "width": 1805, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2280, 
+		  "top": 1975, 
+		  "height": 199, 
+		  "left": 120
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[11]", 
+		 "request": "DataRead.2141", 
+		 "width": 1805, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2280, 
+		  "top": 2170, 
+		  "height": 199, 
+		  "left": 120
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[12]", 
+		 "request": "DataRead.2141", 
+		 "width": 1805, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2280, 
+		  "top": 2370, 
+		  "height": 199, 
+		  "left": 120
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[13]", 
+		 "request": "DataRead.2141", 
+		 "width": 1805, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2280, 
+		  "top": 2569, 
+		  "height": 199, 
+		  "left": 120
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[14]", 
+		 "request": "DataRead.2141", 
+		 "width": 1805, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2280, 
+		  "top": 2764, 
+		  "height": 199, 
+		  "left": 120
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[15]", 
+		 "request": "DataRead.2141", 
+		 "width": 1805, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2280, 
+		  "top": 2962, 
+		  "height": 199, 
+		  "left": 120
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[16]", 
+		 "request": "DataRead.2141", 
+		 "width": 1805, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2280, 
+		  "top": 3161, 
+		  "height": 199, 
+		  "left": 120
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[17]", 
+		 "request": "DataRead.2141", 
+		 "width": 1805, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2280, 
+		  "top": 3360, 
+		  "height": 248, 
+		  "left": 120
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[18]", 
+		 "request": "DataRead.2141", 
+		 "width": 1805, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2280, 
+		  "top": 3488, 
+		  "height": 188, 
+		  "left": 120
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[19]", 
+		 "request": "DataRead.2141", 
+		 "width": 1805, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2280, 
+		  "top": 3676, 
+		  "height": 188, 
+		  "left": 120
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[20]", 
+		 "request": "DataRead.2141", 
+		 "width": 1805, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2280, 
+		  "top": 3860, 
+		  "height": 188, 
+		  "left": 120
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[21]", 
+		 "request": "DataRead.2141", 
+		 "width": 1805, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2280, 
+		  "top": 4048, 
+		  "height": 188, 
+		  "left": 120
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[22]", 
+		 "request": "DataRead.2141", 
+		 "width": 1805, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2280, 
+		  "top": 4236, 
+		  "height": 188, 
+		  "left": 120
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[23]", 
+		 "request": "DataRead.2141", 
+		 "width": 1805, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2280, 
+		  "top": 4420, 
+		  "height": 188, 
+		  "left": 120
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[24]", 
+		 "request": "DataRead.2141", 
+		 "width": 1805, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2280, 
+		  "top": 4608, 
+		  "height": 188, 
+		  "left": 120
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[25]", 
+		 "request": "DataRead.2141", 
+		 "width": 1805, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2280, 
+		  "top": 4796, 
+		  "height": 188, 
+		  "left": 120
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[26]", 
+		 "request": "DataRead.2141", 
+		 "width": 1805, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2280, 
+		  "top": 4980, 
+		  "height": 188, 
+		  "left": 120
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[27]", 
+		 "request": "DataRead.2141", 
+		 "width": 1820, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2280, 
+		  "top": 5160, 
+		  "height": 190, 
+		  "left": 120
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[28]", 
+		 "request": "DataRead.2141", 
+		 "width": 1820, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2280, 
+		  "top": 5350, 
+		  "height": 190, 
+		  "left": 120
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[29]", 
+		 "request": "DataRead.2141", 
+		 "width": 1820, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2280, 
+		  "top": 5540, 
+		  "height": 190, 
+		  "left": 120
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[30]", 
+		 "request": "DataRead.2141", 
+		 "width": 1820, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2280, 
+		  "top": 5730, 
+		  "height": 190, 
+		  "left": 120
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[31]", 
+		 "request": "DataRead.2141", 
+		 "width": 1820, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2280, 
+		  "top": 5910, 
+		  "height": 188, 
+		  "left": 120
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[32]", 
+		 "request": "DataRead.2141", 
+		 "width": 1820, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2280, 
+		  "top": 6090, 
+		  "height": 188, 
+		  "left": 120
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[33]", 
+		 "request": "DataRead.2141", 
+		 "width": 1820, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2280, 
+		  "top": 6270, 
+		  "height": 188, 
+		  "left": 120
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[34]", 
+		 "request": "DataRead.2141", 
+		 "width": 1820, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2280, 
+		  "top": 6450, 
+		  "height": 188, 
+		  "left": 120
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[35]", 
+		 "request": "DataRead.2141", 
+		 "width": 1820, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2280, 
+		  "top": 6630, 
+		  "height": 188, 
+		  "left": 120
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[36]", 
+		 "request": "DataRead.2141", 
+		 "width": 1820, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2280, 
+		  "top": 6810, 
+		  "height": 188, 
+		  "left": 120
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[37]", 
+		 "request": "DataRead.2141", 
+		 "width": 1760, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2160, 
+		  "top": 0, 
+		  "height": 177, 
+		  "left": 2400
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[38]", 
+		 "request": "DataRead.2141", 
+		 "width": 1760, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2160, 
+		  "top": 177, 
+		  "height": 177, 
+		  "left": 2400
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[39]", 
+		 "request": "DataRead.2141", 
+		 "width": 1760, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2160, 
+		  "top": 353, 
+		  "height": 177, 
+		  "left": 2400
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[40]", 
+		 "request": "DataRead.2141", 
+		 "width": 1760, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2160, 
+		  "top": 530, 
+		  "height": 177, 
+		  "left": 2400
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[41]", 
+		 "request": "DataRead.2141", 
+		 "width": 1760, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2160, 
+		  "top": 706, 
+		  "height": 177, 
+		  "left": 2400
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[42]", 
+		 "request": "DataRead.2141", 
+		 "width": 1760, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2160, 
+		  "top": 883, 
+		  "height": 177, 
+		  "left": 2400
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[43]", 
+		 "request": "DataRead.2141", 
+		 "width": 1760, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2160, 
+		  "top": 1059, 
+		  "height": 177, 
+		  "left": 2400
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[44]", 
+		 "request": "DataRead.2141", 
+		 "width": 1760, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2160, 
+		  "top": 1236, 
+		  "height": 177, 
+		  "left": 2400
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[45]", 
+		 "request": "DataRead.2141", 
+		 "width": 1760, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2160, 
+		  "top": 1412, 
+		  "height": 177, 
+		  "left": 2400
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[46]", 
+		 "request": "DataRead.2141", 
+		 "width": 1760, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2160, 
+		  "top": 1588, 
+		  "height": 177, 
+		  "left": 2400
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[47]", 
+		 "request": "DataRead.2141", 
+		 "width": 1760, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2160, 
+		  "top": 1764, 
+		  "height": 177, 
+		  "left": 2400
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[48]", 
+		 "request": "DataRead.2141", 
+		 "width": 1760, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2160, 
+		  "top": 1941, 
+		  "height": 177, 
+		  "left": 2400
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[49]", 
+		 "request": "DataRead.2141", 
+		 "width": 1760, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2160, 
+		  "top": 2118, 
+		  "height": 177, 
+		  "left": 2400
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[50]", 
+		 "request": "DataRead.2141", 
+		 "width": 1760, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2160, 
+		  "top": 2295, 
+		  "height": 177, 
+		  "left": 2400
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[51]", 
+		 "request": "DataRead.2141", 
+		 "width": 1760, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2160, 
+		  "top": 2472, 
+		  "height": 177, 
+		  "left": 2400
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[52]", 
+		 "request": "DataRead.2141", 
+		 "width": 1760, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2160, 
+		  "top": 2649, 
+		  "height": 177, 
+		  "left": 2400
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[53]", 
+		 "request": "DataRead.2141", 
+		 "width": 1760, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2160, 
+		  "top": 2826, 
+		  "height": 177, 
+		  "left": 2400
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[54]", 
+		 "request": "DataRead.2141", 
+		 "width": 1760, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2160, 
+		  "top": 3000, 
+		  "height": 165, 
+		  "left": 2400
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[55]", 
+		 "request": "DataRead.2141", 
+		 "width": 1760, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2160, 
+		  "top": 3165, 
+		  "height": 165, 
+		  "left": 2400
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[56]", 
+		 "request": "DataRead.2141", 
+		 "width": 1760, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2160, 
+		  "top": 3331, 
+		  "height": 165, 
+		  "left": 2400
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[57]", 
+		 "request": "DataRead.2141", 
+		 "width": 1760, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2160, 
+		  "top": 3496, 
+		  "height": 165, 
+		  "left": 2400
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[58]", 
+		 "request": "DataRead.2141", 
+		 "width": 1760, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2160, 
+		  "top": 3661, 
+		  "height": 165, 
+		  "left": 2400
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[59]", 
+		 "request": "DataRead.2141", 
+		 "width": 1760, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2160, 
+		  "top": 3826, 
+		  "height": 165, 
+		  "left": 2400
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[60]", 
+		 "request": "DataRead.2141", 
+		 "width": 1760, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2160, 
+		  "top": 3991, 
+		  "height": 165, 
+		  "left": 2400
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[61]", 
+		 "request": "DataRead.2141", 
+		 "width": 1760, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2160, 
+		  "top": 4156, 
+		  "height": 165, 
+		  "left": 2400
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[62]", 
+		 "request": "DataRead.2142", 
+		 "width": 1760, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2160, 
+		  "top": 4320, 
+		  "height": 163, 
+		  "left": 2400
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[63]", 
+		 "request": "DataRead.2142", 
+		 "width": 1760, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2160, 
+		  "top": 4440, 
+		  "height": 163, 
+		  "left": 2400
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[64]", 
+		 "request": "DataRead.2142", 
+		 "width": 1760, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2160, 
+		  "top": 4604, 
+		  "height": 163, 
+		  "left": 2400
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[65]", 
+		 "request": "DataRead.2142", 
+		 "width": 1760, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2160, 
+		  "top": 4767, 
+		  "height": 163, 
+		  "left": 2400
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[66]", 
+		 "request": "DataRead.2142", 
+		 "width": 1760, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2160, 
+		  "top": 4930, 
+		  "height": 163, 
+		  "left": 2400
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[67]", 
+		 "request": "DataRead.2142", 
+		 "width": 1760, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2160, 
+		  "top": 5094, 
+		  "height": 163, 
+		  "left": 2400
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[68]", 
+		 "request": "DataRead.2142", 
+		 "width": 1760, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2160, 
+		  "top": 0, 
+		  "height": 183, 
+		  "left": 4620
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[69]", 
+		 "request": "DataRead.2142", 
+		 "width": 1760, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2160, 
+		  "top": 183, 
+		  "height": 183, 
+		  "left": 4620
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[70]", 
+		 "request": "DataRead.2142", 
+		 "width": 1760, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2160, 
+		  "top": 367, 
+		  "height": 183, 
+		  "left": 4620
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[71]", 
+		 "request": "DataRead.2142", 
+		 "width": 1760, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2160, 
+		  "top": 550, 
+		  "height": 183, 
+		  "left": 4620
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[72]", 
+		 "request": "DataRead.2142", 
+		 "width": 1760, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2160, 
+		  "top": 733, 
+		  "height": 183, 
+		  "left": 4620
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[73]", 
+		 "request": "DataRead.2142", 
+		 "width": 1760, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2160, 
+		  "top": 916, 
+		  "height": 183, 
+		  "left": 4620
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[74]", 
+		 "request": "DataRead.2142", 
+		 "width": 1760, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2160, 
+		  "top": 1099, 
+		  "height": 183, 
+		  "left": 4620
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[75]", 
+		 "request": "DataRead.2142", 
+		 "width": 1760, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2160, 
+		  "top": 1282, 
+		  "height": 183, 
+		  "left": 4620
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[76]", 
+		 "request": "DataRead.2142", 
+		 "width": 1760, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2160, 
+		  "top": 1465, 
+		  "height": 183, 
+		  "left": 4620
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[77]", 
+		 "request": "DataRead.2142", 
+		 "width": 1760, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2160, 
+		  "top": 1648, 
+		  "height": 183, 
+		  "left": 4620
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[78]", 
+		 "request": "DataRead.2142", 
+		 "width": 1760, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2160, 
+		  "top": 1831, 
+		  "height": 183, 
+		  "left": 4620
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[79]", 
+		 "request": "DataRead.2142", 
+		 "width": 1760, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2160, 
+		  "top": 2014, 
+		  "height": 183, 
+		  "left": 4620
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[80]", 
+		 "request": "DataRead.2142", 
+		 "width": 1775, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2220, 
+		  "top": 2160, 
+		  "height": 178, 
+		  "left": 4605
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[81]", 
+		 "request": "DataRead.2142", 
+		 "width": 1775, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2220, 
+		  "top": 2338, 
+		  "height": 178, 
+		  "left": 4605
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[82]", 
+		 "request": "DataRead.2142", 
+		 "width": 1775, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2220, 
+		  "top": 2517, 
+		  "height": 178, 
+		  "left": 4605
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[83]", 
+		 "request": "DataRead.2142", 
+		 "width": 1775, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2220, 
+		  "top": 2695, 
+		  "height": 178, 
+		  "left": 4605
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[84]", 
+		 "request": "DataRead.2142", 
+		 "width": 1775, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2220, 
+		  "top": 2873, 
+		  "height": 178, 
+		  "left": 4605
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[85]", 
+		 "request": "DataRead.2142", 
+		 "width": 1775, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2220, 
+		  "top": 3052, 
+		  "height": 178, 
+		  "left": 4605
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[86]", 
+		 "request": "DataRead.2142", 
+		 "width": 1775, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2220, 
+		  "top": 3230, 
+		  "height": 178, 
+		  "left": 4605
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[87]", 
+		 "request": "DataRead.2142", 
+		 "width": 1775, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2220, 
+		  "top": 3408, 
+		  "height": 178, 
+		  "left": 4605
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[88]", 
+		 "request": "DataRead.2142", 
+		 "width": 1775, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2220, 
+		  "top": 3586, 
+		  "height": 178, 
+		  "left": 4605
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[89]", 
+		 "request": "DataRead.2142", 
+		 "width": 1775, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2220, 
+		  "top": 3765, 
+		  "height": 178, 
+		  "left": 4605
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[90]", 
+		 "request": "DataRead.2142", 
+		 "width": 1775, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2220, 
+		  "top": 3943, 
+		  "height": 178, 
+		  "left": 4605
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[91]", 
+		 "request": "DataRead.2142", 
+		 "width": 1775, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2220, 
+		  "top": 4121, 
+		  "height": 178, 
+		  "left": 4605
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[92]", 
+		 "request": "DataRead.2142", 
+		 "width": 1775, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2220, 
+		  "top": 4300, 
+		  "height": 178, 
+		  "left": 4605
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[93]", 
+		 "request": "DataRead.2142", 
+		 "width": 1775, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2220, 
+		  "top": 4478, 
+		  "height": 178, 
+		  "left": 4605
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[94]", 
+		 "request": "DataRead.2142", 
+		 "width": 1775, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2220, 
+		  "top": 4656, 
+		  "height": 178, 
+		  "left": 4605
+		 }
+		}, 
+		{
+		 "color": "rgb(255,255,255)", 
+		 "text": "Cell Voltage[95]", 
+		 "request": "DataRead.2142", 
+		 "width": 1775, 
+		 "fontcolor": "rgb(0,0,0)", 
+		 "font": {
+		  "bold": "0", 
+		  "name": "Arial", 
+		  "italic": "0", 
+		  "size": 6.0
+		 }, 
+		 "rect": {
+		  "width": 2220, 
+		  "top": 4834, 
+		  "height": 178, 
+		  "left": 4605
+				}
+			}
+		  ]
+		}	
+	}, 
+	
+    "categories": {
+        "Parameters":[
+            "INV","BMS","Chademo","PDM", "Internal" , "BMS cell map"
+        ]
+    } 
+}

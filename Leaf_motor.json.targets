@@ -1,0 +1,14 @@
+[
+    {
+        "group": "EVC",
+        "protocol": "CAN",
+        "address": "93",
+        "diagnotic_version": "0",
+        "supplier_code": "Electric_Engines",
+        "soft_version": "0",
+        "version": "0",
+        "projects": [
+            "DIY"
+        ]
+    }
+]
