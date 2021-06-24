@@ -2,8 +2,8 @@
     "screens": {
         
         "INV": {
-            "height": 6000, 
-            "width": 12000,
+            "height": 7000, 
+            "width": 14000,
             "color": "rgb(255,255,255)",
             "presend": [],
             "labels": [
@@ -208,13 +208,13 @@
                     }
                 },
 				{
-                    "text": "Ошибка",
+                    "text": "Ошибка инвертора",
                     "request": "22.03.02",
-                    "width": 1000,
+                    "width": 2200,
                     "rect": {
                         "top": 850,
                         "left": 6500,
-                        "width": 2000,
+                        "width": 4500,
                         "height": 300
                     },
                     "color": "rgb(240,240,240)",
@@ -234,6 +234,25 @@
                         "top": 1250,
                         "left": 6500,
                         "width": 2000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "Ограничения",
+                    "request": "22.03.01",
+                    "width": 2200,
+                    "rect": {
+                        "top": 1650,
+                        "left": 6500,
+                        "width": 6000,
                         "height": 300
                     },
                     "color": "rgb(240,240,240)",
@@ -562,25 +581,6 @@
                 },
 				{
                     "color": "rgb(240,240,240)",
-                    "text": "SOH запись",
-                    "request": "2e.01.02",
-                    "width": 0,
-                    "fontcolor": "rgb(0,0,0)",
-                    "font": {
-                        "name": "Arial",
-                        "bold": 0,
-                        "italic": 0,
-                        "size": 10
-                    },
-                    "rect": {
-                        "top": 4400,
-                        "left": 5500,
-                        "width": 1200,
-                        "height": 200
-                    }
-                },
-				{
-                    "color": "rgb(240,240,240)",
                     "text": "Запись напряжение включения контакторов",
                     "request": "2e.01.10",
                     "width": 0,
@@ -595,7 +595,26 @@
                         "top": 6100,
                         "left": 5500,
                         "width": 1200,
-                        "height": 200
+                        "height": 300
+                    }
+                },
+				{
+                    "color": "rgb(240,240,240)",
+                    "text": "SOH запись",
+                    "request": "2e.01.02",
+                    "width": 0,
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    },
+                    "rect": {
+                        "top": 4400,
+                        "left": 5500,
+                        "width": 1200,
+                        "height": 300
                     }
                 }
 			
@@ -785,8 +804,34 @@
                 },
 				{
                     "color": "rgb(255,128,192)",
+                    "text": "Запись_напряжения_контакторов",
+                    "uniquename": "Запись_напряжения_контакторов_7",
+                    "messages": [ "" ],
+                    "send": [
+                        {
+                            "Delay": "0",
+                            "RequestName": "2e.01.10"
+                        }
+                    ],
+                    "width": 2000,
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    },
+                    "rect": {
+                        "top": 6100,
+                        "left": 7000,
+                        "width": 1500,
+                        "height": 200
+                    }
+                },
+				{
+                    "color": "rgb(255,128,192)",
                     "text": "Запись_SOC",
-                    "uniquename": "Запись_SOC_7",
+                    "uniquename": "Запись_SOC_8",
                     "messages": [ "" ],
                     "send": [
                         {
@@ -812,7 +857,7 @@
 				{
                     "color": "rgb(255,128,192)",
                     "text": "Запись_SOH",
-                    "uniquename": "Запись_SOH_8",
+                    "uniquename": "Запись_SOH_9",
                     "messages": [ "" ],
                     "send": [
                         {
@@ -838,12 +883,12 @@
 				{
                     "color": "rgb(255,128,192)",
                     "text": "Запись_выкл_батареи",
-                    "uniquename": "Запись_выкл_батареи_8",
+                    "uniquename": "Запись_выкл_батареи_10",
                     "messages": [ "" ],
                     "send": [
                         {
                             "Delay": "0",
-                            "RequestName": "2e.04.11"
+                            "RequestName": "2e.01.11"
                         }
                     ],
                     "width": 2000,
@@ -863,34 +908,8 @@
                 },
 				{
                     "color": "rgb(255,128,192)",
-                    "text": "Запись_напряжения_вкл_контакторов",
-                    "uniquename": "Запись_напряжения_вкл_контакторов_10",
-                    "messages": [ "" ],
-                    "send": [
-                        {
-                            "Delay": "0",
-                            "RequestName": "2e.01.10"
-                        }
-                    ],
-                    "width": 2000,
-                    "fontcolor": "rgb(0,0,0)",
-                    "font": {
-                        "name": "Arial",
-                        "bold": 0,
-                        "italic": 0,
-                        "size": 10
-                    },
-                    "rect": {
-                        "top": 6100,
-                        "left": 7000,
-                        "width": 1500,
-                        "height": 200
-                    }
-                },
-				{
-                    "color": "rgb(255,128,192)",
                     "text": "Выкл_ток",
-                    "uniquename": "Выкл_ток",
+                    "uniquename": "Выкл_ток_11",
                     "messages": [ "" ],
                     "send": [
                         {
@@ -916,7 +935,7 @@
 				{
                     "color": "rgb(255,128,192)",
                     "text": "Вкл_ток",
-                    "uniquename": "Вкл_ток",
+                    "uniquename": "Вкл_ток_12",
                     "messages": [ "" ],
                     "send": [
                         {
@@ -1789,7 +1808,7 @@
             ]
         },
 		"Internal": {
-            "height": 6000, 
+            "height": 9000, 
             "width": 9000,
             "color": "rgb(255,255,255)",
             "presend": [],
@@ -1826,10 +1845,10 @@
                     "request": "03.22.04.01",
                     "width": 3500,
                     "rect": {
-                        "top": 350,
+                        "top": 450,
                         "left": 150,
                         "width": 5000,
-                        "height": 200
+                        "height": 300
                     },
                     "color": "rgb(240,240,240)",
                     "fontcolor": "rgb(0,0,0)",
@@ -1845,10 +1864,10 @@
                     "request": "03.22.04.01",
                     "width": 3500,
                     "rect": {
-                        "top": 650,
+                        "top": 850,
                         "left": 150,
                         "width": 5000,
-                        "height": 200
+                        "height": 300
                     },
                     "color": "rgb(240,240,240)",
                     "fontcolor": "rgb(0,0,0)",
@@ -1864,10 +1883,10 @@
                     "request": "03.22.04.02",
                     "width": 3500,
                     "rect": {
-                        "top": 1000,
+                        "top": 1250,
                         "left": 150,
                         "width": 5000,
-                        "height": 200
+                        "height": 300
                     },
                     "color": "rgb(240,240,240)",
                     "fontcolor": "rgb(0,0,0)",
@@ -1883,10 +1902,10 @@
                     "request": "03.22.04.02",
                     "width": 3500,
                     "rect": {
-                        "top": 1350,
+                        "top": 1650,
                         "left": 150,
                         "width": 5000,
-                        "height": 200
+                        "height": 300
                     },
                     "color": "rgb(240,240,240)",
                     "fontcolor": "rgb(0,0,0)",
@@ -1902,10 +1921,10 @@
                     "request": "03.22.04.03",
                     "width": 3500,
                     "rect": {
-                        "top": 1650,
+                        "top": 2050,
                         "left": 150,
                         "width": 5000,
-                        "height": 200
+                        "height": 300
                     },
                     "color": "rgb(240,240,240)",
                     "fontcolor": "rgb(0,0,0)",
@@ -1921,10 +1940,10 @@
                     "request": "03.22.04.03",
                     "width": 3500,
                     "rect": {
-                        "top": 2000,
+                        "top": 2450,
                         "left": 150,
                         "width": 5000,
-                        "height": 200
+                        "height": 300
                     },
                     "color": "rgb(240,240,240)",
                     "fontcolor": "rgb(0,0,0)",
@@ -1940,10 +1959,10 @@
                     "request": "03.22.04.04",
                     "width": 3500,
                     "rect": {
-                        "top": 2350,
+                        "top": 2850,
                         "left": 150,
                         "width": 5000,
-                        "height": 200
+                        "height": 300
                     },
                     "color": "rgb(240,240,240)",
                     "fontcolor": "rgb(0,0,0)",
@@ -1959,10 +1978,10 @@
                     "request": "03.22.04.04",
                     "width": 3500,
                     "rect": {
-                        "top": 2700,
+                        "top": 3250,
                         "left": 150,
                         "width": 5000,
-                        "height": 200
+                        "height": 300
                     },
                     "color": "rgb(240,240,240)",
                     "fontcolor": "rgb(0,0,0)",
@@ -1978,10 +1997,29 @@
                     "request": "03.22.04.05",
                     "width": 3500,
                     "rect": {
-                        "top": 3050,
+                        "top": 3650,
                         "left": 150,
                         "width": 5000,
-                        "height": 200
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "A3",
+                    "request": "03.22.04.13",
+                    "width": 3500,
+                    "rect": {
+                        "top": 4050,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 300
                     },
                     "color": "rgb(240,240,240)",
                     "fontcolor": "rgb(0,0,0)",
@@ -1997,10 +2035,10 @@
                     "request": "03.22.04.05",
                     "width": 3500,
                     "rect": {
-                        "top": 3400,
+                        "top": 4450,
                         "left": 150,
                         "width": 5000,
-                        "height": 200
+                        "height": 300
                     },
                     "color": "rgb(240,240,240)",
                     "fontcolor": "rgb(0,0,0)",
@@ -2016,10 +2054,10 @@
                     "request": "03.22.04.05",
                     "width": 3500,
                     "rect": {
-                        "top": 3750,
+                        "top": 4850,
                         "left": 150,
                         "width": 5000,
-                        "height": 200
+                        "height": 300
                     },
                     "color": "rgb(240,240,240)",
                     "fontcolor": "rgb(0,0,0)",
@@ -2035,10 +2073,10 @@
                     "request": "03.22.04.06",
                     "width": 3500,
                     "rect": {
-                        "top": 4100,
+                        "top": 5250,
                         "left": 150,
                         "width": 5000,
-                        "height": 200
+                        "height": 300
                     },
                     "color": "rgb(240,240,240)",
                     "fontcolor": "rgb(0,0,0)",
@@ -2054,10 +2092,10 @@
                     "request": "03.22.04.06",
                     "width": 3500,
                     "rect": {
-                        "top": 4450,
+                        "top": 5650,
                         "left": 150,
                         "width": 5000,
-                        "height": 200
+                        "height": 300
                     },
                     "color": "rgb(240,240,240)",
                     "fontcolor": "rgb(0,0,0)",
@@ -2073,10 +2111,10 @@
                     "request": "03.22.04.06",
                     "width": 3500,
                     "rect": {
-                        "top": 4800,
+                        "top": 6050,
                         "left": 150,
                         "width": 5000,
-                        "height": 200
+                        "height": 300
                     },
                     "color": "rgb(240,240,240)",
                     "fontcolor": "rgb(0,0,0)",
@@ -2092,10 +2130,29 @@
                     "request": "03.22.04.06",
                     "width": 3500,
                     "rect": {
-                        "top": 5150,
+                        "top": 6450,
                         "left": 150,
                         "width": 5000,
-                        "height": 200
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "CAN 3",
+                    "request": "03.22.04.13",
+                    "width": 3500,
+                    "rect": {
+                        "top": 7000,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 300
                     },
                     "color": "rgb(240,240,240)",
                     "fontcolor": "rgb(0,0,0)",
@@ -2111,10 +2168,10 @@
                     "request": "03.22.04.07",
                     "width": 3500,
                     "rect": {
-                        "top": 5700,
+                        "top": 8000,
                         "left": 150,
                         "width": 5000,
-                        "height": 200
+                        "height": 300
                     },
                     "color": "rgb(240,240,240)",
                     "fontcolor": "rgb(0,0,0)",
@@ -2130,10 +2187,10 @@
                     "request": "03.22.04.07",
                     "width": 3500,
                     "rect": {
-                        "top": 6050,
+                        "top": 8400,
                         "left": 150,
                         "width": 5000,
-                        "height": 200
+                        "height": 300
                     },
                     "color": "rgb(240,240,240)",
                     "fontcolor": "rgb(0,0,0)",
