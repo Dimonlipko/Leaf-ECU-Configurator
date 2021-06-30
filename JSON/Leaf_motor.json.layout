@@ -2,17 +2,17 @@
     "screens": {
         
         "INV": {
-            "height": 7000, 
-            "width": 14000,
+            "height": 7500, 
+            "width": 16000,
             "color": "rgb(255,255,255)",
             "presend": [],
             "labels": [
 			{
-                    "text": " Параметры инвертора",
+                    "text": "     Параметры инвертора",
                     "bbox": {
                         "top": 50,
                         "left": 0,
-                        "width": 9000,
+                        "width": 16000,
                         "height": 300
                     },
                     "alignment": 2,
@@ -212,7 +212,7 @@
                     "request": "22.03.02",
                     "width": 2200,
                     "rect": {
-                        "top": 850,
+                        "top": 1250,
                         "left": 6500,
                         "width": 4500,
                         "height": 300
@@ -231,7 +231,7 @@
                     "request": "22.03.01",
                     "width": 1000,
                     "rect": {
-                        "top": 1250,
+                        "top": 850,
                         "left": 6500,
                         "width": 2000,
                         "height": 300
@@ -416,7 +416,65 @@
                         "italic": 0,
                         "size": 10
                     }
-                }    				
+                },
+				{
+                    "text": "Момент в точке",
+                    "request": "22.03.07",
+                    "width": 3500,
+                    "rect": {
+                        "top": 6000,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "Положения педали в точке",
+                    "request": "22.03.07",
+                    "width": 3500,
+                    "rect": {
+                        "top": 6400,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "Положение отпущеной педали",
+                    "request": "22.03.08",
+                    "width": 3500,
+                    "rect": {
+                        "top": 6800,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                }
+				
             ]
         },
 		"BMS": {
@@ -2231,59 +2289,34 @@
 			],
 				
             "inputs": [
-			{
-                    "color": "rgb(240,240,240)",
-                    "text": "Педаль мин",
-                    "request": "8C",
-                    "width": 2500,
-                    "fontcolor": "rgb(0,0,0)",
-                    "font": {
-                        "name": "Arial",
-                        "bold": 0,
-                        "italic": 0,
-                        "size": 10
-                    },
-                    "rect": {
-                        "top": 3000,
-                        "left": 150,
-                        "width": 4000,
-                        "height": 150
-                    }
-                }
+			
 				
 			],
             "buttons": [
-			  {
-                    "color": "rgb(255,128,192)",
-                    "text": "Запись 8C",
-                    "uniquename": "Запись 8C_0",
-                    "messages": [ "" ],
-                    "send": [
-                        {
-                            "Delay": "0",
-                            "RequestName": "8C"
-                        }
-                    ],
-                    "width": 2500,
-                    "fontcolor": "rgb(0,0,0)",
-                    "font": {
-                        "name": "Arial",
-                        "bold": 0,
-                        "italic": 0,
-                        "size": 10
-                    },
-                    "rect": {
-                        "top": 3650,
-                        "left": 4500,
-                        "width": 4000,
-                        "height": 150
-                    }
-                }
+			  
 				
 			],
             "displays": [
 			   
-		      
+		      {
+                    "text": "Окружность колеса",
+                    "request": "03.22.09.01",
+                    "width": 3500,
+                    "rect": {
+                        "top": 450,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                }
             ]
         },
 		"BMS cell map": {
@@ -4125,7 +4158,7 @@
 	
     "categories": {
         "Parameters":[
-            "INV","BMS","Chademo","PDM", "Internal" , "BMS cell map"
+            "INV","BMS","Chademo","PDM","Internal","BMS cell map","Setting"
         ]
     } 
 }

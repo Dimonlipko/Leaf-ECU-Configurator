@@ -194,6 +194,33 @@
             "sentbytes": "220306"
         },
 		{
+            "name": "22.03.07",
+            "replybytes": "62220307",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "Момент в точке": {
+                    "firstbyte": 4
+                },
+				"Положения педали в точке": {
+                    "firstbyte": 5
+                }					
+            },
+            "minbytes": 4,
+            "sentbytes": "220307"
+        },
+		{
+            "name": "22.03.08",
+            "replybytes": "62220308",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "Положение отпущеной педали": {
+                    "firstbyte": 4
+                }		
+            },
+            "minbytes": 4,
+            "sentbytes": "220308"
+        },
+		{
             "name": "22.06.01",
             "replybytes": "62220601",
             "deny_sds": [],
@@ -754,6 +781,18 @@
             },
             "minbytes": 4,
             "sentbytes": "220101"
+        },
+		{
+            "name": "03.22.09.01",
+            "replybytes": "62220901",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "Окружность колеса": {
+                    "firstbyte": 4
+                }
+            },
+            "minbytes": 4,
+            "sentbytes": "220901"
         },
 		{
             "name": "2e.01.01",
@@ -1661,6 +1700,26 @@
             "bitscount": 16
         },
 		"Макс. педали газа": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16
+        },
+		"Момент в точке": {
+            "scaled": true,
+            "bytescount": 1,
+            "bitscount": 8
+        },
+		"Положения педали в точке": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16
+        },
+		"Положение отпущеной педали": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16
+        },
+		"Окружность колеса": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16
