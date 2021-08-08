@@ -478,7 +478,7 @@
             ]
         },
 		"BMS": {
-            "height": 7000, 
+            "height": 7700, 
             "width": 9000,
             "color": "rgb(255,255,255)",
             "presend": [],
@@ -486,10 +486,10 @@
 			{
                     "text": " Параметры BMS: ",
                     "bbox": {
-                        "top": 100,
+                        "top": 50,
                         "left": 0,
                         "width": 9000,
-                        "height": 230
+                        "height": 300
                     },
                     "alignment": 2,
                     "color": "rgb(255,255,170)",
@@ -517,10 +517,10 @@
                         "size": 10
                     },
                     "rect": {
-                        "top": 1700,
+                        "top": 2050,
                         "left": 5500,
                         "width": 1200,
-                        "height": 200
+                        "height": 300
                     }
                 },
 				{
@@ -536,10 +536,10 @@
                         "size": 10
                     },
                     "rect": {
-                        "top": 2050,
+                        "top": 2450,
                         "left": 5500,
                         "width": 1200,
-                        "height": 200
+                        "height": 300
                     }
                 },
 				{
@@ -555,10 +555,10 @@
                         "size": 10
                     },
                     "rect": {
-                        "top": 2350,
+                        "top": 2850,
                         "left": 5500,
                         "width": 1200,
-                        "height": 200
+                        "height": 300
                     }
                 },
 				{
@@ -574,10 +574,10 @@
                         "size": 10
                     },
                     "rect": {
-                        "top": 2700,
+                        "top": 3250,
                         "left": 5500,
                         "width": 1200,
-                        "height": 200
+                        "height": 300
                     }
                 },
 				{
@@ -593,10 +593,10 @@
                         "size": 10
                     },
                     "rect": {
-                        "top": 3000,
+                        "top": 3650,
                         "left": 5500,
                         "width": 1200,
-                        "height": 200
+                        "height": 300
                     }
                 },
 				{
@@ -612,10 +612,10 @@
                         "size": 10
                     },
                     "rect": {
-                        "top": 3350,
+                        "top": 4050,
                         "left": 5500,
                         "width": 1200,
-                        "height": 200
+                        "height": 300
                     }
                 },
 				{
@@ -631,10 +631,10 @@
                         "size": 10
                     },
                     "rect": {
-                        "top": 4050,
+                        "top": 4850,
                         "left": 5500,
                         "width": 1200,
-                        "height": 200
+                        "height": 300
                     }
                 },
 				{
@@ -650,7 +650,7 @@
                         "size": 10
                     },
                     "rect": {
-                        "top": 6100,
+                        "top": 7250,
                         "left": 5500,
                         "width": 1200,
                         "height": 300
@@ -669,7 +669,7 @@
                         "size": 10
                     },
                     "rect": {
-                        "top": 4400,
+                        "top": 5250,
                         "left": 5500,
                         "width": 1200,
                         "height": 300
@@ -698,10 +698,10 @@
                         "size": 10
                     },
                     "rect": {
-                        "top": 1350,
+                        "top": 1650,
                         "left": 5500,
                         "width": 1500,
-                        "height": 200
+                        "height": 300
                     }
                 },
 				{
@@ -724,10 +724,10 @@
                         "size": 10
                     },
                     "rect": {
-                        "top": 1350,
+                        "top": 1650,
                         "left": 7000,
                         "width": 1500,
-                        "height": 200
+                        "height": 300
                     }
                 },
 				{
@@ -750,10 +750,10 @@
                         "size": 10
                     },
                     "rect": {
-                        "top": 1700,
+                        "top": 2050,
                         "left": 7000,
                         "width": 1500,
-                        "height": 200
+                        "height": 300
                     }
                 },
 				{
@@ -776,10 +776,10 @@
                         "size": 10
                     },
                     "rect": {
-                        "top": 2050,
+                        "top": 2450,
                         "left": 7000,
                         "width": 1500,
-                        "height": 200
+                        "height": 300
                     }
                 },
 				{
@@ -802,10 +802,10 @@
                         "size": 10
                     },
                     "rect": {
-                        "top": 2350,
+                        "top": 2850,
                         "left": 7000,
                         "width": 1500,
-                        "height": 200
+                        "height": 300
                     }
                 },
 				{
@@ -828,10 +828,10 @@
                         "size": 10
                     },
                     "rect": {
-                        "top": 2700,
+                        "top": 3250,
                         "left": 7000,
                         "width": 1500,
-                        "height": 200
+                        "height": 300
                     }
                 },
 				{
@@ -854,10 +854,10 @@
                         "size": 10
                     },
                     "rect": {
-                        "top": 3000,
+                        "top": 3650,
                         "left": 7000,
                         "width": 1500,
-                        "height": 200
+                        "height": 300
                     }
                 },
 				{
@@ -880,10 +880,10 @@
                         "size": 10
                     },
                     "rect": {
-                        "top": 6100,
+                        "top": 7250,
                         "left": 7000,
                         "width": 1500,
-                        "height": 200
+                        "height": 300
                     }
                 },
 				{
@@ -906,10 +906,10 @@
                         "size": 10
                     },
                     "rect": {
-                        "top": 4050,
+                        "top": 4850,
                         "left": 7000,
                         "width": 1500,
-                        "height": 200
+                        "height": 300
                     }
                 },
 				{
@@ -932,10 +932,10 @@
                         "size": 10
                     },
                     "rect": {
-                        "top": 4400,
+                        "top": 5250,
                         "left": 7000,
                         "width": 1500,
-                        "height": 200
+                        "height": 300
                     }
                 },
 				{
@@ -946,7 +946,7 @@
                     "send": [
                         {
                             "Delay": "0",
-                            "RequestName": "2e.01.11"
+                            "RequestName": "2e.04.11"
                         }
                     ],
                     "width": 2000,
@@ -958,10 +958,10 @@
                         "size": 10
                     },
                     "rect": {
-                        "top": 3350,
+                        "top": 4050,
                         "left": 7000,
                         "width": 1500,
-                        "height": 200
+                        "height": 300
                     }
                 },
 				{
@@ -984,10 +984,10 @@
                         "size": 10
                     },
                     "rect": {
-                        "top": 4750,
+                        "top": 6050,
                         "left": 7000,
                         "width": 1500,
-                        "height": 200
+                        "height": 300
                     }
                 },
 				{
@@ -1010,10 +1010,10 @@
                         "size": 10
                     },
                     "rect": {
-                        "top": 4750,
+                        "top": 6050,
                         "left": 5500,
                         "width": 1500,
-                        "height": 200
+                        "height": 300
                     }
                 }
 			  
@@ -1024,10 +1024,10 @@
                     "request": "03.22.01.07",
                     "width": 3500,
                     "rect": {
-                        "top": 350,
+                        "top": 450,
                         "left": 150,
                         "width": 5000,
-                        "height": 200
+                        "height": 300
                     },
                     "color": "rgb(240,240,240)",
                     "fontcolor": "rgb(0,0,0)",
@@ -1041,12 +1041,31 @@
 				{
                     "text": "Напряжение минимальной ячейки",
                     "request": "22.03.06",
-                    "width": 3500,
+                    "width": 4000,
                     "rect": {
-                        "top": 650,
+                        "top": 850,
                         "left": 150,
                         "width": 5000,
-                        "height": 200
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "Номер мин ячейки",
+                    "request": "22.03.08",
+                    "width": 2200,
+                    "rect": {
+                        "top": 850,
+                        "left": 5500,
+                        "width": 2800,
+                        "height": 300
                     },
                     "color": "rgb(240,240,240)",
                     "fontcolor": "rgb(0,0,0)",
@@ -1060,12 +1079,31 @@
 				{
                     "text": "Напряжение максимальной ячейки",
                     "request": "22.03.06",
-                    "width": 3500,
+                    "width": 4000,
                     "rect": {
-                        "top": 1000,
+                        "top": 1250,
                         "left": 150,
                         "width": 5000,
-                        "height": 200
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "Номер макс ячейки",
+                    "request": "22.03.08",
+                    "width": 2200,
+                    "rect": {
+                        "top": 1250,
+                        "left": 5500,
+                        "width": 2800,
+                        "height": 300
                     },
                     "color": "rgb(240,240,240)",
                     "fontcolor": "rgb(0,0,0)",
@@ -1081,10 +1119,10 @@
                     "request": "03.22.04.08",
                     "width": 3500,
                     "rect": {
-                        "top": 1350,
+                        "top": 1650,
                         "left": 150,
                         "width": 5000,
-                        "height": 200
+                        "height": 300
                     },
                     "color": "rgb(240,240,240)",
                     "fontcolor": "rgb(0,0,0)",
@@ -1100,10 +1138,10 @@
                     "request": "03.22.04.08",
                     "width": 3500,
                     "rect": {
-                        "top": 1650,
+                        "top": 2050,
                         "left": 150,
                         "width": 5000,
-                        "height": 200
+                        "height": 300
                     },
                     "color": "rgb(240,240,240)",
                     "fontcolor": "rgb(0,0,0)",
@@ -1119,10 +1157,10 @@
                     "request": "03.22.04.08",
                     "width": 3500,
                     "rect": {
-                        "top": 2000,
+                        "top": 2450,
                         "left": 150,
                         "width": 5000,
-                        "height": 200
+                        "height": 300
                     },
                     "color": "rgb(240,240,240)",
                     "fontcolor": "rgb(0,0,0)",
@@ -1138,10 +1176,10 @@
                     "request": "03.22.04.09",
                     "width": 3500,
                     "rect": {
-                        "top": 2350,
+                        "top": 2850,
                         "left": 150,
                         "width": 5000,
-                        "height": 200
+                        "height": 300
                     },
                     "color": "rgb(240,240,240)",
                     "fontcolor": "rgb(0,0,0)",
@@ -1157,10 +1195,10 @@
                     "request": "03.22.04.09",
                     "width": 3500,
                     "rect": {
-                        "top": 2650,
+                        "top": 3250,
                         "left": 150,
                         "width": 5000,
-                        "height": 200
+                        "height": 300
                     },
                     "color": "rgb(240,240,240)",
                     "fontcolor": "rgb(0,0,0)",
@@ -1176,10 +1214,10 @@
                     "request": "03.22.04.10",
                     "width": 3500,
                     "rect": {
-                        "top": 3000,
+                        "top": 3650,
                         "left": 150,
                         "width": 5000,
-                        "height": 200
+                        "height": 300
                     },
                     "color": "rgb(240,240,240)",
                     "fontcolor": "rgb(0,0,0)",
@@ -1195,10 +1233,10 @@
                     "request": "03.22.04.10",
                     "width": 3500,
                     "rect": {
-                        "top": 3350,
+                        "top": 4050,
                         "left": 150,
                          "width": 5000,
-                        "height": 200
+                        "height": 300
                     },
                     "color": "rgb(240,240,240)",
                     "fontcolor": "rgb(0,0,0)",
@@ -1214,10 +1252,10 @@
                     "request": "03.22.01.05",
                     "width": 3500,
                     "rect": {
-                        "top": 3700,
+                        "top": 4450,
                         "left": 150,
                         "width": 5000,
-                        "height": 200
+                        "height": 300
                     },
                     "color": "rgb(240,240,240)",
                     "fontcolor": "rgb(0,0,0)",
@@ -1233,10 +1271,10 @@
                     "request": "03.22.01.01",
                     "width": 3500,
                     "rect": {
-                        "top": 4050,
+                        "top": 4850,
                         "left": 150,
                         "width": 5000,
-                        "height": 200
+                        "height": 300
                     },
                     "color": "rgb(240,240,240)",
                     "fontcolor": "rgb(0,0,0)",
@@ -1252,10 +1290,10 @@
                     "request": "03.22.01.02",
                     "width": 3500,
                     "rect": {
-                        "top": 4400,
+                        "top": 5250,
                         "left": 150,
                         "width": 5000,
-                        "height": 200
+                        "height": 300
                     },
                     "color": "rgb(240,240,240)",
                     "fontcolor": "rgb(0,0,0)",
@@ -1271,10 +1309,10 @@
                     "request": "03.22.01.08",
                     "width": 3500,
                     "rect": {
-                        "top": 4750,
+                        "top": 5650,
                         "left": 150,
                         "width": 5000,
-                        "height": 200
+                        "height": 300
                     },
                     "color": "rgb(240,240,240)",
                     "fontcolor": "rgb(0,0,0)",
@@ -1290,10 +1328,10 @@
                     "request": "03.22.01.08",
                     "width": 3500,
                     "rect": {
-                        "top": 5100,
+                        "top": 6050,
                         "left": 150,
                         "width": 5000,
-                        "height": 200
+                        "height": 300
                     },
                     "color": "rgb(240,240,240)",
                     "fontcolor": "rgb(0,0,0)",
@@ -1309,10 +1347,10 @@
                     "request": "03.22.01.09",
                     "width": 3500,
                     "rect": {
-                        "top": 5450,
+                        "top": 6450,
                         "left": 150,
                         "width": 5000,
-                        "height": 200
+                        "height": 300
                     },
                     "color": "rgb(240,240,240)",
                     "fontcolor": "rgb(0,0,0)",
@@ -1328,10 +1366,10 @@
                     "request": "03.22.01.09",
                     "width": 3500,
                     "rect": {
-                        "top": 5800,
+                        "top": 6850,
                         "left": 150,
                         "width": 5000,
-                        "height": 200
+                        "height": 300
                     },
                     "color": "rgb(240,240,240)",
                     "fontcolor": "rgb(0,0,0)",
@@ -1347,10 +1385,10 @@
                     "request": "03.22.01.10",
                     "width": 3500,
                     "rect": {
-                        "top": 6100,
+                        "top": 7250,
                         "left": 150,
                         "width": 5000,
-                        "height": 200
+                        "height": 300
                     },
                     "color": "rgb(240,240,240)",
                     "fontcolor": "rgb(0,0,0)",
@@ -2264,17 +2302,17 @@
         },
 		"Setting": {
             "height": 6000, 
-            "width": 9000,
+            "width": 12000,
             "color": "rgb(255,255,255)",
             "presend": [],
             "labels": [
 			{
                     "text": " Настройки ECU: ",
                     "bbox": {
-                        "top": 100,
+                        "top": 50,
                         "left": 0,
-                        "width": 9000,
-                        "height": 230
+                        "width": 12000,
+                        "height": 300
                     },
                     "alignment": 2,
                     "color": "rgb(255,255,170)",
@@ -2290,9 +2328,235 @@
 				
             "inputs": [
 			
+				{
+                    "color": "rgb(240,240,240)",
+                    "text": "Запись окружности колеса",
+                    "request": "2e.09.01",
+                    "width": 0,
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    },
+                    "rect": {
+                        "top": 450,
+                        "left": 6500,
+                        "width": 1200,
+                        "height": 300
+                    }
+                },
+				{
+                    "color": "rgb(240,240,240)",
+                    "text": "Запись напряжение включения контакторов",
+                    "request": "2e.01.10",
+                    "width": 0,
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    },
+                    "rect": {
+                        "top": 850,
+                        "left": 6500,
+                        "width": 1200,
+                        "height": 300
+                    }
+                },
+				{
+                    "color": "rgb(240,240,240)",
+                    "text": "Запись селектора",
+                    "request": "2e.01.31.02",
+                    "width": 0,
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    },
+                    "rect": {
+                        "top": 1250,
+                        "left": 6500,
+                        "width": 1200,
+                        "height": 300
+                    }
+                },
+				{
+                    "color": "rgb(240,240,240)",
+                    "text": "Запись кнопки старта",
+                    "request": "2e.01.31.03",
+                    "width": 0,
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    },
+                    "rect": {
+                        "top": 1650,
+                        "left": 6500,
+                        "width": 1200,
+                        "height": 300
+                    }
+                },
+				{
+                    "color": "rgb(240,240,240)",
+                    "text": "Запись тип инвертора",
+                    "request": "2e.01.31.04",
+                    "width": 0,
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    },
+                    "rect": {
+                        "top": 2050,
+                        "left": 6500,
+                        "width": 1200,
+                        "height": 300
+                    }
+                }
 				
 			],
             "buttons": [
+			
+				{
+                    "color": "rgb(255,128,192)",
+                    "text": "Запись окружности",
+                    "uniquename": "Запись окружности_0",
+                    "messages": [ "" ],
+                    "send": [
+                        {
+                            "Delay": "0",
+                            "RequestName": "2e.09.01"
+                        }
+                    ],
+                    "width": 2000,
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    },
+                    "rect": {
+                        "top": 450,
+                        "left": 8000,
+                        "width": 3000,
+                        "height": 300
+                    }
+                },
+				{
+                    "color": "rgb(255,128,192)",
+                    "text": "Запись напряжения",
+                    "uniquename": "Запись напряжения_1",
+                    "messages": [ "" ],
+                    "send": [
+                        {
+                            "Delay": "0",
+                            "RequestName": "2e.01.10"
+                        }
+                    ],
+                    "width": 2000,
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    },
+                    "rect": {
+                        "top": 850,
+                        "left": 8000,
+                        "width": 3000,
+                        "height": 300
+                    }
+                },
+				{
+                    "color": "rgb(255,128,192)",
+                    "text": "Запись_селектора",
+                    "uniquename": "Запись_селектора_2",
+                    "messages": [ "" ],
+                    "send": [
+                        {
+                            "Delay": "0",
+                            "RequestName": "2e.01.31.02"
+                        }
+                    ],
+                    "width": 2000,
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    },
+                    "rect": {
+                        "top": 1250,
+                        "left": 8000,
+                        "width": 3000,
+                        "height": 300
+                    }
+                },
+				{
+                    "color": "rgb(255,128,192)",
+                    "text": "Запись_кнопки_старта",
+                    "uniquename": "Запись_кнопки_старта_3",
+                    "messages": [ "" ],
+                    "send": [
+                        {
+                            "Delay": "0",
+                            "RequestName": "2e.01.31.03"
+                        }
+                    ],
+                    "width": 2000,
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    },
+                    "rect": {
+                        "top": 1650,
+                        "left": 8000,
+                        "width": 3000,
+                        "height": 300
+                    }
+                },
+				{
+                    "color": "rgb(255,128,192)",
+                    "text": "Запись_тип_инвертора",
+                    "uniquename": "Запись_тип_инвертора_4",
+                    "messages": [ "" ],
+                    "send": [
+                        {
+                            "Delay": "0",
+                            "RequestName": "2e.01.31.04"
+                        }
+                    ],
+                    "width": 2000,
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    },
+                    "rect": {
+                        "top": 2050,
+                        "left": 8000,
+                        "width": 3000,
+                        "height": 300
+                    }
+                }
 			  
 				
 			],
@@ -2301,11 +2565,87 @@
 		      {
                     "text": "Окружность колеса",
                     "request": "03.22.09.01",
-                    "width": 3500,
+                    "width": 4500,
                     "rect": {
                         "top": 450,
                         "left": 150,
-                        "width": 5000,
+                        "width": 6000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "Напряжение включения контакторов",
+                    "request": "03.22.01.10",
+                    "width": 4500,
+                    "rect": {
+                        "top": 850,
+                        "left": 150,
+                        "width": 6000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "Тип селектора",
+                    "request": "03.22.01.31",
+                    "width": 4500,
+                    "rect": {
+                        "top": 1250,
+                        "left": 150,
+                        "width": 6000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "Тип кнопки старта",
+                    "request": "03.22.01.31",
+                    "width": 4500,
+                    "rect": {
+                        "top": 1650,
+                        "left": 150,
+                        "width": 6000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "Тип инвертора",
+                    "request": "03.22.01.31",
+                    "width": 4500,
+                    "rect": {
+                        "top": 2050,
+                        "left": 150,
+                        "width": 6000,
                         "height": 300
                     },
                     "color": "rgb(240,240,240)",

@@ -94,6 +94,63 @@
             "sentbytes": "220110"
 		}, 
 		{
+            "name": "03.22.01.31",
+            "replybytes": "62220131",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+				"Тип селектора": {
+                    "firstbyte": 5
+                },
+				"Тип кнопки старта": {
+                    "firstbyte": 6
+                },
+				"Тип инвертора": {
+                    "firstbyte": 7
+                }
+            },
+            "minbytes": 4,
+            "sentbytes": "220131"
+		}, 
+		{
+            "name": "2e.01.31.02",
+            "deny_sds": [],
+			"manualsend": true,
+            "sendbyte_dataitems": {
+				"Запись селектора": {
+                    "firstbyte": 5
+                }
+                
+            },
+			"minbytes": 5,
+            "sentbytes": "2e01310200"
+        },
+		{
+            "name": "2e.01.31.03",
+            "deny_sds": [],
+			"manualsend": true,
+            "sendbyte_dataitems": {
+				"Запись кнопки старта": {
+                    "firstbyte": 5
+                }
+                
+            },
+			"minbytes": 5,
+            "sentbytes": "2e01310300"
+        },
+		{
+            "name": "2e.01.31.04",
+            "deny_sds": [],
+			"manualsend": true,
+            "sendbyte_dataitems": {
+				"Запись тип инвертора": {
+                    "firstbyte": 5
+                }
+                
+            },
+			"minbytes": 5,
+            "sentbytes": "2e01310400"
+        },
+		{
             "name": "22.03.01",
             "replybytes": "62220301",
             "deny_sds": [],
@@ -215,7 +272,13 @@
             "receivebyte_dataitems": {
                 "Положение отпущеной педали": {
                     "firstbyte": 4
-                }		
+                },
+				"Номер мин ячейки": {
+                    "firstbyte": 6
+                },	
+				"Номер макс ячейки": {
+                    "firstbyte": 7
+                }	
             },
             "minbytes": 4,
             "sentbytes": "220308"
@@ -323,6 +386,30 @@
             "sentbytes": "2e03040000"
         },
 		{
+            "name": "2e.01.10",
+            "deny_sds": [],
+			"manualsend": true,
+            "sendbyte_dataitems": {
+				"Запись напряжение включения контакторов": {
+                    "firstbyte": 4
+                }
+            },
+            "minbytes": 4,
+            "sentbytes": "2e01100000"
+		},
+		{
+            "name": "2e.09.01",
+            "deny_sds": [],
+			"manualsend": true,
+            "sendbyte_dataitems": {
+                "Запись окружности колеса": {
+                    "firstbyte": 4
+                }
+            },
+			"minbytes": 4,
+            "sentbytes": "2e09010000"
+        },
+		{
             "name": "2e.03.05",
             "deny_sds": [],
 			"manualsend": true,
@@ -346,19 +433,6 @@
 			"minbytes": 4,
             "sentbytes": "2e03060000"
         },
-		
-		{
-            "name": "2e.01.10",
-            "deny_sds": [],
-			"manualsend": true,
-            "receivebyte_dataitems": {
-				"Запись напряжение включения контакторов": {
-                    "firstbyte": 4
-                }
-            },
-            "minbytes": 4,
-            "sentbytes": "2e01100000"
-		},
 		
 		{
             "name": "2e.01.08.01",
@@ -1655,7 +1729,8 @@
             "lists": {
                 "0": "N",
                 "1": "D",
-				"2": "R"
+				"2": "R",
+				"3": "P"
             }
         },
 		"Ошибка инвертора": {
@@ -1720,6 +1795,11 @@
             "bitscount": 16
         },
 		"Окружность колеса": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16
+        },
+		"Запись окружности колеса": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16
@@ -2078,12 +2158,22 @@
             "divideby": 1000,
             "unit": "В"
         },
+		"Номер мин ячейки": {
+            "scaled": true,
+            "bytescount": 1,
+            "bitscount": 8
+        },
 		"Напряжение максимальной ячейки": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
             "divideby": 1000,
             "unit": "В"
+        },
+		"Номер макс ячейки": {
+            "scaled": true,
+            "bytescount": 1,
+            "bitscount": 8
         },
 		"SOH в Ач": {
             "scaled": true,
@@ -2125,6 +2215,42 @@
             "bitscount": 16,
             "divideby": 100,
             "unit": "%"
+        },
+		"Тип селектора": {
+            "lists": {
+                "0": "Кнопка",
+                "1": "Leaf"
+            }
+        },
+		"Тип кнопки старта": {
+           "lists": {
+                "0": "С фиксацией",
+                "1": "Без фиксации"
+            }
+        }, 
+		"Запись селектора": {
+            "lists": {
+                "0": "Кнопка",
+                "1": "Leaf"
+            }
+        },
+		"Запись кнопки старта": {
+           "lists": {
+                "0": "С фиксацией",
+                "1": "Без фиксации"
+            }
+        },
+		"Тип инвертора": {
+           "lists": {
+                "0": "AZE0",
+                "1": "ZE0"
+            }
+        },
+		"Запись тип инвертора": {
+           "lists": {
+                "0": "AZE0",
+                "1": "ZE0"
+            }
         },
         "22.02.01 Коррекция датчика тока": {
             "scaled": true,
