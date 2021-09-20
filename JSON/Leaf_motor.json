@@ -151,6 +151,45 @@
             "sentbytes": "2e01310400"
         },
 		{
+            "name": "2e.03.07.01",
+            "deny_sds": [],
+			"manualsend": true,
+            "sendbyte_dataitems": {
+				"Запись момент в точке": {
+                    "firstbyte": 5
+                }
+                
+            },
+			"minbytes": 5,
+            "sentbytes": "2e03070100"
+        },
+		{
+            "name": "2e.03.07.02",
+            "deny_sds": [],
+			"manualsend": true,
+            "sendbyte_dataitems": {
+				"Запись положение педали в точке": {
+                    "firstbyte": 5
+                }
+                
+            },
+			"minbytes": 5,
+            "sentbytes": "2e0307020000"
+        },
+		{
+            "name": "2e.03.08",
+            "deny_sds": [],
+			"manualsend": true,
+            "sendbyte_dataitems": {
+				"Запись положение отпущеной педали": {
+                    "firstbyte": 5
+                }
+                
+            },
+			"minbytes": 5,
+            "sentbytes": "2e0308000"
+        },
+		{
             "name": "22.03.01",
             "replybytes": "62220301",
             "deny_sds": [],
@@ -1020,8 +1059,11 @@
             "replybytes": "62020700000000",
             "deny_sds": [],
             "receivebyte_dataitems": {
-                "22.02.07 Датчик 1": {
+                "Термодатчик 1": {
                     "firstbyte": 4
+                },
+				"Сопротивление 1": {
+                    "firstbyte": 6
                 }
             },
             "minbytes": 7,
@@ -1032,8 +1074,11 @@
             "replybytes": "62020800000000",
             "deny_sds": [],
             "receivebyte_dataitems": {
-                "22.02.08 Датчик 2": {
+                "Термодатчик 2": {
                     "firstbyte": 4
+                },
+				"Сопротивление 2": {
+                    "firstbyte": 6
                 }
             },
             "minbytes": 7,
@@ -1044,72 +1089,210 @@
             "replybytes": "62020900000000",
             "deny_sds": [],
             "receivebyte_dataitems": {
-                "22.02.09 Датчик 3": {
+                "Термодатчик 3": {
                     "firstbyte": 4
+                },
+				"Сопротивление 3": {
+                    "firstbyte": 6
                 }
             },
             "minbytes": 7,
             "sentbytes": "220209"
         },
         {
-            "name": "22.02.0A",
-            "replybytes": "62020A00000000",
+            "name": "22.02.10",
+            "replybytes": "62021000000000",
             "deny_sds": [],
             "receivebyte_dataitems": {
-                "22.02.0A Датчик 4": {
+                "Термодатчик 4": {
                     "firstbyte": 4
+                },
+				"Сопротивление 4": {
+                    "firstbyte": 6
                 }
             },
             "minbytes": 7,
-            "sentbytes": "22020A"
+            "sentbytes": "220210"
         },
         {
-            "name": "22.02.0B",
-            "replybytes": "62020B0000",
+            "name": "22.02.11",
+            "replybytes": "6202110000",
             "deny_sds": [],
             "receivebyte_dataitems": {
-                "22.02.0B Датчик 1": {
+                "Термодатчик 5": {
                     "firstbyte": 4
+                },
+				"Сопротивление 5": {
+                    "firstbyte": 6
                 }
             },
-            "minbytes": 5,
-            "sentbytes": "22020B"
+            "minbytes": 7,
+            "sentbytes": "220211"
+        }, 
+		{
+            "name": "22.02.12",
+            "replybytes": "6202120000",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "Термодатчик 6": {
+                    "firstbyte": 4
+                },
+				"Сопротивление 6": {
+                    "firstbyte": 6
+                }
+            },
+            "minbytes": 7,
+            "sentbytes": "220212"
         },
-        {
-            "name": "22.02.0C",
-            "replybytes": "62020C0000",
+		{
+            "name": "22.02.13",
+            "replybytes": "6202130000",
             "deny_sds": [],
             "receivebyte_dataitems": {
-                "22.02.0C Датчик 2": {
+                "Термодатчик 7": {
                     "firstbyte": 4
+                },
+				"Сопротивление 7": {
+                    "firstbyte": 6
                 }
             },
-            "minbytes": 5,
-            "sentbytes": "22020C"
+            "minbytes": 7,
+            "sentbytes": "220213"
         },
-        {
-            "name": "22.02.0D",
-            "replybytes": "62020D0000",
+		{
+            "name": "22.02.14",
+            "replybytes": "6202140000",
             "deny_sds": [],
             "receivebyte_dataitems": {
-                "22.02.0D Датчик 3": {
+                "Термодатчик 8": {
                     "firstbyte": 4
+                },
+				"Сопротивление 8": {
+                    "firstbyte": 6
                 }
             },
-            "minbytes": 5,
-            "sentbytes": "22020D"
+            "minbytes": 7,
+            "sentbytes": "220214"
         },
-        {
-            "name": "22.02.0E",
-            "replybytes": "62020E0000",
+		{
+            "name": "22.02.15",
+            "replybytes": "6202150000",
             "deny_sds": [],
             "receivebyte_dataitems": {
-                "22.02.0E Датчик 4": {
+                "Термодатчик 9": {
                     "firstbyte": 4
+                },
+				"Сопротивление 9": {
+                    "firstbyte": 6
                 }
             },
-            "minbytes": 5,
-            "sentbytes": "22020E"
+            "minbytes": 7,
+            "sentbytes": "220215"
+        },
+		{
+            "name": "22.02.16",
+            "replybytes": "6202160000",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "Термодатчик 10": {
+                    "firstbyte": 4
+                },
+				"Сопротивление 10": {
+                    "firstbyte": 6
+                }
+            },
+            "minbytes": 7,
+            "sentbytes": "220216"
+        },
+		{
+            "name": "22.02.17",
+            "replybytes": "6202170000",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "Термодатчик 11": {
+                    "firstbyte": 4
+                },
+				"Сопротивление 11": {
+                    "firstbyte": 6
+                }
+            },
+            "minbytes": 7,
+            "sentbytes": "220217"
+        },
+		{
+            "name": "22.02.18",
+            "replybytes": "6202180000",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "Термодатчик 12": {
+                    "firstbyte": 4
+                },
+				"Сопротивление 12": {
+                    "firstbyte": 6
+                }
+            },
+            "minbytes": 7,
+            "sentbytes": "220218"
+        },
+		{
+            "name": "22.02.19",
+            "replybytes": "6202190000",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "Термодатчик 13": {
+                    "firstbyte": 4
+                },
+				"Сопротивление 13": {
+                    "firstbyte": 6
+                }
+            },
+            "minbytes": 7,
+            "sentbytes": "220219"
+        },
+		{
+            "name": "22.02.25",
+            "replybytes": "6202250000",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "Термодатчик 14": {
+                    "firstbyte": 4
+                },
+				"Сопротивление 14": {
+                    "firstbyte": 6
+                }
+            },
+            "minbytes": 7,
+            "sentbytes": "220225"
+        },
+		{
+            "name": "22.02.26",
+            "replybytes": "6202260000",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "Термодатчик 15": {
+                    "firstbyte": 4
+                },
+				"Сопротивление 15": {
+                    "firstbyte": 6
+                }
+            },
+            "minbytes": 7,
+            "sentbytes": "220226"
+        },
+		{
+            "name": "22.02.27",
+            "replybytes": "6202270000",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "Термодатчик 16": {
+                    "firstbyte": 4
+                },
+				"Сопротивление 16": {
+                    "firstbyte": 6
+                }
+            },
+            "minbytes": 7,
+            "sentbytes": "220227"
         },
         {
             "name": "22.02.0F",
@@ -1123,102 +1306,8 @@
             "minbytes": 4,
             "sentbytes": "22020F"
         },
-        {
-            "name": "22.02.10",
-            "replybytes": "6202100000",
-            "deny_sds": [],
-            "receivebyte_dataitems": {
-                "22.02.10 АЦП 1": {
-                    "firstbyte": 4
-                }
-            },
-            "minbytes": 5,
-            "sentbytes": "220210"
-        },
-        {
-            "name": "22.02.11",
-            "replybytes": "6202110000",
-            "deny_sds": [],
-            "receivebyte_dataitems": {
-                "22.02.11 АЦП 2": {
-                    "firstbyte": 4
-                }
-            },
-            "minbytes": 5,
-            "sentbytes": "220211"
-        },
-        {
-            "name": "22.02.12",
-            "replybytes": "6202120000",
-            "deny_sds": [],
-            "receivebyte_dataitems": {
-                "22.02.12 АЦП 3": {
-                    "firstbyte": 4
-                }
-            },
-            "minbytes": 5,
-            "sentbytes": "220212"
-        },
-        {
-            "name": "22.02.13",
-            "replybytes": "6202130000",
-            "deny_sds": [],
-            "receivebyte_dataitems": {
-                "22.02.13 АЦП 4": {
-                    "firstbyte": 4
-                }
-            },
-            "minbytes": 5,
-            "sentbytes": "220213"
-        },
-        {
-            "name": "22.02.14",
-            "replybytes": "6202140000",
-            "deny_sds": [],
-            "receivebyte_dataitems": {
-                "22.02.14 АЦП 5": {
-                    "firstbyte": 4
-                }
-            },
-            "minbytes": 5,
-            "sentbytes": "220214"
-        },
-        {
-            "name": "22.02.15",
-            "replybytes": "6202150000",
-            "deny_sds": [],
-            "receivebyte_dataitems": {
-                "22.02.15 АЦП 6": {
-                    "firstbyte": 4
-                }
-            },
-            "minbytes": 5,
-            "sentbytes": "220215"
-        },
-        {
-            "name": "22.02.16",
-            "replybytes": "6202160000",
-            "deny_sds": [],
-            "receivebyte_dataitems": {
-                "22.02.16 АЦП 7": {
-                    "firstbyte": 4
-                }
-            },
-            "minbytes": 5,
-            "sentbytes": "220216"
-        },
-        {
-            "name": "22.02.17",
-            "replybytes": "6202170000",
-            "deny_sds": [],
-            "receivebyte_dataitems": {
-                "22.02.17 АЦП 8": {
-                    "firstbyte": 4
-                }
-            },
-            "minbytes": 5,
-            "sentbytes": "220217"
-        },
+        
+        
         {
             "name": "22.02.20",
             "replybytes": "6202200000",
@@ -1278,42 +1367,6 @@
             },
             "minbytes": 5,
             "sentbytes": "220224"
-        },
-        {
-            "name": "22.02.25",
-            "replybytes": "6202250000",
-            "deny_sds": [],
-            "receivebyte_dataitems": {
-                "22.02.25 Датчик 3": {
-                    "firstbyte": 4
-                }
-            },
-            "minbytes": 5,
-            "sentbytes": "220225"
-        },
-        {
-            "name": "22.02.26",
-            "replybytes": "6202260000",
-            "deny_sds": [],
-            "receivebyte_dataitems": {
-                "22.02.26 Датчик 4": {
-                    "firstbyte": 4
-                }
-            },
-            "minbytes": 5,
-            "sentbytes": "220226"
-        },
-        {
-            "name": "22.02.27",
-            "replybytes": "6202270000",
-            "deny_sds": [],
-            "receivebyte_dataitems": {
-                "22.02.27 Датчик 1": {
-                    "firstbyte": 4
-                }
-            },
-            "minbytes": 5,
-            "sentbytes": "220227"
         },
         {
             "name": "22.02.28",
@@ -1834,6 +1887,24 @@
             "bytescount": 1,
             "bitscount":  8,
             "unit": "°C"
+        }, 
+		"Запись момент в точке": {
+            "scaled": true,
+			"signed": true,
+            "bytescount": 1,
+            "bitscount":  8
+        },
+		"Запись положение педали в точке": {
+            "scaled": true,
+			"signed": true,
+            "bytescount": 2,
+            "bitscount":  16
+        },
+		"Запись положение отпущеной педали": {
+            "scaled": true,
+			"signed": true,
+            "bytescount": 2,
+            "bitscount":  16
         },
 		"12в АЦП": {
             "scaled": true,
@@ -2310,117 +2381,233 @@
 				
             }
         },
-        "22.02.07 Датчик 1": {
-            "scaled": true,
-            "bytescount": 4,
-            "bitscount": 32,
-            "unit": "Ом"
-        },
-        "22.02.08 Датчик 2": {
-            "scaled": true,
-            "bytescount": 4,
-            "bitscount": 32,
-            "unit": "Ом"
-        },
-        "22.02.09 Датчик 3": {
-            "scaled": true,
-            "bytescount": 4,
-            "bitscount": 32,
-            "unit": "Ом"
-        },
-        "22.02.0A Датчик 4": {
-            "scaled": true,
-            "bytescount": 4,
-            "bitscount": 32,
-            "unit": "Ом"
-        },
-        "22.02.0B Датчик 1": {
+        "Термодатчик 1": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
-            "signed": true,
+			"divideby": 100, 
+			"offset": -4000,
             "unit": "°C"
         },
-        "22.02.0C Датчик 2": {
+        "Термодатчик 2": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
-            "signed": true,
+			"divideby": 100, 
+			"offset": -4000,
             "unit": "°C"
         },
-        "22.02.0D Датчик 3": {
+        "Термодатчик 3": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
-            "signed": true,
+			"divideby": 100,  
+			"offset": -4000,
             "unit": "°C"
         },
-        "22.02.0E Датчик 4": {
+        "Термодатчик 4": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
-            "signed": true,
+			"divideby": 100, 
+			"offset": -4000,
             "unit": "°C"
+        },
+        "Термодатчик 5": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+			"divideby": 100, 
+			"offset": -4000,
+            "unit": "°C"
+        },
+        "Термодатчик 6": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+			"divideby": 100, 
+			"offset": -4000,
+            "unit": "°C"
+        },
+        "Термодатчик 7": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+			"divideby": 100, 
+			"offset": -4000,
+            "unit": "°C"
+        },
+        "Термодатчик 8": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+			"divideby": 100, 
+			"offset": -4000,
+            "unit": "°C"
+        },
+		"Термодатчик 9": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+			"divideby": 100, 
+			"offset": -4000,
+            "unit": "°C"
+        },
+		"Термодатчик 10": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+			"divideby": 100, 
+			"offset": -4000,
+            "unit": "°C"
+        },
+		"Термодатчик 11": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+			"divideby": 100, 
+			"offset": -4000,
+            "unit": "°C"
+        },
+		"Термодатчик 12": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+			"divideby": 100, 
+			"offset": -4000,
+            "unit": "°C"
+        },
+		"Термодатчик 13": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+			"divideby": 100, 
+			"offset": -4000,
+            "unit": "°C"
+        },
+		"Термодатчик 14": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+			"offset": -4000,
+			"divideby": 100, 
+            "unit": "°C"
+        },
+		"Термодатчик 15": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+			"offset": -4000,
+			"divideby": 100, 
+            "unit": "°C"
+        },
+		"Термодатчик 16": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+			"offset": -4000,
+			"divideby": 100, 
+            "unit": "°C"
+        },
+		"Сопротивление 1": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+            "unit": "Ом"
+        },
+		"Сопротивление 2": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+            "unit": "Ом"
+        },
+		"Сопротивление 3": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+            "unit": "Ом"
+        },
+		"Сопротивление 4": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+            "unit": "Ом"
+        },
+		"Сопротивление 5": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+            "unit": "Ом"
+        },
+		"Сопротивление 6": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+            "unit": "Ом"
+        },
+		"Сопротивление 7": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+            "unit": "Ом"
+        },
+		"Сопротивление 8": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+            "unit": "Ом"
+        },
+		"Сопротивление 9": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+            "unit": "Ом"
+        },
+		"Сопротивление 10": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+            "unit": "Ом"
+        },
+		"Сопротивление 11": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+            "unit": "Ом"
+        },
+		"Сопротивление 12": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+            "unit": "Ом"
+        },
+		"Сопротивление 13": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+            "unit": "Ом"
+        },
+		"Сопротивление 14": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+            "unit": "Ом"
+        },
+		"Сопротивление 15": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+            "unit": "Ом"
+        },
+		"Сопротивление 16": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+            "unit": "Ом"
         },
         "22.02.0F Внутреннее сопротивление": {
             "scaled": true,
             "unit": "Ом"
-        },
-        "22.02.10 АЦП 1": {
-            "scaled": true,
-            "bytescount": 2,
-            "bitscount": 16,
-            "divideby": 1000,
-            "unit": "В"
-        },
-        "22.02.11 АЦП 2": {
-            "scaled": true,
-            "bytescount": 2,
-            "bitscount": 16,
-            "divideby": 1000,
-            "unit": "В"
-        },
-        "22.02.12 АЦП 3": {
-            "scaled": true,
-            "bytescount": 2,
-            "bitscount": 16,
-            "divideby": 1000,
-            "unit": "В"
-        },
-        "22.02.13 АЦП 4": {
-            "scaled": true,
-            "bytescount": 2,
-            "bitscount": 16,
-            "divideby": 1000,
-            "unit": "В"
-        },
-        "22.02.14 АЦП 5": {
-            "scaled": true,
-            "bytescount": 2,
-            "bitscount": 16,
-            "divideby": 1000,
-            "unit": "В"
-        },
-        "22.02.15 АЦП 6": {
-            "scaled": true,
-            "bytescount": 2,
-            "bitscount": 16,
-            "divideby": 1000,
-            "unit": "В"
-        },
-        "22.02.16 АЦП 7": {
-            "scaled": true,
-            "bytescount": 2,
-            "bitscount": 16,
-            "divideby": 1000,
-            "unit": "В"
-        },
-        "22.02.17 АЦП 8": {
-            "scaled": true,
-            "bytescount": 2,
-            "bitscount": 16,
-            "divideby": 1000,
-            "unit": "В"
         },
         "Напряжение в покое при 6%": {
             "scaled": true,
