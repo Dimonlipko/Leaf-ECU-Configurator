@@ -182,12 +182,12 @@
 			"manualsend": true,
             "sendbyte_dataitems": {
 				"Запись положение отпущеной педали": {
-                    "firstbyte": 5
+                    "firstbyte": 4
                 }
                 
             },
-			"minbytes": 5,
-            "sentbytes": "2e0308000"
+			"minbytes": 6,
+            "sentbytes": "2e03080000"
         },
 		{
             "name": "22.03.01",
