@@ -809,6 +809,25 @@
                         "width": 1200,
                         "height": 300
                     }
+                },
+				{
+                    "color": "rgb(240,240,240)",
+                    "text": "Запись тип датчика тока",
+                    "request": "2e.04.81",
+                    "width": 0,
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    },
+                    "rect": {
+                        "top": 6050,
+                        "left": 5500,
+                        "width": 1200,
+                        "height": 300
+                    }
                 }
 			
 			],
@@ -1101,13 +1120,13 @@
                 },
 				{
                     "color": "rgb(255,128,192)",
-                    "text": "Выкл_ток",
-                    "uniquename": "Выкл_ток_11",
+                    "text": "Запись_ток",
+                    "uniquename": "Запись_ток_11",
                     "messages": [ "" ],
                     "send": [
                         {
                             "Delay": "0",
-                            "RequestName": "2e.01.08.01"
+                            "RequestName": "2e.04.81"
                         }
                     ],
                     "width": 2000,
@@ -1121,32 +1140,6 @@
                     "rect": {
                         "top": 6050,
                         "left": 7000,
-                        "width": 1500,
-                        "height": 300
-                    }
-                },
-				{
-                    "color": "rgb(255,128,192)",
-                    "text": "Вкл_ток",
-                    "uniquename": "Вкл_ток_12",
-                    "messages": [ "" ],
-                    "send": [
-                        {
-                            "Delay": "0",
-                            "RequestName": "2e.03.81.01"
-                        }
-                    ],
-                    "width": 2000,
-                    "fontcolor": "rgb(0,0,0)",
-                    "font": {
-                        "name": "Arial",
-                        "bold": 0,
-                        "italic": 0,
-                        "size": 10
-                    },
-                    "rect": {
-                        "top": 6050,
-                        "left": 5500,
                         "width": 1500,
                         "height": 300
                     }
@@ -1652,8 +1645,8 @@
             ]
         },
 		"Chademo": {
-            "height": 12000, 
-            "width": 9000,
+            "height": 7500, 
+            "width": 14000,
             "color": "rgb(255,255,255)",
             "presend": [],
             "labels": [
