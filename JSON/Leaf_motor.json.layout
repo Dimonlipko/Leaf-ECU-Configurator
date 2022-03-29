@@ -2033,20 +2033,56 @@
         },
 		"Internal": {
             "height": 9000, 
-            "width": 9000,
+            "width": 13000,
             "color": "rgb(255,255,255)",
             "presend": [],
             "labels": [
 			{
-                    "text": " Внутренние параметры: ",
+                    "text": "                                                  Внутренние параметры ",
                     "bbox": {
                         "top": 100,
                         "left": 0,
-                        "width": 9000,
-                        "height": 230
+                        "width": 12000,
+                        "height": 300
                     },
                     "alignment": 2,
                     "color": "rgb(255,255,170)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 12
+                    }
+				},
+				{
+                    "text": " Входы: ",
+                    "bbox": {
+                        "top": 500,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 300
+                    },
+                    "alignment": 2,
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 12
+                    }
+				},
+				{
+                    "text": " Выходы: ",
+                    "bbox": {
+                        "top": 500,
+                        "left": 6000,
+                        "width": 6000,
+                        "height": 300
+                    },
+                    "alignment": 2,
+                    "color": "rgb(240,240,240)",
                     "fontcolor": "rgb(0,0,0)",
                     "font": {
                         "name": "Arial",
@@ -2058,9 +2094,55 @@
 			],
 				
             "inputs": [
+			{
+                    "color": "rgb(240,240,240)",
+                    "text": "Тест выходов",
+                    "request": "2e.04.15",
+                    "width": 2000,
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    },
+                    "rect": {
+                        "top": 6000,
+                        "left": 6000,
+                        "width": 5000,
+                        "height": 400
+                }
+            }
 			
 			],
             "buttons": [
+			
+			{
+			        "color": "rgb(255,128,192)",
+                    "text": "Test",
+                    "uniquename": "Test_0",
+                    "messages": [ "" ],
+                    "send": [
+                        {
+                            "Delay": "0",
+                            "RequestName": "2e.04.15"
+                        }
+                    ],
+                    "width": 2000,
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    },
+                    "rect": {
+                        "top": 6000,
+                        "left": 11000,
+                        "width": 1000,
+                        "height": 400
+                    }
+                }
 			  
 			],
             "displays": [
@@ -2069,7 +2151,7 @@
                     "request": "03.22.04.01",
                     "width": 3500,
                     "rect": {
-                        "top": 450,
+                        "top": 950,
                         "left": 150,
                         "width": 5000,
                         "height": 300
@@ -2088,7 +2170,7 @@
                     "request": "03.22.04.01",
                     "width": 3500,
                     "rect": {
-                        "top": 850,
+                        "top": 1350,
                         "left": 150,
                         "width": 5000,
                         "height": 300
@@ -2107,7 +2189,7 @@
                     "request": "03.22.04.02",
                     "width": 3500,
                     "rect": {
-                        "top": 1250,
+                        "top": 1750,
                         "left": 150,
                         "width": 5000,
                         "height": 300
@@ -2126,7 +2208,7 @@
                     "request": "03.22.04.02",
                     "width": 3500,
                     "rect": {
-                        "top": 1650,
+                        "top": 2150,
                         "left": 150,
                         "width": 5000,
                         "height": 300
@@ -2145,7 +2227,7 @@
                     "request": "03.22.04.03",
                     "width": 3500,
                     "rect": {
-                        "top": 2050,
+                        "top": 2550,
                         "left": 150,
                         "width": 5000,
                         "height": 300
@@ -2164,7 +2246,7 @@
                     "request": "03.22.04.03",
                     "width": 3500,
                     "rect": {
-                        "top": 2450,
+                        "top": 2950,
                         "left": 150,
                         "width": 5000,
                         "height": 300
@@ -2183,7 +2265,7 @@
                     "request": "03.22.04.04",
                     "width": 3500,
                     "rect": {
-                        "top": 2850,
+                        "top": 3350,
                         "left": 150,
                         "width": 5000,
                         "height": 300
@@ -2202,7 +2284,7 @@
                     "request": "03.22.04.04",
                     "width": 3500,
                     "rect": {
-                        "top": 3250,
+                        "top": 3750,
                         "left": 150,
                         "width": 5000,
                         "height": 300
@@ -2221,7 +2303,7 @@
                     "request": "03.22.04.05",
                     "width": 3500,
                     "rect": {
-                        "top": 3650,
+                        "top": 4150,
                         "left": 150,
                         "width": 5000,
                         "height": 300
@@ -2240,7 +2322,7 @@
                     "request": "03.22.04.13",
                     "width": 3500,
                     "rect": {
-                        "top": 4050,
+                        "top": 4550,
                         "left": 150,
                         "width": 5000,
                         "height": 300
@@ -2259,7 +2341,7 @@
                     "request": "03.22.04.05",
                     "width": 3500,
                     "rect": {
-                        "top": 4450,
+                        "top": 4950,
                         "left": 150,
                         "width": 5000,
                         "height": 300
@@ -2278,7 +2360,7 @@
                     "request": "03.22.04.05",
                     "width": 3500,
                     "rect": {
-                        "top": 4850,
+                        "top": 5350,
                         "left": 150,
                         "width": 5000,
                         "height": 300
@@ -2297,7 +2379,7 @@
                     "request": "03.22.04.06",
                     "width": 3500,
                     "rect": {
-                        "top": 5250,
+                        "top": 5750,
                         "left": 150,
                         "width": 5000,
                         "height": 300
@@ -2316,7 +2398,7 @@
                     "request": "03.22.04.06",
                     "width": 3500,
                     "rect": {
-                        "top": 5650,
+                        "top": 6150,
                         "left": 150,
                         "width": 5000,
                         "height": 300
@@ -2335,7 +2417,7 @@
                     "request": "03.22.04.06",
                     "width": 3500,
                     "rect": {
-                        "top": 6050,
+                        "top": 6550,
                         "left": 150,
                         "width": 5000,
                         "height": 300
@@ -2354,7 +2436,7 @@
                     "request": "03.22.04.06",
                     "width": 3500,
                     "rect": {
-                        "top": 6450,
+                        "top": 6950,
                         "left": 150,
                         "width": 5000,
                         "height": 300
@@ -2373,7 +2455,7 @@
                     "request": "03.22.04.13",
                     "width": 3500,
                     "rect": {
-                        "top": 7000,
+                        "top": 7550,
                         "left": 150,
                         "width": 5000,
                         "height": 300
@@ -2392,7 +2474,7 @@
                     "request": "03.22.04.07",
                     "width": 3500,
                     "rect": {
-                        "top": 8000,
+                        "top": 8100,
                         "left": 150,
                         "width": 5000,
                         "height": 300
@@ -2411,7 +2493,7 @@
                     "request": "03.22.04.07",
                     "width": 3500,
                     "rect": {
-                        "top": 8400,
+                        "top": 8500,
                         "left": 150,
                         "width": 5000,
                         "height": 300
@@ -2424,7 +2506,160 @@
                         "italic": 0,
                         "size": 10
                     }
+                },
+				{
+                    "text": "A10 (Контактор +)",
+                    "request": "03.22.04.15",
+                    "width": 4000,
+                    "rect": {
+                        "top": 950,
+                        "left": 6000,
+                        "width": 6000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "А11 (Контактор -)",
+                    "request": "03.22.04.15",
+                    "width": 4000,
+                    "rect": {
+                        "top": 1350,
+                        "left": 6000,
+                        "width": 6000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "D11 (Предзаряд)",
+                    "request": "03.22.04.15",
+                    "width": 4000,
+                    "rect": {
+                        "top": 1750,
+                        "left": 6000,
+                        "width": 6000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "D24 (Помпа охлаждения)",
+                    "request": "03.22.04.15",
+                    "width": 4000,
+                    "rect": {
+                        "top": 2150,
+                        "left": 6000,
+                        "width": 6000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "D9 (Вентилятор охлаждения)",
+                    "request": "03.22.04.16",
+                    "width": 4000,
+                    "rect": {
+                        "top": 2550,
+                        "left": 6000,
+                        "width": 6000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "DAC1 (Стоп)",
+                    "request": "03.22.04.16",
+                    "width": 4000,
+                    "rect": {
+                        "top": 2950,
+                        "left": 6000,
+                        "width": 6000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "D8  (Chademo out0)",
+                    "request": "03.22.04.16",
+                    "width": 4000,
+                    "rect": {
+                        "top": 2950,
+                        "left": 6000,
+                        "width": 6000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "D12 (Chademo out1)",
+                    "request": "03.22.04.16",
+                    "width": 4000,
+                    "rect": {
+                        "top": 3350,
+                        "left": 6000,
+                        "width": 6000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
                 }
+				
 				
             ]
         },
@@ -2546,6 +2781,44 @@
                     },
                     "rect": {
                         "top": 2050,
+                        "left": 6500,
+                        "width": 1200,
+                        "height": 300
+                    }
+                },
+				{
+                    "color": "rgb(240,240,240)",
+                    "text": "Запись температуры помпы",
+                    "request": "2e.04.08",
+                    "width": 0,
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    },
+                    "rect": {
+                        "top": 2650,
+                        "left": 6500,
+                        "width": 1200,
+                        "height": 300
+                    }
+                },
+				{
+                    "color": "rgb(240,240,240)",
+                    "text": "Запись температуры вентилятора",
+                    "request": "2e.04.14",
+                    "width": 0,
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    },
+                    "rect": {
+                        "top": 3000,
                         "left": 6500,
                         "width": 1200,
                         "height": 300
@@ -2684,9 +2957,59 @@
                         "width": 3000,
                         "height": 300
                     }
+                },
+				{
+                    "color": "rgb(255,128,192)",
+                    "text": "Запись_темп_помпы",
+                    "uniquename": "Запись_темп_помпы_5",
+                    "messages": [ "" ],
+                    "send": [
+                        {
+                            "Delay": "0",
+                            "RequestName": "2e.04.08"
+                        }
+                    ],
+                    "width": 2000,
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    },
+                    "rect": {
+                        "top": 2650,
+                        "left": 8000,
+                        "width": 3000,
+                        "height": 300
+                    }
+                },
+				{
+                    "color": "rgb(255,128,192)",
+                    "text": "Запись_темп_вентилятора",
+                    "uniquename": "Запись_темп_вентилятора_6",
+                    "messages": [ "" ],
+                    "send": [
+                        {
+                            "Delay": "0",
+                            "RequestName": "2e.04.14"
+                        }
+                    ],
+                    "width": 2000,
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    },
+                    "rect": {
+                        "top": 3000,
+                        "left": 8000,
+                        "width": 3000,
+                        "height": 300
+                    }
                 }
-			  
-				
 			],
             "displays": [
 			   
@@ -2772,6 +3095,44 @@
                     "width": 4500,
                     "rect": {
                         "top": 2050,
+                        "left": 150,
+                        "width": 6000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "Температура вкл помпы",
+                    "request": "03.22.04.08",
+                    "width": 4500,
+                    "rect": {
+                        "top": 2650,
+                        "left": 150,
+                        "width": 6000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "Температура вкл вентилятора",
+                    "request": "03.22.04.14",
+                    "width": 4500,
+                    "rect": {
+                        "top": 3000,
                         "left": 150,
                         "width": 6000,
                         "height": 300

@@ -520,6 +520,19 @@
             "sentbytes": "2e040800"
         },
 		{
+            "name": "2e.04.14",
+            "deny_sds": [],
+			"manualsend": true,
+            "sendbyte_dataitems": {
+				"Запись температуры вентилятора": {
+                    "firstbyte": 4
+                }
+                
+            },
+			"minbytes": 4,
+            "sentbytes": "2e041400"
+        },
+		{
             "name": "2e.03.81.01",
             "deny_sds": [],
 			"manualsend": true,
@@ -705,6 +718,72 @@
             "minbytes": 4,
             "sentbytes": "220411"
 		},
+		{
+            "name": "03.22.04.14",
+            "replybytes": "62220414",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "Температура вкл вентилятора": {
+                    "firstbyte": 4
+                }
+            },
+            "minbytes": 4,
+            "sentbytes": "220414"
+		},
+		{
+            "name": "03.22.04.15",
+            "replybytes": "62220415",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "A10 (Контактор +)": {
+                    "firstbyte": 4
+                },
+				"А11 (Контактор -)": {
+                    "firstbyte": 5
+                },
+				"D11 (Предзаряд)": {
+                    "firstbyte": 6
+                },
+				"D24 (Помпа охлаждения)": {
+                    "firstbyte": 7
+                }
+            },
+            "minbytes": 4,
+            "sentbytes": "220415"
+		},
+		{
+            "name": "03.22.04.16",
+            "replybytes": "62220416",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "D9 (Вентилятор охлаждения)": {
+                    "firstbyte": 4
+                },
+				"DAC1 (Стоп)": {
+                    "firstbyte": 5
+                },
+				"D8  (Chademo out0)": {
+                    "firstbyte": 6
+                },
+				"D12 (Chademo out1)": {
+                    "firstbyte": 7
+                }
+            },
+            "minbytes": 4,
+            "sentbytes": "220416"
+		},
+		{
+            "name": "2e.04.15",
+            "deny_sds": [],
+			"manualsend": true,
+            "sendbyte_dataitems": {
+                "Тест выходов": {
+                    "firstbyte": 4
+                }
+            },
+			"minbytes": 5,
+            "sentbytes": "2e041500"
+        },
 		{
             "name": "03.22.04.01",
             "replybytes": "62220401",
@@ -1824,6 +1903,7 @@
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
+			"signed": true,
             "unit": "rpm"
         },
 		"Положение педали газа": {
@@ -1896,6 +1976,13 @@
             "unit": "Нм"
         },
 		"Запись температуры помпы": {
+            "scaled": true,
+			"signed": true,
+            "bytescount": 1,
+            "bitscount":  8,
+            "unit": "°C"
+        }, 
+		"Запись температуры вентилятора": {
             "scaled": true,
 			"signed": true,
             "bytescount": 1,
@@ -2029,6 +2116,66 @@
             "lists": {
                 "1": "High",
                 "0": "Low"				
+            }
+        },
+		"A10 (Контактор +)": {
+            "lists": {
+                "1": "High",
+                "0": "Low"				
+            }
+        },
+		"А11 (Контактор -)": {
+            "lists": {
+                "1": "High",
+                "0": "Low"				
+            }
+        },
+		"D11 (Предзаряд)": {
+            "lists": {
+                "1": "High",
+                "0": "Low"				
+            }
+        },
+		"D24 (Помпа охлаждения)": {
+            "lists": {
+                "1": "High",
+                "0": "Low"				
+            }
+        },
+		"D9 (Вентилятор охлаждения)": {
+            "lists": {
+                "1": "High",
+                "0": "Low"				
+            }
+        },
+		"DAC1 (Стоп)": {
+            "lists": {
+                "1": "High",
+                "0": "Low"				
+            }
+        },
+		"D8  (Chademo out0)": {
+            "lists": {
+                "1": "High",
+                "0": "Low"				
+            }
+        },
+		"D12 (Chademo out1)": {
+            "lists": {
+                "1": "High",
+                "0": "Low"				
+            }
+        },
+		"Тест выходов": {
+            "lists": {
+                "1": "A10 (Контактор +)", 
+                "2": "А11 (Контактор -)",
+				"3": "D11 (Предзаряд)",
+				"4": "D24 (Помпа охлаждения)",
+				"5": "D9 (Вентилятор охлаждения)",
+				"6": "DAC1 (Стоп)",
+				"7": "D8  (Chademo out0)",
+				"8": "D12 (Chademo out1)"
             }
         },
 		"Device ID": {
@@ -2185,6 +2332,10 @@
            "scaled": true,
             "unit": "°C"
         },
+		"Температура вкл вентилятора": {
+           "scaled": true,
+            "unit": "°C"
+        },
 		"Балансировка": {
             "lists": {
                 "0": "Нет",
@@ -2304,7 +2455,8 @@
 		"Тип селектора": {
             "lists": {
                 "0": "Кнопка",
-                "1": "Leaf"
+                "1": "Leaf",
+				"2": "PSA"
             }
         },
 		"Тип кнопки старта": {
@@ -2316,7 +2468,8 @@
 		"Запись селектора": {
             "lists": {
                 "0": "Кнопка",
-                "1": "Leaf"
+                "1": "Leaf",
+				"2": "PSA"
             }
         },
 		"Запись кнопки старта": {
