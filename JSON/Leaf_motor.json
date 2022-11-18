@@ -213,7 +213,7 @@
 				"Старт": {
                     "firstbyte": 6
                 },
-				"Ограничения": {
+				"Статус": {
                     "firstbyte": 7
                 }
             },
@@ -520,17 +520,30 @@
             "sentbytes": "2e040800"
         },
 		{
-            "name": "2e.04.14",
+            "name": "2e.04.14.01",
             "deny_sds": [],
 			"manualsend": true,
             "sendbyte_dataitems": {
 				"Запись температуры вентилятора": {
-                    "firstbyte": 4
+                    "firstbyte": 5
                 }
                 
             },
-			"minbytes": 4,
-            "sentbytes": "2e041400"
+			"minbytes": 5,
+            "sentbytes": "2e04140100"
+        },
+		{
+            "name": "2e.04.14.02",
+            "deny_sds": [],
+			"manualsend": true,
+            "sendbyte_dataitems": {
+				"Запись тип БМС": {
+                    "firstbyte": 5
+                }
+                
+            },
+			"minbytes": 5,
+            "sentbytes": "2e04140200"
         },
 		{
             "name": "2e.03.81.01",
@@ -725,6 +738,9 @@
             "receivebyte_dataitems": {
                 "Температура вкл вентилятора": {
                     "firstbyte": 4
+                },
+				"Тип БМС": {
+                    "firstbyte": 5
                 }
             },
             "minbytes": 4,
@@ -824,7 +840,7 @@
                 "А4 АЦП": {
                     "firstbyte": 4
                 },
-				"А5 АЦП": {
+				"А5 ADC (Pedal 1)": {
                     "firstbyte": 6
                 }
 				
@@ -872,7 +888,7 @@
             "replybytes": "62220406",
             "deny_sds": [],
             "receivebyte_dataitems": {
-                "D7": {
+                "D7 (Chademo IN1)": {
                     "firstbyte": 4
                 },
 				"D48": {
@@ -894,12 +910,16 @@
             "replybytes": "62220413",
             "deny_sds": [],
             "receivebyte_dataitems": {
-                "A3": {
+                "A3 (Chademo IN0)": {
                     "firstbyte": 4
                 },
 				"CAN 3": {
                     "firstbyte": 5
+                },
+				"D46 (Chademo IN2)": {
+                    "firstbyte": 6
                 }
+				
 				
             },
             "minbytes": 4,
@@ -1436,306 +1456,272 @@
             "minbytes": 5,
             "sentbytes": "220222"
         },
-        {
-            "name": "22.02.23",
-            "replybytes": "6202230000",
+		
+		
+		{
+            "name": "22.12.01",
+            "replybytes": "6212010000",
             "deny_sds": [],
             "receivebyte_dataitems": {
-                "22.02.23 Датчик 1": {
+                "Total odometer": {
                     "firstbyte": 4
                 }
             },
-            "minbytes": 5,
-            "sentbytes": "220223"
-        },
-        {
-            "name": "22.02.24",
-            "replybytes": "6202240000",
+            "minbytes": 6,
+            "sentbytes": "221201"
+        },      
+		{
+            "name": "2e.12.02",
             "deny_sds": [],
-            "receivebyte_dataitems": {
-                "22.02.24 Датчик 2": {
-                    "firstbyte": 4
-                }
-            },
-            "minbytes": 5,
-            "sentbytes": "220224"
-        },
-        {
-            "name": "22.02.28",
-            "replybytes": "6202280000",
-            "deny_sds": [],
-            "receivebyte_dataitems": {
-                "22.02.28 Датчик 2": {
-                    "firstbyte": 4
-                }
-            },
-            "minbytes": 5,
-            "sentbytes": "220228"
-        },
-        {
-            "name": "22.02.29",
-            "replybytes": "6202290000",
-            "deny_sds": [],
-            "receivebyte_dataitems": {
-                "22.02.29 Датчик 3": {
-                    "firstbyte": 4
-                }
-            },
-            "minbytes": 5,
-            "sentbytes": "220229"
-        },
-        {
-            "name": "22.02.2A",
-            "replybytes": "62022A0000",
-            "deny_sds": [],
-            "receivebyte_dataitems": {
-                "22.02.2A Датчик 4": {
-                    "firstbyte": 4
-                }
-            },
-            "minbytes": 5,
-            "sentbytes": "22022A"
-        },
-        {
-            "name": "2E.02.2E",
-            "deny_sds": [],
-            "manualsend": true,
+			"manualsend": true,
             "sendbyte_dataitems": {
-                "2E.02.2E Режим": {
+                "Write odometer": {
+                    "firstbyte": 4
+                }
+            },
+			"minbytes": 6,
+            "sentbytes": "2e1201000000"
+        },
+		{
+            "name": "22.12.02",
+            "replybytes": "6212020000",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "IN1 (Right turn)": {
                     "firstbyte": 4
                 },
-                "2E.02.2E Датчик 1": {
-                    "firstbyte": 4,
-                    "bitoffset": 4
+				"IN2 (Left turn)": {
+                    "firstbyte": 5
                 },
-                "2E.02.2E Датчик 2": {
-                    "firstbyte": 4,
-                    "bitoffset": 5
+				"IN3 (Parking lights)": {
+                    "firstbyte": 6
                 },
-                "2E.02.2E Датчик 3": {
-                    "firstbyte": 4,
-                    "bitoffset": 6
-                },
-                "2E.02.2E Датчик 4": {
-                    "firstbyte": 4,
-                    "bitoffset": 7
+				"IN4 (Headlight)": {
+                    "firstbyte": 7
                 }
             },
-            "sentbytes": "2E022E00"
-        },
-        {
-            "name": "31.10",
+            "minbytes": 6,
+            "sentbytes": "221202"
+        },  
+		{
+            "name": "22.12.03",
+            "replybytes": "6212030000",
             "deny_sds": [],
-            "manualsend": true,
-            "sendbyte_dataitems": {
-                "31.10 Химия": {
-                    "firstbyte": 3
+            "receivebyte_dataitems": {
+                "IN5 (Beam lights)": {
+                    "firstbyte": 4
+                },
+				"IN6 (Handbreak)": {
+                    "firstbyte": 5
+                },
+				"IN7 (Belt)": {
+                    "firstbyte": 6
+                },
+				"IN8": {
+                    "firstbyte": 7
                 }
             },
-            "sentbytes": "311000"
-        },
+            "minbytes": 6,
+            "sentbytes": "221203"
+        },  
+		
         
-        {
-            "name": "8F",
-            "deny_sds": [],
-            "manualsend": true,
-            "sendbyte_dataitems": {
-                "8F Максимальная температура": {
-                    "firstbyte": 2
-                }
-            },
-            "sentbytes": "8F00"
-        },
+        
+		
+		
+		
+        
 		{
 	"name": "DataRead.2141", 
 	"replybytes": "614100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000", 
 	"deny_sds": [], 
 	"receivebyte_dataitems": {
-		"Cell Voltage[45]": {
-		"firstbyte": 93
-		}, 
-		"Cell Voltage[53]": {
-		"firstbyte": 109
-		}, 
-		"Cell Voltage[44]": {
-		"firstbyte": 91
-		}, 
-		"Cell Voltage[00]": {
+		
+		"Cell [01]": {
 		"firstbyte": 3
 		}, 
-		"Cell Voltage[23]": {
-		"firstbyte": 49
-		}, 
-		"Cell Voltage[35]": {
-		"firstbyte": 73
-		}, 
-		"Cell Voltage[58]": {
-		"firstbyte": 119
-		}, 
-		"Cell Voltage[32]": {
-		"firstbyte": 67
-		}, 
-		"Cell Voltage[47]": {
-		"firstbyte": 97
-		}, 
-		"Cell Voltage[17]": {
-		"firstbyte": 37
-		}, 
-		"Cell Voltage[30]": {
-		"firstbyte": 63
-		}, 
-		"Cell Voltage[34]": {
-		"firstbyte": 71
-		}, 
-		"Cell Voltage[43]": {
-		"firstbyte": 89
-		}, 
-		"Cell Voltage[40]": {
-		"firstbyte": 83
-		}, 
-		"Cell Voltage[46]": {
-		"firstbyte": 95
-		}, 
-		"Cell Voltage[57]": {
-		"firstbyte": 117
-		}, 
-		"Cell Voltage[41]": {
-		"firstbyte": 85
-		}, 
-		"Cell Voltage[10]": {
-		"firstbyte": 23
-		}, 
-		"Cell Voltage[27]": {
-		"firstbyte": 57
-		}, 
-		"Cell Voltage[05]": {
-		"firstbyte": 13
-		}, 
-		"Cell Voltage[09]": {
-		"firstbyte": 21
-		}, 
-		"Cell Voltage[14]": {
-		"firstbyte": 31
-		}, 
-		"Cell Voltage[24]": {
-		"firstbyte": 51
-		}, 
-		"Cell Voltage[59]": {
-		"firstbyte": 121
-		}, 
-		"Cell Voltage[02]": {
+		"Cell [02]": {
+		"firstbyte": 5
+		},
+		"Cell [03]": {
 		"firstbyte": 7
 		}, 
-		"Cell Voltage[22]": {
-		"firstbyte": 47
-		}, 
-		"Cell Voltage[07]": {
-		"firstbyte": 17
-		}, 
-		"Cell Voltage[03]": {
+		"Cell [04]": {
 		"firstbyte": 9
 		}, 
-		"Cell Voltage[36]": {
-		"firstbyte": 75
+		"Cell [05]": {
+		"firstbyte": 11
+		},
+		"Cell [06]": {
+		"firstbyte": 13
 		}, 
-		"Cell Voltage[15]": {
-		"firstbyte": 33
-		}, 
-		"Cell Voltage[31]": {
-		"firstbyte": 65
-		}, 
-		"Cell Voltage[29]": {
-		"firstbyte": 61
-		}, 
-		"Cell Voltage[42]": {
-		"firstbyte": 87
-		}, 
-		"Cell Voltage[21]": {
-		"firstbyte": 45
-		}, 
-		"Cell Voltage[16]": {
-		"firstbyte": 35
-		}, 
-		"Cell Voltage[38]": {
-		"firstbyte": 79
-		}, 
-		"Cell Voltage[13]": {
-		"firstbyte": 29
-		}, 
-		"Cell Voltage[12]": {
-		"firstbyte": 27
-		}, 
-		"Cell Voltage[26]": {
-		"firstbyte": 55
-		}, 
-		"Cell Voltage[52]": {
-		"firstbyte": 107
-		}, 
-		"Cell Voltage[28]": {
-		"firstbyte": 59
-		}, 
-		"Cell Voltage[39]": {
-		"firstbyte": 81
-		}, 
-		"Cell Voltage[50]": {
-		"firstbyte": 103
-		}, 
-		"Cell Voltage[54]": {
-		"firstbyte": 111
-		}, 
-		"Cell Voltage[08]": {
+		"Cell [07]": {
+		"firstbyte": 15
+		},
+		"Cell [08]": {
+		"firstbyte": 17
+		},
+		"Cell [09]": {
 		"firstbyte": 19
 		}, 
-		"Cell Voltage[19]": {
-		"firstbyte": 41
+		"Cell [10]": {
+		"firstbyte": 21
+		},
+		"Cell [11]": {
+		"firstbyte": 23
+		}, 	
+		"Cell [12]": {
+		"firstbyte": 25
+		},
+		"Cell [13]": {
+		"firstbyte": 27
 		}, 
-		"Cell Voltage[06]": {
-		"firstbyte": 15
+		"Cell [14]": {
+		"firstbyte": 29
 		}, 
-		"Cell Voltage[20]": {
-		"firstbyte": 43
+		"Cell [15]": {
+		"firstbyte": 31
 		}, 
-		"Cell Voltage[48]": {
-		"firstbyte": 99
+		"Cell [16]": {
+		"firstbyte": 33
 		}, 
-		"Cell Voltage[18]": {
+		"Cell [17]": {
+		"firstbyte": 35
+		}, 
+		"Cell [18]": {
+		"firstbyte": 37
+		}, 
+		"Cell [19]": {
 		"firstbyte": 39
 		}, 
-		"Cell Voltage[01]": {
-		"firstbyte": 5
+		"Cell [20]": {
+		"firstbyte": 41
 		}, 
-		"Cell Voltage[51]": {
-		"firstbyte": 105
+		"Cell [21]": {
+		"firstbyte": 43
 		}, 
-		"Cell Voltage[55]": {
-		"firstbyte": 113
+		"Cell [22]": {
+		"firstbyte": 45
 		}, 
-		"Cell Voltage[11]": {
-		"firstbyte": 25
+		"Cell [23]": {
+		"firstbyte": 47
 		}, 
-		"Cell Voltage[37]": {
-		"firstbyte": 77
+		"Cell [24]": {
+		"firstbyte": 49
 		}, 
-		"Cell Voltage[33]": {
-		"firstbyte": 69
+		"Cell [25]": {
+		"firstbyte": 51
 		}, 
-		"Cell Voltage[61]": {
-		"firstbyte": 125
-		}, 
-		"Cell Voltage[25]": {
+		"Cell [26]": {
 		"firstbyte": 53
 		}, 
-		"Cell Voltage[56]": {
-		"firstbyte": 115
+		"Cell [27]": {
+		"firstbyte": 55
 		}, 
-		"Cell Voltage[04]": {
-		"firstbyte": 11
+		"Cell [28]": {
+		"firstbyte": 57
 		}, 
-		"Cell Voltage[49]": {
+		"Cell [29]": {
+		"firstbyte": 59
+		}, 
+		"Cell [30]": {
+		"firstbyte": 61
+		}, 
+		"Cell [31]": {
+		"firstbyte": 63
+		}, 
+		"Cell [32]": {
+		"firstbyte": 65
+		}, 
+		"Cell [33]": {
+		"firstbyte": 67
+		}, 
+		"Cell [34]": {
+		"firstbyte": 69
+		}, 
+		"Cell [35]": {
+		"firstbyte": 71
+		}, 
+		"Cell [36]": {
+		"firstbyte": 73
+		}, 
+		"Cell [37]": {
+		"firstbyte": 75
+		}, 
+		"Cell [38]": {
+		"firstbyte": 77
+		}, 
+		"Cell [39]": {
+		"firstbyte": 79
+		}, 
+		"Cell [40]": {
+		"firstbyte": 81
+		}, 
+		"Cell [41]": {
+		"firstbyte": 83
+		}, 
+		"Cell [42]": {
+		"firstbyte": 85
+		}, 
+		"Cell [43]": {
+		"firstbyte": 87
+		}, 
+		"Cell [44]": {
+		"firstbyte": 89
+		}, 
+		"Cell [45]": {
+		"firstbyte": 91
+		}, 
+		"Cell [46]": {
+		"firstbyte": 93
+		}, 
+		"Cell [47]": {
+		"firstbyte": 95
+		}, 
+		"Cell [48]": {
+		"firstbyte": 97
+		}, 
+		"Cell [49]": {
+		"firstbyte": 99
+		}, 
+		"Cell [50]": {
 		"firstbyte": 101
 		}, 
-		"Cell Voltage[60]": {
+		"Cell [51]": {
+		"firstbyte": 103
+		}, 
+		"Cell [52]": {
+		"firstbyte": 105
+		}, 
+		"Cell [53]": {
+		"firstbyte": 107
+		}, 
+		"Cell [54]": {
+		"firstbyte": 109
+		}, 
+		"Cell [55]": {
+		"firstbyte": 111
+		}, 
+		"Cell [56]": {
+		"firstbyte": 113
+		}, 
+		"Cell [57]": {
+		"firstbyte": 115
+		}, 
+		"Cell [58]": {
+		"firstbyte": 117
+		}, 
+		"Cell [59]": {
+		"firstbyte": 119
+		}, 
+		"Cell [60]": {
+		"firstbyte": 121
+		}, 
+		"Cell [61]": {
 		"firstbyte": 123
+		}, 
+		"Cell [62]": {
+		"firstbyte": 125
 		}
 	}, 
 	"minbytes": 126, 
@@ -1746,109 +1732,109 @@
 	"replybytes": "61420000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000", 
 	"deny_sds": [], 
 	"receivebyte_dataitems": {
-	 
-		"Cell Voltage[88]": {
-		"firstbyte": 55
-		}, 
-		"Cell Voltage[81]": {
-		"firstbyte": 41
-		}, 
-		"Cell Voltage[78]": {
-		"firstbyte": 35
-		}, 
-		"Cell Voltage[75]": {
-		"firstbyte": 29
-		}, 
-		"Cell Voltage[95]": {
-		"firstbyte": 69
-		}, 
-		"Cell Voltage[85]": {
-		"firstbyte": 49
-		}, 
-		"Cell Voltage[63]": {
-		"firstbyte": 5
-		}, 
-		"Cell Voltage[77]": {
-		"firstbyte": 33
-		}, 
-		"Cell Voltage[68]": {
-		"firstbyte": 15
-		}, 
-		"Cell Voltage[74]": {
-		"firstbyte": 27
-		}, 
-		"Cell Voltage[69]": {
-		"firstbyte": 17
-		}, 
-		"Cell Voltage[87]": {
-		"firstbyte": 53
-		},  
-		"Cell Voltage[84]": {
-		"firstbyte": 47
-		}, 
-		"Cell Voltage[73]": {
-		"firstbyte": 25
-		}, 
-		"Cell Voltage[76]": {
-		"firstbyte": 31
-		}, 
-		"Cell Voltage[67]": {
-		"firstbyte": 13
-		}, 
-		"Cell Voltage[64]": {
-		"firstbyte": 7
-		}, 
-		"Cell Voltage[86]": {
-		"firstbyte": 51
-		}, 
-		"Cell Voltage[93]": {
-		"firstbyte": 65
-		}, 
-		"Cell Voltage[83]": {
-		"firstbyte": 45
-		}, 
-		"Cell Voltage[72]": {
-		"firstbyte": 23
-		}, 
-		"Cell Voltage[89]": {
-		"firstbyte": 57
-		}, 
-		"Cell Voltage[80]": {
-		"firstbyte": 39
-		}, 
-		"Cell Voltage[70]": {
-		"firstbyte": 19
-		}, 
-		"Cell Voltage[66]": {
-		"firstbyte": 11
-		}, 
-		"Cell Voltage[94]": {
-		"firstbyte": 67
-		}, 
-		"Cell Voltage[82]": {
-		"firstbyte": 43
-		}, 
-		"Cell Voltage[90]": {
-		"firstbyte": 59
-		}, 
-		"Cell Voltage[79]": {
-		"firstbyte": 37
-		}, 
-		"Cell Voltage[91]": {
-		"firstbyte": 61
-		}, 
-		"Cell Voltage[62]": {
+		
+		"Cell [63]": {
 		"firstbyte": 3
 		}, 
-		"Cell Voltage[71]": {
-		"firstbyte": 21
+		"Cell [64]": {
+		"firstbyte": 5
 		}, 
-		"Cell Voltage[65]": {
+		"Cell [65]": {
+		"firstbyte": 7
+		}, 
+		"Cell [66]": {
 		"firstbyte": 9
 		}, 
-		"Cell Voltage[92]": {
+		"Cell [67]": {
+		"firstbyte": 11
+		},
+		"Cell [68]": {
+		"firstbyte": 13
+		}, 
+		"Cell [69]": {
+		"firstbyte": 15
+		}, 
+		"Cell [70]": {
+		"firstbyte": 17
+		}, 
+		"Cell [71]": {
+		"firstbyte": 19
+		}, 
+		"Cell [72]": {
+		"firstbyte": 21
+		}, 
+		"Cell [73]": {
+		"firstbyte": 23
+		},
+		"Cell [74]": {
+		"firstbyte": 25
+		}, 
+		"Cell [75]": {
+		"firstbyte": 27
+		}, 
+		"Cell [76]": {
+		"firstbyte": 29
+		}, 
+		"Cell [77]": {
+		"firstbyte": 31
+		}, 
+		"Cell [78]": {
+		"firstbyte": 33
+		}, 
+		"Cell [79]": {
+		"firstbyte": 35
+		}, 
+		"Cell [80]": {
+		"firstbyte": 37
+		}, 
+		"Cell [81]": {
+		"firstbyte": 39
+		}, 
+		"Cell [82]": {
+		"firstbyte": 41
+		}, 
+		"Cell [83]": {
+		"firstbyte": 43
+		}, 
+		"Cell [84]": {
+		"firstbyte": 45
+		}, 
+		"Cell [85]": {
+		"firstbyte": 47
+		}, 
+		"Cell [86]": {
+		"firstbyte": 49
+		}, 
+		"Cell [87]": {
+		"firstbyte": 51
+		}, 
+		"Cell [88]": {
+		"firstbyte": 53
+		},  
+		"Cell [89]": {
+		"firstbyte": 55
+		}, 
+		"Cell [90]": {
+		"firstbyte": 57
+		}, 
+		"Cell [91]": {
+		"firstbyte": 59
+		}, 
+		"Cell [92]": {
+		"firstbyte": 61
+		}, 
+		"Cell [93]": {
 		"firstbyte": 63
-		}
+		},
+		"Cell [94]": {
+		"firstbyte": 65
+		}, 
+		"Cell [95]": {
+		"firstbyte": 67
+		}, 
+		"Cell [96]": {
+		"firstbyte": 69
+		}	
 	}, 
 	"minbytes": 74, 
 	"sentbytes": "2142"
@@ -1890,12 +1876,17 @@
                 "1": "Да"				
             }
         },
-		"Ограничения": {
+		"Статус": {
             "lists": {
-                "0": "Нет",
+                "0": "ОК",
                 "1": "Батарея разряжена, выкл",
 				"2": "Батарея разряжена, черепаха",
-				"3": "Ошибка предзаряда"
+				"3": "Ошибка предзаряда",
+				"4": "Вставлен AC пистолет",
+				"5": "AC Зарядка",
+				"6": "Вставлен DC пистолет",
+				"7": "DC Зарядка"
+				
 				
             }
         },
@@ -2042,7 +2033,7 @@
 			"divideby": 1000,
             "unit": "В"
         },
-		"А5 АЦП": {
+		"А5 ADC (Pedal 1)": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
@@ -2070,7 +2061,7 @@
 			"divideby": 1000,
             "unit": "В"
         },
-		"A3": {
+		"A3 (Chademo IN0)": {
             "lists": {
                 "1": "High",
                 "0": "Low"				
@@ -2094,7 +2085,13 @@
                 "0": "Low"				
             }
         },
-		"D7": {
+		"D7 (Chademo IN1)": {
+            "lists": {
+                "1": "High",
+                "0": "Low"				
+            }
+        },
+		"D46 (Chademo IN2)": {
             "lists": {
                 "1": "High",
                 "0": "Low"				
@@ -2316,8 +2313,10 @@
 		"Статус пистолета": {
            "lists": {
                 "136": "Вставлен",
+				"152": "Вставлен",
 				"132": "Вставлен + нажата кнопка",
-                "144": "Не вставлен"
+				"148": "Вставлен + нажата кнопка",
+                "144": "Не вставлен"  
             }
         },
 		"Температура зарядного блока": {
@@ -2335,6 +2334,24 @@
 		"Температура вкл вентилятора": {
            "scaled": true,
             "unit": "°C"
+        },
+		"Тип БМС": {
+           "lists": {
+                "0": "Нет",
+                "1": "Volt Gen1",
+				"2": "Leaf",
+				"3": "Orion 2"
+            }
+          
+        },
+		"Запись тип БМС": {
+           "lists": {
+			    "1": "Volt Gen1",
+                "0": "Нет",
+				"2": "Leaf",
+				"3": "Orion 2"
+            }
+          
         },
 		"Балансировка": {
             "lists": {
@@ -2481,13 +2498,15 @@
 		"Тип инвертора": {
            "lists": {
                 "0": "AZE0",
-                "1": "ZE0"
+                "1": "ZE0",
+				"2": "ZE1"
             }
         },
 		"Запись тип инвертора": {
            "lists": {
                 "0": "AZE0",
-                "1": "ZE0"
+                "1": "ZE0",
+				"2": "ZE1"
             }
         },
 		"Запись тип датчика тока": {
@@ -2559,152 +2578,140 @@
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
-			"divideby": 100, 
-			"offset": -4000,
+			"offset": -40,
             "unit": "°C"
         },
         "Термодатчик 2": {
             "scaled": true,
             "bytescount": 2,
-            "bitscount": 16,
-			"divideby": 100, 
-			"offset": -4000,
+            "bitscount": 16, 
+			"offset": -40,
             "unit": "°C"
         },
         "Термодатчик 3": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
-			"divideby": 100,  
-			"offset": -4000,
+			"offset": -40,
             "unit": "°C"
         },
         "Термодатчик 4": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
-			"divideby": 100, 
-			"offset": -4000,
+			"offset": -40,
             "unit": "°C"
         },
         "Термодатчик 5": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
-			"divideby": 100, 
-			"offset": -4000,
+			"offset": -40,
             "unit": "°C"
         },
         "Термодатчик 6": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
-			"divideby": 100, 
-			"offset": -4000,
+			"offset": -40,
             "unit": "°C"
         },
         "Термодатчик 7": {
-            "scaled": true,
+           "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
-			"divideby": 100, 
-			"offset": -4000,
+			"offset": -40,
             "unit": "°C"
         },
         "Термодатчик 8": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
-			"divideby": 100, 
-			"offset": -4000,
+			"offset": -40,
             "unit": "°C"
         },
 		"Термодатчик 9": {
-            "scaled": true,
+           "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
-			"divideby": 100, 
-			"offset": -4000,
+			"offset": -40,
             "unit": "°C"
         },
 		"Термодатчик 10": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
-			"divideby": 100, 
-			"offset": -4000,
+			"offset": -40,
             "unit": "°C"
         },
 		"Термодатчик 11": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
-			"divideby": 100, 
-			"offset": -4000,
+			"offset": -40,
             "unit": "°C"
         },
 		"Термодатчик 12": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
-			"divideby": 100, 
-			"offset": -4000,
+			"offset": -40,
             "unit": "°C"
         },
 		"Термодатчик 13": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
-			"divideby": 100, 
-			"offset": -4000,
+			"offset": -40,
             "unit": "°C"
         },
 		"Термодатчик 14": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
-			"offset": -4000,
-			"divideby": 100, 
+			"offset": -40,
             "unit": "°C"
         },
 		"Термодатчик 15": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
-			"offset": -4000,
-			"divideby": 100, 
+			"offset": -40,
             "unit": "°C"
         },
 		"Термодатчик 16": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
-			"offset": -4000,
-			"divideby": 100, 
+			"offset": -40,
             "unit": "°C"
         },
 		"Сопротивление 1": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
+			"step": 10,
             "unit": "Ом"
         },
 		"Сопротивление 2": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
+			"step": 10,
             "unit": "Ом"
         },
 		"Сопротивление 3": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
+			"step": 10,
             "unit": "Ом"
         },
 		"Сопротивление 4": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
+			"step": 10,
             "unit": "Ом"
         },
 		"Сопротивление 5": {
@@ -2717,12 +2724,14 @@
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
+			"step": 10,
             "unit": "Ом"
         },
 		"Сопротивление 7": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
+			"step": 10,
             "unit": "Ом"
         },
 		"Сопротивление 8": {
@@ -2735,6 +2744,7 @@
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
+			"step": 10,
             "unit": "Ом"
         },
 		"Сопротивление 10": {
@@ -2747,6 +2757,7 @@
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
+			"step": 10,
             "unit": "Ом"
         },
 		"Сопротивление 12": {
@@ -2759,24 +2770,28 @@
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
+			"step": 10,
             "unit": "Ом"
         },
 		"Сопротивление 14": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
+			"step": 10,
             "unit": "Ом"
         },
 		"Сопротивление 15": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
+			"step": 10,
             "unit": "Ом"
         },
 		"Сопротивление 16": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
+			"step": 10,
             "unit": "Ом"
         },
         "22.02.0F Внутреннее сопротивление": {
@@ -2804,99 +2819,12 @@
             "divideby": 1000,
             "unit": "В"
         },
-        "22.02.23 Датчик 1": {
-            "scaled": true,
-            "bytescount": 2,
-            "bitscount": 16,
-            "unit": "K"
-        },
-        "22.02.24 Датчик 2": {
-            "scaled": true,
-            "bytescount": 2,
-            "bitscount": 16,
-            "unit": "K"
-        },
-        "22.02.25 Датчик 3": {
-            "scaled": true,
-            "bytescount": 2,
-            "bitscount": 16,
-            "unit": "K"
-        },
-        "22.02.26 Датчик 4": {
-            "scaled": true,
-            "bytescount": 2,
-            "bitscount": 16,
-            "unit": "K"
-        },
-        "22.02.27 Датчик 1": {
-            "scaled": true,
-            "bytescount": 2,
-            "bitscount": 16,
-            "unit": "Ом"
-        },
-        "22.02.28 Датчик 2": {
-            "scaled": true,
-            "bytescount": 2,
-            "bitscount": 16,
-            "unit": "Ом"
-        },
-        "22.02.29 Датчик 3": {
-            "scaled": true,
-            "bytescount": 2,
-            "bitscount": 16,
-            "unit": "Ом"
-        },
-        "22.02.2A Датчик 4": {
-            "scaled": true,
-            "bytescount": 2,
-            "bitscount": 16,
-            "unit": "Ом"
-        },
-        "2E.02.2E Режим": {
-            "lists": {
-                "0": "Отправлять (Tesla)",
-                "1": "Отправлять",
-                "15": "Не отправлять"
-            },
-            "bitscount": 4
-        },
-        "2E.02.2E Датчик 1": {
-            "lists": {
-                "0": "Отключен",
-                "1": "Включен"
-            },
-            "bitscount": 1
-        },
-        "2E.02.2E Датчик 2": {
-            "lists": {
-                "0": "Отключен",
-                "1": "Включен"
-            },
-            "bitscount": 1
-        },
-        "2E.02.2E Датчик 3": {
-            "lists": {
-                "0": "Отключен",
-                "1": "Включен"
-            },
-            "bitscount": 1
-        },
-        "2E.02.2E Датчик 4": {
-            "lists": {
-                "0": "Отключен",
-                "1": "Включен"
-            },
-            "bitscount": 1
-        },
+        
+        
+        
 		
-        "31.10 Химия": {
-            "lists": {
-                "01": "Leaf",
-                "02": "Tesla",
-				"03": "Volt",
-				"04": "Leaf 40"
-            }
-        },
+        
+		
         "8C Общая температура": {
             "scaled": true,
             "offset": -40,
@@ -2937,691 +2865,762 @@
             "unit": "А"
         },
 		
-        "8F Максимальная температура": {
-            "scaled": true,
-            "offset": -40,
-            "unit": "°C"
-        },
-		
-		"Cell Voltage[00]": {
+		"Cell [01]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[01]": {
+		"Cell [02]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[02]": {
+		"Cell [03]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[03]": {
-			"scaled": true, 
-			"bytescount": 2, 
-			"step": 0.001, 
-			"bitscount": 16, 
-			"unit": "V"
-		}, 
-		"Cell Voltage[04]": {
+		"Cell [04]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		},		
-		"Cell Voltage[05]": {
+		"Cell [05]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[06]": {
+		"Cell [06]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[07]": {
+		"Cell [07]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[08]": {
+		"Cell [08]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[09]": {
+		"Cell [09]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[10]": {
+		"Cell [10]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[11]": {
+		"Cell [11]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[12]": {
+		"Cell [12]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[13]": {
+		"Cell [13]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[14]": {
+		"Cell [14]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[15]": {
+		"Cell [15]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[16]": {
+		"Cell [16]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[17]": {
+		"Cell [17]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[18]": {
+		"Cell [18]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[19]": {
+		"Cell [19]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[20]": {
+		"Cell [20]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[21]": {
+		"Cell [21]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[22]": {
+		"Cell [22]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[23]": {
+		"Cell [23]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[24]": {
+		"Cell [24]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[25]": {
+		"Cell [25]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[26]": {
+		"Cell [26]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[27]": {
+		"Cell [27]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[28]": {
+		"Cell [28]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[29]": {
+		"Cell [29]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[30]": {
+		"Cell [30]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[31]": {
+		"Cell [31]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[32]": {
+		"Cell [32]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[33]": {
+		"Cell [33]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[34]": {
+		"Cell [34]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[35]": {
+		"Cell [35]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[36]": {
+		"Cell [36]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[37]": {
+		"Cell [37]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[38]": {
+		"Cell [38]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[39]": {
+		"Cell [39]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[40]": {
+		"Cell [40]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[41]": {
+		"Cell [41]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[42]": {
+		"Cell [42]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[43]": {
+		"Cell [43]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[44]": {
+		"Cell [44]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[45]": {
+		"Cell [45]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[46]": {
+		"Cell [46]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[47]": {
+		"Cell [47]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[48]": {
+		"Cell [48]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[49]": {
+		"Cell [49]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[50]": {
+		"Cell [50]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[51]": {
+		"Cell [51]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[52]": {
+		"Cell [52]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[53]": {
+		"Cell [53]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[54]": {
+		"Cell [54]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[55]": {
+		"Cell [55]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[56]": {
+		"Cell [56]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[57]": {
+		"Cell [57]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[58]": {
+		"Cell [58]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[59]": {
+		"Cell [59]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[60]": {
+		"Cell [60]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[61]": {
+		"Cell [61]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[62]": {
+		"Cell [62]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[63]": {
+		"Cell [63]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[64]": {
+		"Cell [64]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[65]": {
+		"Cell [65]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[66]": {
+		"Cell [66]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[67]": {
+		"Cell [67]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[68]": {
+		"Cell [68]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[69]": {
+		"Cell [69]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[70]": {
+		"Cell [70]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[71]": {
+		"Cell [71]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[72]": {
+		"Cell [72]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[73]": {
+		"Cell [73]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[74]": {
+		"Cell [74]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[75]": {
+		"Cell [75]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[76]": {
+		"Cell [76]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[77]": {
+		"Cell [77]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[78]": {
+		"Cell [78]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[79]": {
+		"Cell [79]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[80]": {
+		"Cell [80]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[81]": {
+		"Cell [81]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[82]": {
+		"Cell [82]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[83]": {
+		"Cell [83]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[84]": {
+		"Cell [84]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[85]": {
+		"Cell [85]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[86]": {
+		"Cell [86]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[87]": {
+		"Cell [87]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[88]": {
+		"Cell [88]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[89]": {
+		"Cell [89]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[90]": {
+		"Cell [90]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[91]": {
+		"Cell [91]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[92]": {
+		"Cell [92]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[93]": {
+		"Cell [93]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		}, 
-		"Cell Voltage[93]": {
+		"Cell [94]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		},
-		"Cell Voltage[94]": {
+		"Cell [95]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
 			"unit": "V"
 		},
-		"Cell Voltage[95]": {
+		"Cell [96]": {
 			"scaled": true, 
 			"bytescount": 2, 
 			"step": 0.001, 
 			"bitscount": 16, 
+			"unit": "V"
+		},
+		
+		"Total odometer": {
+			"scaled": true, 
+			"scaled": true, 
+			"bytescount": 3, 
+			"step": 0.1, 
+			"bitscount": 24, 
+			"unit": "Km"
+		},
+		
+		"Write odometer": {
+			"scaled": true, 
+			"bytescount": 3, 
+			"bitscount": 24,
+			"divideby": 10
+		},
+		
+		"Date day": {
+			"scaled": true, 
+			"bytescount": 3, 
+			"step": 0.1, 
+			"bitscount": 24, 
+			"unit": "Km"
+		},
+		"IN1 (Right turn)": {
+			"scaled": true, 
+			"bytescount": 1, 
+			"step": 0.1, 
+			"bitscount": 8, 
+			"unit": "V"
+		},
+		"IN2 (Left turn)": {
+			"scaled": true, 
+			"bytescount": 1, 
+			"step": 0.1, 
+			"bitscount": 8, 
+			"unit": "V"
+		},
+		"IN3 (Parking lights)": {
+			"scaled": true, 
+			"bytescount": 1, 
+			"step": 0.1, 
+			"bitscount": 8, 
+			"unit": "V"
+		},
+		"IN4 (Headlight)": {
+			"scaled": true, 
+			"bytescount": 1, 
+			"step": 0.1, 
+			"bitscount": 8, 
+			"unit": "V"
+		},
+		"IN5 (Beam lights)": {
+			"scaled": true, 
+			"bytescount": 1, 
+			"step": 0.1, 
+			"bitscount": 8, 
+			"unit": "V"
+		},
+		"IN6 (Handbreak)": {
+			"scaled": true, 
+			"bytescount": 1, 
+			"step": 0.1, 
+			"bitscount": 8, 
+			"unit": "V"
+		},
+		"IN7 (Belt)": {
+			"scaled": true, 
+			"bytescount": 1, 
+			"step": 0.1, 
+			"bitscount": 8, 
+			"unit": "V"
+		},
+		"IN8": {
+			"scaled": true, 
+			"bytescount": 1, 
+			"step": 0.1, 
+			"bitscount": 8, 
 			"unit": "V"
 		}
+		
+		
+		
+		
 		
 		
     }
