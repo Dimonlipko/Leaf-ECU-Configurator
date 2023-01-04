@@ -141,6 +141,26 @@
                         "width": 1200,
                         "height": 300
                     }
+                },
+				{
+				
+                    "color": "rgb(240,240,240)",
+                    "text": "Запись момент холостого хода",
+                    "request": "2e.03.07.03",
+                    "width": 0,
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    },
+                    "rect": {
+                        "top": 7200,
+                        "left": 5500,
+                        "width": 1200,
+                        "height": 300
+                    }
                 }
 				
 			],
@@ -296,6 +316,32 @@
                     },
                     "rect": {
                         "top": 6800,
+                        "left": 7000,
+                        "width": 2500,
+                        "height": 300
+                    }
+                },
+				{
+                    "color": "rgb(255,128,192)",
+                    "text": "Запись момент холостого хода",
+                    "uniquename": "Запись момент холостого хода_6",
+                    "messages": [ "" ],
+                    "send": [
+                        {
+                            "Delay": "0",
+                            "RequestName": "2e.03.07.03"
+                        }
+                    ],
+                    "width": 1000,
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    },
+                    "rect": {
+                        "top": 7200,
                         "left": 7000,
                         "width": 2500,
                         "height": 300
@@ -608,6 +654,25 @@
                         "italic": 0,
                         "size": 10
                     }
+                },
+				{
+                    "text": "Момент холостого хода",
+                    "request": "22.03.07",
+                    "width": 3500,
+                    "rect": {
+                        "top": 7200,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
                 }
 				
             ]
@@ -846,6 +911,7 @@
                         "height": 300
                     }
                 },
+				
 				{
                     "color": "rgb(255,128,192)",
                     "text": "Запись_рекуперации",
@@ -875,7 +941,7 @@
 				{
                     "color": "rgb(255,128,192)",
                     "text": "Запись_выкл_зарядки",
-                    "uniquename": "Запись_выкл_зарядки_4",
+                    "uniquename": "Запись_выкл_зарядки_3",
                     "messages": [ "" ],
                     "send": [
                         {
@@ -901,7 +967,7 @@
 				{
                     "color": "rgb(255,128,192)",
                     "text": "Запись_начала_балансировки",
-                    "uniquename": "Запись_начала_балансировки_5",
+                    "uniquename": "Запись_начала_балансировки_4",
                     "messages": [ "" ],
                     "send": [
                         {
@@ -927,7 +993,7 @@
 				{
                     "color": "rgb(255,128,192)",
                     "text": "Запись_черепахи",
-                    "uniquename": "Запись_черепахи_6",
+                    "uniquename": "Запись_черепахи_5",
                     "messages": [ "" ],
                     "send": [
                         {
@@ -953,7 +1019,7 @@
 				{
                     "color": "rgb(255,128,192)",
                     "text": "Запись_SOC",
-                    "uniquename": "Запись_SOC_8",
+                    "uniquename": "Запись_SOC_6",
                     "messages": [ "" ],
                     "send": [
                         {
@@ -979,7 +1045,7 @@
 				{
                     "color": "rgb(255,128,192)",
                     "text": "Запись_SOH",
-                    "uniquename": "Запись_SOH_9",
+                    "uniquename": "Запись_SOH_7",
                     "messages": [ "" ],
                     "send": [
                         {
@@ -1005,7 +1071,7 @@
 				{
                     "color": "rgb(255,128,192)",
                     "text": "Запись_выкл_батареи",
-                    "uniquename": "Запись_выкл_батареи_10",
+                    "uniquename": "Запись_выкл_батареи_8",
                     "messages": [ "" ],
                     "send": [
                         {
@@ -1031,7 +1097,7 @@
 				{
                     "color": "rgb(255,128,192)",
                     "text": "Запись_ток",
-                    "uniquename": "Запись_ток_11",
+                    "uniquename": "Запись_ток_9",
                     "messages": [ "" ],
                     "send": [
                         {
@@ -1049,6 +1115,58 @@
                     },
                     "rect": {
                         "top": 6050,
+                        "left": 7000,
+                        "width": 1500,
+                        "height": 300
+                    }
+                },
+				{
+                    "color": "rgb(255,128,192)",
+                    "text": "Вкл",
+                    "uniquename": "Вкл_10",
+                    "messages": [ "" ],
+                    "send": [
+                        {
+                            "Delay": "0",
+                            "RequestName": "2e.04.14.03.01"
+                        }
+                    ],
+                    "width": 2000,
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    },
+                    "rect": {
+                        "top": 2450,
+                        "left": 5500,
+                        "width": 1500,
+                        "height": 300
+                    }
+                },
+				{
+                    "color": "rgb(255,128,192)",
+                    "text": "Выкл",
+                    "uniquename": "Выкл_11",
+                    "messages": [ "" ],
+                    "send": [
+                        {
+                            "Delay": "0",
+                            "RequestName": "2e.04.14.03.00"
+                        }
+                    ],
+                    "width": 2000,
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    },
+                    "rect": {
+                        "top": 2450,
                         "left": 7000,
                         "width": 1500,
                         "height": 300
@@ -1177,6 +1295,25 @@
                     "width": 3500,
                     "rect": {
                         "top": 2050,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "Добивка",
+                    "request": "03.22.04.14",
+                    "width": 3500,
+                    "rect": {
+                        "top": 2450,
                         "left": 150,
                         "width": 5000,
                         "height": 300
@@ -1714,7 +1851,7 @@
                     "rect": {
                         "top": 2450,
                         "left": 150,
-                        "width": 5000,
+                        "width": 8000,
                         "height": 300
                     },
                     "color": "rgb(240,240,240)",

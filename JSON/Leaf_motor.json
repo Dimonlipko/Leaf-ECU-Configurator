@@ -190,6 +190,20 @@
             "sentbytes": "2e0307020000"
         },
 		{
+		
+            "name": "2e.03.07.03",
+            "deny_sds": [],
+			"manualsend": true,
+            "sendbyte_dataitems": {
+				"Запись момент холостого хода": {
+                    "firstbyte": 5
+                }
+                
+            },
+			"minbytes": 5,
+            "sentbytes": "2e03070300"
+        },
+		{
             "name": "2e.03.08",
             "deny_sds": [],
 			"manualsend": true,
@@ -202,6 +216,7 @@
 			"minbytes": 6,
             "sentbytes": "2e03080000"
         },
+		
 		{
             "name": "22.03.01",
             "replybytes": "62220301",
@@ -312,7 +327,10 @@
                 },
 				"Положения педали в точке": {
                     "firstbyte": 5
-                }					
+                },
+				"Момент холостого хода": {
+                    "firstbyte": 7
+                }	
             },
             "minbytes": 4,
             "sentbytes": "220307"
@@ -566,6 +584,27 @@
             "sentbytes": "2e048100"
         },
 		{
+            "name": "2e.04.14.03.01",
+            "deny_sds": [],
+			"manualsend": true,
+            "sendbyte_dataitems": {
+                
+            },
+			"minbytes": 5,
+            "sentbytes": "2e04140301"
+        },
+		{
+            "name": "2e.04.14.03.00",
+            "deny_sds": [],
+			"manualsend": true,
+            "sendbyte_dataitems": {
+                
+            },
+			"minbytes": 5,
+            "sentbytes": "2e04140300"
+        },
+		
+		{
             "name": "2e.04.82",
             "deny_sds": [],
 			"manualsend": true,
@@ -741,6 +780,9 @@
                 },
 				"Тип БМС": {
                     "firstbyte": 5
+                },
+				"Добивка": {
+                    "firstbyte": 6
                 }
             },
             "minbytes": 4,
@@ -925,19 +967,6 @@
             "minbytes": 4,
             "sentbytes": "220413"
 		},
-		
-		{
-            "name": "8C",
-            "deny_sds": [],
-            "manualsend": true,
-            "sendbyte_dataitems": {
-                "Педаль мин": {
-                    "firstbyte": 2
-                }
-            },
-            "sentbytes": "8C00"
-        },
-		
 		
 		
 		{
@@ -1966,9 +1995,23 @@
             "bitscount":  16,
             "unit": "Нм"
         },
-		"Запись температуры помпы": {
+		"Момент холостого хода": {
             "scaled": true,
 			"signed": true,
+            "bytescount": 1,
+            "bitscount":  8,
+            "unit": "Нм"
+        },
+		"Запись момент холостого хода": {
+            "scaled": true,
+			"signed": true,
+            "bytescount": 1,
+            "bitscount":  8,
+            "unit": "Нм"
+        },
+		"Запись температуры помпы": {
+            "scaled": true,
+			"signed ": true,
             "bytescount": 1,
             "bitscount":  8,
             "unit": "°C"
@@ -2216,9 +2259,23 @@
             "bitscount": 8
         },
 		"chademoState": {
-            "scaled": true,
-            "bytescount": 1,
-            "bitscount": 8
+            
+			 "lists": {
+                "0": "STARTUP",
+				"1": "SEND INITIAL PARAMS",
+				"2": "WAIT FOR EVSE PARAMS",
+				"3": "SET CHARGE BEGIN",
+                "4": "WAIT FOR BEGIN CONFIRMATION",
+				"5": "CLOSE CONTACTORS",
+				"6": "RUNNING",
+				"7": "CEASE_CURRENT",
+				"8": "WAIT FOR ZERO CURRENT",
+				"9": "OPEN CONTACTOR",
+				"10": "FAULTED",
+				"11": "STOPPED",
+				"12": "LIMBO",
+				"13": "NOT SUPPORT"
+            }
         },
 		"availVoltage": {
             "scaled": true,
@@ -2321,6 +2378,7 @@
         },
 		"Температура зарядного блока": {
            "scaled": true,
+		   "offset": -40,
             "unit": "°C"
         },
 		"Ток зарядки": {
@@ -2353,6 +2411,7 @@
             }
           
         },
+		
 		"Балансировка": {
             "lists": {
                 "0": "Нет",
@@ -2364,6 +2423,12 @@
 		    "bytescount": 2,
             "bitscount": 16,
             "unit": "Нм"
+        },
+		"Добивка": {
+           "lists": {
+                "0": "Нет",
+                "1": "Да"
+            }
         },
 		"Напряжение выкл зарядки": {
             "scaled": true,
@@ -2718,6 +2783,7 @@
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
+			"step": 10,
             "unit": "Ом"
         },
 		"Сопротивление 6": {
@@ -2738,6 +2804,7 @@
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
+			"step": 10,
             "unit": "Ом"
         },
 		"Сопротивление 9": {
@@ -2751,6 +2818,7 @@
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
+			"step": 10,
             "unit": "Ом"
         },
 		"Сопротивление 11": {
@@ -2764,6 +2832,7 @@
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
+			"step": 10,
             "unit": "Ом"
         },
 		"Сопротивление 13": {
@@ -2836,7 +2905,6 @@
 			"signed": true,
             "bytescount": 2,
             "bitscount": 16,
-			"divideby": 100,
             "unit": "А"
         },		
 		
@@ -2853,7 +2921,6 @@
 			"signed": true,
             "bytescount": 2,
             "bitscount": 16,
-			"divideby": 100,
             "unit": "А"
         },		
 		"Датчик тока 2": {
@@ -2861,7 +2928,6 @@
 			"signed": true,
             "bytescount": 2,
             "bitscount": 16,
-			"divideby": 100,
             "unit": "А"
         },
 		
