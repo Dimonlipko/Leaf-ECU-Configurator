@@ -1,6 +1,6 @@
 # Leaf-ECU-Configurator
 
-Перед началом работы с ECU внимательно прочтите Leaf_ECU_Manual [Leaf ECU Manual](https://github.com/Dimonlipko/Leaf-ECU-Configurator/blob/main/Leaf_ecu_manual_1.7v.pdf), и только после начните подключеть проводку, после чего установите программу конфигуратора.
+Перед началом работы с ECU внимательно прочтите [Leaf ECU Manual](https://github.com/Dimonlipko/Leaf-ECU-Configurator/blob/main/Leaf_ecu_manual_1.7v.pdf), и только после начните подключеть проводку, после чего установите программу конфигуратора.
 
 
 Программа для настройки и мониторинга параметров контроллера управления Leaf мотором 
