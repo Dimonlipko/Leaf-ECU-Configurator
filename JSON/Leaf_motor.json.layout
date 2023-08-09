@@ -2154,7 +2154,7 @@
 			],
             "displays": [
 			    {
-                    "text": "12в АЦП",
+                    "text": "12v ADC",
                     "request": "03.22.04.01",
                     "width": 3500,
                     "rect": {
@@ -2173,7 +2173,7 @@
                     }
                 },
 				{
-                    "text": "5в АЦП",
+                    "text": "5v ADC",
                     "request": "03.22.04.01",
                     "width": 3500,
                     "rect": {
@@ -2192,7 +2192,7 @@
                     }
                 },
 				{
-                    "text": "А1 АЦП",
+                    "text": "A1 ADC",
                     "request": "03.22.04.02",
                     "width": 3500,
                     "rect": {
@@ -2211,7 +2211,7 @@
                     }
                 },
 				{
-                    "text": "А2 АЦП",
+                    "text": "A2 ADC",
                     "request": "03.22.04.02",
                     "width": 3500,
                     "rect": {
@@ -2230,7 +2230,7 @@
                     }
                 },
 				{
-                    "text": "А4 АЦП",
+                    "text": "A4 ADC",
                     "request": "03.22.04.03",
                     "width": 3500,
                     "rect": {
@@ -2249,7 +2249,7 @@
                     }
                 },
 				{
-                    "text": "А5 ADC (Pedal 1)",
+                    "text": "A5 ADC (Pedal 1)",
                     "request": "03.22.04.03",
                     "width": 3500,
                     "rect": {
@@ -2268,7 +2268,7 @@
                     }
                 },
 				{
-                    "text": "А7 АЦП",
+                    "text": "A7 ADC",
                     "request": "03.22.04.04",
                     "width": 3500,
                     "rect": {
@@ -2287,7 +2287,7 @@
                     }
                 },
 				{
-                    "text": "А8 АЦП",
+                    "text": "A8 ADC",
                     "request": "03.22.04.04",
                     "width": 3500,
                     "rect": {
@@ -2306,7 +2306,7 @@
                     }
                 },
 				{
-                    "text": "А9 АЦП",
+                    "text": "A9 ADC (Brake sens)",
                     "request": "03.22.04.05",
                     "width": 3500,
                     "rect": {
@@ -3243,7 +3243,7 @@
 		"color": "rgb(255,255,255)", 
 		"labels": [], 
 	   "presend": [], 
-	   "height": 10000, 
+	   "height": 12000, 
 	   "buttons": [], 
 	   "width": 14000, 
 	   "displays": [
@@ -3347,7 +3347,7 @@
                     "request": "DataRead.2141",
                     "width": 1300,
                     "rect": {
-                        "top": 2600,
+                        "top": 3000,
                         "left": 200,
                         "width": 2500,
                         "height": 300
@@ -3366,7 +3366,7 @@
                     "request": "DataRead.2141",
                     "width": 1300,
                     "rect": {
-                        "top": 3000,
+                        "top": 3400,
                         "left": 200,
                         "width": 2500,
                         "height": 300
@@ -3385,7 +3385,7 @@
                     "request": "DataRead.2141",
                     "width": 1300,
                     "rect": {
-                        "top": 3400,
+                        "top": 3800,
                         "left": 200,
                         "width": 2500,
                         "height": 300
@@ -3404,7 +3404,7 @@
                     "request": "DataRead.2141",
                     "width": 1300,
                     "rect": {
-                        "top": 3800,
+                        "top": 4200,
                         "left": 200,
                         "width": 2500,
                         "height": 300
@@ -3423,7 +3423,7 @@
                     "request": "DataRead.2141",
                     "width": 1300,
                     "rect": {
-                        "top": 4200,
+                        "top": 4600,
                         "left": 200,
                         "width": 2500,
                         "height": 300
@@ -3442,7 +3442,7 @@
                     "request": "DataRead.2141",
                     "width": 1300,
                     "rect": {
-                        "top": 4600,
+                        "top": 5000,
                         "left": 200,
                         "width": 2500,
                         "height": 300
@@ -3461,7 +3461,7 @@
                     "request": "DataRead.2141",
                     "width": 1300,
                     "rect": {
-                        "top": 5000,
+                        "top": 5400,
                         "left": 200,
                         "width": 2500,
                         "height": 300
@@ -3480,7 +3480,7 @@
                     "request": "DataRead.2141",
                     "width": 1300,
                     "rect": {
-                        "top": 5400,
+                        "top": 5800,
                         "left": 200,
                         "width": 2500,
                         "height": 300
@@ -3499,7 +3499,7 @@
                     "request": "DataRead.2141",
                     "width": 1300,
                     "rect": {
-                        "top": 5800,
+                        "top": 6200,
                         "left": 200,
                         "width": 2500,
                         "height": 300
@@ -3518,7 +3518,7 @@
                     "request": "DataRead.2141",
                     "width": 1300,
                     "rect": {
-                        "top": 6200,
+                        "top": 6600,
                         "left": 200,
                         "width": 2500,
                         "height": 300
@@ -3537,7 +3537,7 @@
                     "request": "DataRead.2141",
                     "width": 1300,
                     "rect": {
-                        "top": 6600,
+                        "top": 7000,
                         "left": 200,
                         "width": 2500,
                         "height": 300
@@ -3556,7 +3556,7 @@
                     "request": "DataRead.2141",
                     "width": 1300,
                     "rect": {
-                        "top": 7000,
+                        "top": 7400,
                         "left": 200,
                         "width": 2500,
                         "height": 300
@@ -3575,7 +3575,7 @@
                     "request": "DataRead.2141",
                     "width": 1300,
                     "rect": {
-                        "top": 7400,
+                        "top": 7800,
                         "left": 200,
                         "width": 2500,
                         "height": 300
@@ -3594,7 +3594,7 @@
                     "request": "DataRead.2141",
                     "width": 1300,
                     "rect": {
-                        "top": 7800,
+                        "top": 8200,
                         "left": 200,
                         "width": 2500,
                         "height": 300
@@ -3613,7 +3613,7 @@
                     "request": "DataRead.2141",
                     "width": 1300,
                     "rect": {
-                        "top": 8200,
+                        "top": 8600,
                         "left": 200,
                         "width": 2500,
                         "height": 300
@@ -3632,7 +3632,7 @@
                     "request": "DataRead.2141",
                     "width": 1300,
                     "rect": {
-                        "top": 8600,
+                        "top": 9000,
                         "left": 200,
                         "width": 2500,
                         "height": 300
@@ -3651,7 +3651,7 @@
                     "request": "DataRead.2141",
                     "width": 1300,
                     "rect": {
-                        "top": 9000,
+                        "top": 9400,
                         "left": 200,
                         "width": 2500,
                         "height": 300
@@ -3670,7 +3670,7 @@
                     "request": "DataRead.2141",
                     "width": 1300,
                     "rect": {
-                        "top": 9400,
+                        "top": 9800,
                         "left": 200,
                         "width": 2500,
                         "height": 300
@@ -3689,7 +3689,7 @@
                     "request": "DataRead.2141",
                     "width": 1300,
                     "rect": {
-                        "top": 9800,
+                        "top": 10200,
                         "left": 200,
                         "width": 2500,
                         "height": 300
@@ -4221,8 +4221,8 @@
                     "request": "DataRead.2141",
                     "width": 1300,
                     "rect": {
-                        "top": 1000,
-                        "left": 5800,
+                        "top": 10200,
+                        "left": 3000,
                         "width": 2500,
                         "height": 300
                     },
@@ -4240,7 +4240,7 @@
                     "request": "DataRead.2141",
                     "width": 1300,
                     "rect": {
-                        "top": 1400,
+                        "top": 1000,
                         "left": 5800,
                         "width": 2500,
                         "height": 300
@@ -4259,7 +4259,7 @@
                     "request": "DataRead.2141",
                     "width": 1300,
                     "rect": {
-                        "top": 1800,
+                        "top": 1400,
                         "left": 5800,
                         "width": 2500,
                         "height": 300
@@ -4278,7 +4278,7 @@
                     "request": "DataRead.2141",
                     "width": 1300,
                     "rect": {
-                        "top": 2200,
+                        "top": 1800,
                         "left": 5800,
                         "width": 2500,
                         "height": 300
@@ -4297,7 +4297,7 @@
                     "request": "DataRead.2141",
                     "width": 1300,
                     "rect": {
-                        "top": 2600,
+                        "top": 2200,
                         "left": 5800,
                         "width": 2500,
                         "height": 300
@@ -4316,7 +4316,7 @@
                     "request": "DataRead.2141",
                     "width": 1300,
                     "rect": {
-                        "top": 3000,
+                        "top": 2600,
                         "left": 5800,
                         "width": 2500,
                         "height": 300
@@ -4335,7 +4335,7 @@
                     "request": "DataRead.2141",
                     "width": 1300,
                     "rect": {
-                        "top": 3400,
+                        "top": 3000,
                         "left": 5800,
                         "width": 2500,
                         "height": 300
@@ -4354,7 +4354,7 @@
                     "request": "DataRead.2141",
                     "width": 1300,
                     "rect": {
-                        "top": 3800,
+                        "top": 3400,
                         "left": 5800,
                         "width": 2500,
                         "height": 300
@@ -4373,7 +4373,7 @@
                     "request": "DataRead.2141",
                     "width": 1300,
                     "rect": {
-                        "top": 4200,
+                        "top": 3800,
                         "left": 5800,
                         "width": 2500,
                         "height": 300
@@ -4392,7 +4392,7 @@
                     "request": "DataRead.2141",
                     "width": 1300,
                     "rect": {
-                        "top": 4600,
+                        "top": 4200,
                         "left": 5800,
                         "width": 2500,
                         "height": 300
@@ -4411,7 +4411,7 @@
                     "request": "DataRead.2141",
                     "width": 1300,
                     "rect": {
-                        "top": 5000,
+                        "top": 4600,
                         "left": 5800,
                         "width": 2500,
                         "height": 300
@@ -4430,7 +4430,7 @@
                     "request": "DataRead.2141",
                     "width": 1300,
                     "rect": {
-                        "top": 5400,
+                        "top": 5000,
                         "left": 5800,
                         "width": 2500,
                         "height": 300
@@ -4449,7 +4449,7 @@
                     "request": "DataRead.2141",
                     "width": 1300,
                     "rect": {
-                        "top": 5800,
+                        "top": 5400,
                         "left": 5800,
                         "width": 2500,
                         "height": 300
@@ -4469,7 +4469,7 @@
                     "request": "DataRead.2141",
                     "width": 1300,
                     "rect": {
-                        "top": 5000,
+                        "top": 5800,
                         "left": 5800,
                         "width": 2500,
                         "height": 300
@@ -4488,7 +4488,7 @@
                     "request": "DataRead.2141",
                     "width": 1300,
                     "rect": {
-                        "top": 5400,
+                        "top": 6200,
                         "left": 5800,
                         "width": 2500,
                         "height": 300
@@ -4507,7 +4507,7 @@
                     "request": "DataRead.2142",
                     "width": 1300,
                     "rect": {
-                        "top": 5800,
+                        "top": 6600,
                         "left": 5800,
                         "width": 2500,
                         "height": 300
@@ -4526,7 +4526,7 @@
                     "request": "DataRead.2142",
                     "width": 1300,
                     "rect": {
-                        "top": 6200,
+                        "top": 7000,
                         "left": 5800,
                         "width": 2500,
                         "height": 300
@@ -4545,7 +4545,7 @@
                     "request": "DataRead.2142",
                     "width": 1300,
                     "rect": {
-                        "top": 6600,
+                        "top": 7400,
                         "left": 5800,
                         "width": 2500,
                         "height": 300
@@ -4564,7 +4564,7 @@
                     "request": "DataRead.2142",
                     "width": 1300,
                     "rect": {
-                        "top": 7000,
+                        "top": 7800,
                         "left": 5800,
                         "width": 2500,
                         "height": 300
@@ -4583,7 +4583,7 @@
                     "request": "DataRead.2142",
                     "width": 1300,
                     "rect": {
-                        "top": 7400,
+                        "top": 8200,
                         "left": 5800,
                         "width": 2500,
                         "height": 300
@@ -4602,7 +4602,7 @@
                     "request": "DataRead.2142",
                     "width": 1300,
                     "rect": {
-                        "top": 7800,
+                        "top": 8600,
                         "left": 5800,
                         "width": 2500,
                         "height": 300
@@ -4621,7 +4621,7 @@
                     "request": "DataRead.2142",
                     "width": 1300,
                     "rect": {
-                        "top": 8200,
+                        "top": 9000,
                         "left": 5800,
                         "width": 2500,
                         "height": 300
@@ -4640,7 +4640,7 @@
                     "request": "DataRead.2142",
                     "width": 1300,
                     "rect": {
-                        "top": 8600,
+                        "top": 9400,
                         "left": 5800,
                         "width": 2500,
                         "height": 300
@@ -4659,7 +4659,7 @@
                     "request": "DataRead.2142",
                     "width": 1300,
                     "rect": {
-                        "top": 9000,
+                        "top": 9800,
                         "left": 5800,
                         "width": 2500,
                         "height": 300
@@ -4678,7 +4678,7 @@
                     "request": "DataRead.2142",
                     "width": 1300,
                     "rect": {
-                        "top": 9400,
+                        "top": 10200,
                         "left": 5800,
                         "width": 2500,
                         "height": 300
@@ -4697,25 +4697,6 @@
                     "request": "DataRead.2142",
                     "width": 1300,
                     "rect": {
-                        "top": 9800,
-                        "left": 5800,
-                        "width": 2500,
-                        "height": 300
-                    },
-                    "color": "rgb(240,240,240)",
-                    "fontcolor": "rgb(0,0,0)",
-                    "font": {
-                        "name": "Arial",
-                        "bold": 0,
-                        "italic": 0,
-                        "size": 10
-                    }
-        },
-		{
-                    "text": "Cell [74]",
-                    "request": "DataRead.2142",
-                    "width": 1300,
-                    "rect": {
                         "top": 1000,
                         "left": 8600,
                         "width": 2500,
@@ -4731,7 +4712,7 @@
                     }
         },
 		{
-                    "text": "Cell [75]",
+                    "text": "Cell [74]",
                     "request": "DataRead.2142",
                     "width": 1300,
                     "rect": {
@@ -4750,7 +4731,7 @@
                     }
         },
 		{
-                    "text": "Cell [76]",
+                    "text": "Cell [75]",
                     "request": "DataRead.2142",
                     "width": 1300,
                     "rect": {
@@ -4769,7 +4750,7 @@
                     }
         },
 		{
-                    "text": "Cell [77]",
+                    "text": "Cell [76]",
                     "request": "DataRead.2142",
                     "width": 1300,
                     "rect": {
@@ -4788,7 +4769,7 @@
                     }
         },
 		{
-                    "text": "Cell [78]",
+                    "text": "Cell [77]",
                     "request": "DataRead.2142",
                     "width": 1300,
                     "rect": {
@@ -4807,7 +4788,7 @@
                     }
         },
 		{
-                    "text": "Cell [79]",
+                    "text": "Cell [78]",
                     "request": "DataRead.2142",
                     "width": 1300,
                     "rect": {
@@ -4826,7 +4807,7 @@
                     }
         },
 		{
-                    "text": "Cell [80]",
+                    "text": "Cell [79]",
                     "request": "DataRead.2142",
                     "width": 1300,
                     "rect": {
@@ -4845,7 +4826,7 @@
                     }
         },
 		{
-                    "text": "Cell [81]",
+                    "text": "Cell [80]",
                     "request": "DataRead.2142",
                     "width": 1300,
                     "rect": {
@@ -4864,7 +4845,7 @@
                     }
         },
 		{
-                    "text": "Cell [82]",
+                    "text": "Cell [81]",
                     "request": "DataRead.2142",
                     "width": 1300,
                     "rect": {
@@ -4883,7 +4864,7 @@
                     }
         },
 		{
-                    "text": "Cell [83]",
+                    "text": "Cell [82]",
                     "request": "DataRead.2142",
                     "width": 1300,
                     "rect": {
@@ -4902,7 +4883,7 @@
                     }
         },
 		{
-                    "text": "Cell [84]",
+                    "text": "Cell [83]",
                     "request": "DataRead.2142",
                     "width": 1300,
                     "rect": {
@@ -4921,7 +4902,7 @@
                     }
         },
 		{
-                    "text": "Cell [85]",
+                    "text": "Cell [84]",
                     "request": "DataRead.2142",
                     "width": 1300,
                     "rect": {
@@ -4940,7 +4921,7 @@
                     }
         },
 		{
-                    "text": "Cell [86]",
+                    "text": "Cell [85]",
                     "request": "DataRead.2142",
                     "width": 1300,
                     "rect": {
@@ -4959,7 +4940,7 @@
                     }
         },
 		{
-                    "text": "Cell [87]",
+                    "text": "Cell [86]",
                     "request": "DataRead.2142",
                     "width": 1300,
                     "rect": {
@@ -4978,7 +4959,7 @@
                     }
         },
 		{
-                    "text": "Cell [88]",
+                    "text": "Cell [87]",
                     "request": "DataRead.2142",
                     "width": 1300,
                     "rect": {
@@ -4997,7 +4978,7 @@
                     }
         },
 		{
-                    "text": "Cell [89]",
+                    "text": "Cell [88]",
                     "request": "DataRead.2142",
                     "width": 1300,
                     "rect": {
@@ -5016,7 +4997,7 @@
                     }
         },
 		{
-                    "text": "Cell [90]",
+                    "text": "Cell [89]",
                     "request": "DataRead.2142",
                     "width": 1300,
                     "rect": {
@@ -5035,7 +5016,7 @@
                     }
         },
 		{
-                    "text": "Cell [91]",
+                    "text": "Cell [90]",
                     "request": "DataRead.2142",
                     "width": 1300,
                     "rect": {
@@ -5054,7 +5035,7 @@
                     }
         },
 		{
-					"text": "Cell [92]",
+                    "text": "Cell [91]",
                     "request": "DataRead.2142",
                     "width": 1300,
                     "rect": {
@@ -5073,7 +5054,7 @@
                     }
         },
 		{
-                    "text": "Cell [93]",
+					"text": "Cell [92]",
                     "request": "DataRead.2142",
                     "width": 1300,
                     "rect": {
@@ -5092,7 +5073,7 @@
                     }
         },
 		{
-                    "text": "Cell [94]",
+                    "text": "Cell [93]",
                     "request": "DataRead.2142",
                     "width": 1300,
                     "rect": {
@@ -5111,7 +5092,7 @@
                     }
         },
 		{
-                    "text": "Cell [95]",
+                    "text": "Cell [94]",
                     "request": "DataRead.2142",
                     "width": 1300,
                     "rect": {
@@ -5130,11 +5111,30 @@
                     }
         },
 		{
-                    "text": "Cell [96]",
+                    "text": "Cell [95]",
                     "request": "DataRead.2142",
                     "width": 1300,
                     "rect": {
                         "top": 9800,
+                        "left": 8600,
+                        "width": 2500,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+        },
+		{
+                    "text": "Cell [96]",
+                    "request": "DataRead.2142",
+                    "width": 1300,
+                    "rect": {
+                        "top": 10200,
                         "left": 8600,
                         "width": 2500,
                         "height": 300
@@ -6051,16 +6051,626 @@
                         "italic": 0,
                         "size": 10
                     }
+                }	
+            ]
+        },
+			"Climat": {
+            "height": 8000, 
+            "width": 14000,
+            "color": "rgb(255,255,255)",
+            "presend": [],
+            "labels": [
+			{
+                    "text": " Climat comtorl module settings: ",
+                    "bbox": {
+                        "top": 50,
+                        "left": 0,
+                        "width": 12000,
+                        "height": 300
+                    },
+                    "alignment": 2,
+                    "color": "rgb(255,255,170)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 12
+                    }
+				}
+			],
+				
+            "inputs": [
+			
+				
+				
+			],
+            "buttons": [
+			
+			
+				
+			],
+            "displays": [
+			   
+		      
+				{
+                    "text": "IN1 (Button ON)",
+                    "request": "22.16.02",
+                    "width": 2700,
+                    "rect": {
+                        "top": 1400,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "IN2 (Temp set resistor)",
+                    "request": "22.16.02",
+                    "width": 2700,
+                    "rect": {
+                        "top": 1800,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "IN3",
+                    "request": "22.16.02",
+                    "width": 2700,
+                    "rect": {
+                        "top": 2200,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "IN4",
+                    "request": "22.16.02",
+                    "width": 2700,
+                    "rect": {
+                        "top": 2600,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "IN5",
+                    "request": "22.16.03",
+                    "width": 2700,
+                    "rect": {
+                        "top": 3000,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "IN6 (A/C pressure sens)",
+                    "request": "22.16.03",
+                    "width": 2700,
+                    "rect": {
+                        "top": 3400,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "IN7 (Heater temp)",
+                    "request": "22.16.03",
+                    "width": 2700,
+                    "rect": {
+                        "top": 3800,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "IN8 (Evaporator temp)",
+                    "request": "22.16.03",
+                    "width": 2700,
+                    "rect": {
+                        "top": 4200,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },	
+				{
+                    "text": "Button ON state",
+                    "request": "22.16.04",
+                    "width": 2700,
+                    "rect": {
+                        "top": 1400,
+                        "left": 5500,
+                        "width": 5000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "Pressure",
+                    "request": "22.16.05",
+                    "width": 2700,
+                    "rect": {
+                        "top": 3400,
+                        "left": 5500,
+                        "width": 5000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "Heater temp",
+                    "request": "22.16.05",
+                    "width": 2700,
+                    "rect": {
+                        "top": 3800,
+                        "left": 5500,
+                        "width": 5000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "Evaporator temp",
+                    "request": "22.16.05",
+                    "width": 2700,
+                    "rect": {
+                        "top": 4200,
+                        "left": 5500,
+                        "width": 5000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				
+				{
+                    "text": "OUT1",
+                    "request": "22.16.07",
+                    "width": 2700,
+                    "rect": {
+                        "top": 5000,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "OUT2",
+                    "request": "22.16.07",
+                    "width": 2700,
+                    "rect": {
+                        "top": 5400,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "OUT3",
+                    "request": "22.16.07",
+                    "width": 2700,
+                    "rect": {
+                        "top": 5800,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "OUT4",
+                    "request": "22.16.07",
+                    "width": 2700,
+                    "rect": {
+                        "top": 6200,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+                    "text": "OUT5",
+                    "request": "22.16.04",
+                    "width": 2700,
+                    "rect": {
+                        "top": 6600,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				
+				{
+                    "text": "Heater power",
+                    "request": "22.16.06",
+                    "width": 2700,
+                    "rect": {
+                        "top": 7300,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				
+				{
+                    "text": "A/C power",
+                    "request": "22.16.06",
+                    "width": 2700,
+                    "rect": {
+                        "top": 7300,
+                        "left": 5500,
+                        "width": 5000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                }
+				
+            ]
+        },
+			"Brake": {
+            "height": 8000, 
+            "width": 14000,
+            "color": "rgb(255,255,255)",
+            "presend": [],
+            "labels": [
+			{
+                    "text": " Electric brake booster settings: ",
+                    "bbox": {
+                        "top": 50,
+                        "left": 0,
+                        "width": 12000,
+                        "height": 300
+                    },
+                    "alignment": 2,
+                    "color": "rgb(255,255,170)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 12
+                    }
+				}
+			],
+				
+            "inputs": [
+			
+				{
+                    "text": "Write booster on",
+                    "color": "rgb(240,240,240)",
+                    "request": "2e.07.01.01",
+                    "width": 0,
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    },
+                    "rect": {
+                        "top": 1000,
+                        "left": 5500,
+                        "width": 2500,
+                        "height": 300
+                    }
+                },
+				{
+                    "text": "Write booster off",
+                    "color": "rgb(240,240,240)",
+                    "request": "2e.07.01.02",
+                    "width": 0,
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    },
+                    "rect": {
+                        "top": 1400,
+                        "left": 5500,
+                        "width": 2500,
+                        "height": 300
+                    }
                 }
 				
 				
+			],
+            "buttons": [
+			
+				{
+                    "color": "rgb(255,128,192)",
+                    "text": "Write_booster_on",
+                    "uniquename": "Write_booster_on_0",
+                    "messages": [ "" ],
+                    "send": [
+                        {
+                            "Delay": "0",
+                            "RequestName": "2e.07.01.01"
+                        }
+                    ],
+                    "width": 1500,
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    },
+                    "rect": {
+                        "top": 1000,
+                        "left": 8500,
+                        "width": 2000,
+                        "height": 300
+                    }
+                },
+				{
+                    "color": "rgb(255,128,192)",
+                    "text": "Write_booster_off",
+                    "uniquename": "Write_booster_off_1",
+                    "messages": [ "" ],
+                    "send": [
+                        {
+                            "Delay": "0",
+                            "RequestName": "2e.07.01.02"
+                        }
+                    ],
+                    "width": 1500,
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    },
+                    "rect": {
+                        "top": 1400,
+                        "left": 8500,
+                        "width": 2000,
+                        "height": 300
+                    }
+                }
+				
+				
+			],
+            "displays": [
+			   
+		        {
+				  "text": "Brake pressure sens",
+                    "request": "03.22.04.05",
+                    "width": 2700,
+                    "rect": {
+                        "top": 600,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+				  "text": "Voltage pressure sensor booster on",
+                    "request": "03.22.07.01",
+                    "width": 2700,
+                    "rect": {
+                        "top": 1000,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+				  "text": "Voltage pressure sensor booster off",
+                    "request": "03.22.07.01",
+                    "width": 2700,
+                    "rect": {
+                        "top": 1400,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                },
+				{
+				  "text": "Booster status",
+                    "request": "03.22.04.17",
+                    "width": 2700,
+                    "rect": {
+                        "top": 2200,
+                        "left": 150,
+                        "width": 5000,
+                        "height": 300
+                    },
+                    "color": "rgb(240,240,240)",
+                    "fontcolor": "rgb(0,0,0)",
+                    "font": {
+                        "name": "Arial",
+                        "bold": 0,
+                        "italic": 0,
+                        "size": 10
+                    }
+                }
             ]
         }
 	}, 
 	
     "categories": {
         "Parameters":[
-            "INV","BMS","Chademo","PDM","Internal","BMS cell map","BMS temp map","Setting","Display"
+            "INV","BMS","Chademo","PDM","Internal","BMS cell map","BMS temp map","Setting","Display","Climat","Brake"
         ]
     } 
 }

@@ -831,6 +831,21 @@
             "sentbytes": "220416"
 		},
 		{
+            "name": "03.22.04.17",
+            "replybytes": "62220417",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "D25 (Brake booster)": {
+                    "firstbyte": 4
+                },
+				"Booster status": {
+                    "firstbyte": 4
+                }
+            },
+            "minbytes": 4,
+            "sentbytes": "220417"
+		},
+		{
             "name": "2e.04.15",
             "deny_sds": [],
 			"manualsend": true,
@@ -847,10 +862,10 @@
             "replybytes": "62220401",
             "deny_sds": [],
             "receivebyte_dataitems": {
-                "12в АЦП": {
+                "12v ADC": {
                     "firstbyte": 4
                 },
-				"5в АЦП": {
+				"5v ADC": {
                     "firstbyte": 6
                 }
 				
@@ -863,10 +878,10 @@
             "replybytes": "62220402",
             "deny_sds": [],
             "receivebyte_dataitems": {
-                "А1 АЦП": {
+                "A1 ADC": {
                     "firstbyte": 4
                 },
-				"А2 АЦП": {
+				"A2 ADC": {
                     "firstbyte": 6
                 }
 				
@@ -879,10 +894,10 @@
             "replybytes": "62220403",
             "deny_sds": [],
             "receivebyte_dataitems": {
-                "А4 АЦП": {
+                "A4 ADC": {
                     "firstbyte": 4
                 },
-				"А5 ADC (Pedal 1)": {
+				"A5 ADC (Pedal 1)": {
                     "firstbyte": 6
                 }
 				
@@ -895,10 +910,10 @@
             "replybytes": "62220404",
             "deny_sds": [],
             "receivebyte_dataitems": {
-                "А7 АЦП": {
+                "A7 ADC": {
                     "firstbyte": 4
                 },
-				"А8 АЦП": {
+				"A8 ADC": {
                     "firstbyte": 6
                 }
 				
@@ -911,7 +926,10 @@
             "replybytes": "62220405",
             "deny_sds": [],
             "receivebyte_dataitems": {
-                "А9 АЦП": {
+                "A9 ADC (Brake sens)": {
+                    "firstbyte": 4
+                },
+				"Brake pressure sens": {
                     "firstbyte": 4
                 },
 				"D5": {
@@ -961,8 +979,6 @@
 				"D46 (Chademo IN2)": {
                     "firstbyte": 6
                 }
-				
-				
             },
             "minbytes": 4,
             "sentbytes": "220413"
@@ -1554,6 +1570,162 @@
             "sentbytes": "221203"
         },  
 		
+		{
+            "name": "22.16.02",
+            "replybytes": "6216020000",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "IN1 (Button ON)": {
+                    "firstbyte": 4
+                },
+				"IN2 (Temp set resistor)": {
+                    "firstbyte": 5
+                },
+				"IN3": {
+                    "firstbyte": 6
+                },
+				"IN4": {
+                    "firstbyte": 7
+                }
+            },
+            "minbytes": 6,
+            "sentbytes": "221602"
+        },  
+		{
+            "name": "22.16.03",
+            "replybytes": "6216030000",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "IN5": {
+                    "firstbyte": 4
+                },
+				"IN6 (A/C pressure sens)": {
+                    "firstbyte": 5
+                },
+				"IN7 (Heater temp)": {
+                    "firstbyte": 6
+                },
+				"IN8 (Evaporator temp)": {
+                    "firstbyte": 7
+                }
+            },
+            "minbytes": 6,
+            "sentbytes": "221603"
+        },  
+		{
+            "name": "22.16.04",
+            "replybytes": "6216040000",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "Button ON state": {
+                    "firstbyte": 4
+                },
+				"OUT5": {
+                    "firstbyte": 5
+                }
+            },
+            "minbytes": 6,
+            "sentbytes": "221604"
+        },  
+		{
+            "name": "22.16.05",
+            "replybytes": "6216050000",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                
+				"Pressure": {
+                    "firstbyte": 4
+                },
+				"Heater temp": {
+                    "firstbyte": 6
+                },
+				"Evaporator temp": {
+                    "firstbyte": 7
+                }
+            },
+            "minbytes": 6,
+            "sentbytes": "221605"
+        },  
+		{
+            "name": "22.16.06",
+            "replybytes": "6216060000",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                
+				"Heater power": {
+                    "firstbyte": 4
+                },
+				"A/C power": {
+                    "firstbyte": 6
+                }
+            },
+            "minbytes": 6,
+            "sentbytes": "221606"
+        },  
+		{
+            "name": "22.16.07",
+            "replybytes": "6216060000",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                
+				"OUT1": {
+                    "firstbyte": 4
+                },
+				"OUT2": {
+                    "firstbyte": 5
+                },
+				"OUT3": {
+                    "firstbyte": 6
+                },
+				"OUT4": {
+                    "firstbyte": 7
+                }
+				
+            },
+            "minbytes": 6,
+            "sentbytes": "221607"
+        },  
+		{
+            "name": "03.22.07.01",
+            "replybytes": "6207010000",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "Voltage pressure sensor booster on": {
+                    "firstbyte": 4
+                },
+				"Voltage pressure sensor booster off": {
+                    "firstbyte": 6
+                }
+            },
+            "minbytes": 6,
+            "sentbytes": "220701"
+        },
+		{
+            "name": "2e.07.01.01",
+            "deny_sds": [],
+			"manualsend": true,
+            "sendbyte_dataitems": {
+                "Write booster on": {
+                    "firstbyte": 5
+                }
+            },
+			"minbytes": 6,
+            "sentbytes": "2e0701010000"
+        },		
+		{
+            "name": "2e.07.01.02",
+            "deny_sds": [],
+			"manualsend": true,
+            "sendbyte_dataitems": {
+                "Write booster off": {
+                    "firstbyte": 5
+                }
+            },
+			"minbytes": 6,
+            "sentbytes": "2e0701020000"
+        },
+
+		
         
         
 		
@@ -2041,68 +2213,68 @@
             "bytescount": 2,
             "bitscount":  16
         },
-		"12в АЦП": {
+		"12v ADC": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
 			"divideby": 1000,
-            "unit": "В"
+            "unit": "V"
         },
-		"5в АЦП": {
+		"5v ADC": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
 			"divideby": 1000,
-            "unit": "В"
+            "unit": "V"
         },
-		"А1 АЦП": {
+		"A1 ADC": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
 			"divideby": 1000,
-            "unit": "В"
+            "unit": "V"
         },
-		"А2 АЦП": {
+		"A2 ADC": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
 			"divideby": 1000,
-            "unit": "В"
+            "unit": "V"
         },
-		"А4 АЦП": {
+		"A4 ADC": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
 			"divideby": 1000,
-            "unit": "В"
+            "unit": "V"
         },
-		"А5 ADC (Pedal 1)": {
+		"A5 ADC (Pedal 1)": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
 			"divideby": 1000,
-            "unit": "В"
+            "unit": "V"
         },
-		"А7 АЦП": {
+		"A7 ADC": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
 			"divideby": 1000,
-            "unit": "В"
+            "unit": "V"
         },
-		"А8 АЦП": {
+		"A8 ADC": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
 			"divideby": 1000,
-            "unit": "В"
+            "unit": "V"
         },
-		"А9 АЦП": {
+		"A9 ADC (Brake sens)": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
 			"divideby": 1000,
-            "unit": "В"
+            "unit": "V"
         },
 		"A3 (Chademo IN0)": {
             "lists": {
@@ -2201,6 +2373,12 @@
             }
         },
 		"D12 (Chademo out1)": {
+            "lists": {
+                "1": "High",
+                "0": "Low"				
+            }
+        },
+		"D25 (Brake booster)": {
             "lists": {
                 "1": "High",
                 "0": "Low"				
@@ -3682,12 +3860,172 @@
 			"step": 0.1, 
 			"bitscount": 8, 
 			"unit": "V"
+		},
+		"IN1 (Button ON)": {
+			"scaled": true, 
+			"bytescount": 1, 
+			"step": 0.1, 
+			"bitscount": 8, 
+			"unit": "V"
+		},
+		"IN2 (Temp set resistor)": {
+			"scaled": true, 
+			"bytescount": 1, 
+			"step": 0.1, 
+			"bitscount": 8, 
+			"unit": "V"
+		},
+		"IN3": {
+			"scaled": true, 
+			"bytescount": 1, 
+			"step": 0.1, 
+			"bitscount": 8, 
+			"unit": "V"
+		},
+		"IN4": {
+			"scaled": true, 
+			"bytescount": 1, 
+			"step": 0.1, 
+			"bitscount": 8, 
+			"unit": "V"
+		},
+		"IN5": {
+			"scaled": true, 
+			"bytescount": 1, 
+			"step": 0.1, 
+			"bitscount": 8, 
+			"unit": "V"
+		},
+		"IN6 (A/C pressure sens)": {
+			"scaled": true, 
+			"bytescount": 1, 
+			"step": 0.1, 
+			"bitscount": 8, 
+			"unit": "V"
+		},
+		"IN7 (Heater temp)": {
+			"scaled": true, 
+			"bytescount": 1, 
+			"step": 0.1, 
+			"bitscount": 8, 
+			"unit": "V"
+		},
+		"IN8 (Evaporator temp)": {
+			"scaled": true, 
+			"bytescount": 1, 
+			"step": 0.1, 
+			"bitscount": 8, 
+			"unit": "V"
+		},
+		"OUT1": {
+			"lists": {
+                "1": "ON",
+                "0": "OFF"	
+			}
+		},
+		"OUT2": {
+			"lists": {
+                "1": "ON",
+                "0": "OFF"	
+			}
+		},
+		"OUT3": {
+			"lists": {
+                "1": "ON",
+                "0": "OFF"	
+			}
+		},
+		"OUT4": {
+			"lists": {
+                "1": "ON",
+                "0": "OFF"	
+			}
+		},
+		"OUT5": {
+			"lists": {
+                "1": "ON",
+                "0": "OFF"	
+			}
+		},
+		"Button ON state": {
+			"lists": {
+                "1": "ON",
+                "0": "OFF"	
+			}
+		},
+		"Pressure": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"step": 0.01, 
+			"bitscount": 16, 
+			"unit": "Bar"
+		},
+		"Heater temp": {
+			"scaled": true, 
+			"bytescount": 1, 
+			"bitscount": 8, 
+			"offset": -40,
+            "unit": "°C"
+		},
+		"Evaporator temp": {
+			"scaled": true, 
+			"bytescount": 1, 
+			"bitscount": 8, 
+			"offset": -40,
+            "unit": "°C"
+		},
+		"Heater power": {
+			"scaled": true, 
+			"bytescount": 1, 
+			"step": 0.1, 
+			"bitscount": 8, 
+			"unit": " KW"
+		},
+		"A/C power": {
+			"scaled": true, 
+			"bytescount": 1, 
+			"step": 0.1, 
+			"bitscount": 8, 
+			"unit": " KW"
+		},
+		"Brake pressure sens": {
+			"scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+			"divideby": 1000,
+            "unit": "V"
+		},
+		"Voltage pressure sensor booster on": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"bitscount": 16, 
+			"step": 0.001,
+			"unit": "V"
+		},
+		"Voltage pressure sensor booster off": {
+			"scaled": true, 
+			"bytescount": 2,  
+			"bitscount": 16, 
+			"step": 0.001,
+			"unit": "V"
+		},
+		"Booster status": {
+			"lists": {
+                "1": "ON",
+                "0": "OFF"	
+			}
+        },
+		"Write booster on": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"bitscount": 16, 
+			"unit": "V"
+		},
+		"Write booster off": {
+			"scaled": true, 
+			"bytescount": 2, 
+			"bitscount": 16, 
+			"unit": "V"
 		}
-		
-		
-		
-		
-		
-		
     }
 }
