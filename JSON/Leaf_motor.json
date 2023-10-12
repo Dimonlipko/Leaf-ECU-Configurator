@@ -17,7 +17,7 @@
             "replybytes": "62220102",
             "deny_sds": [],
             "receivebyte_dataitems": {
-                "SOH в Ач": {
+                "SOH in Ah": {
                     "firstbyte": 4
                 }
             },
@@ -43,7 +43,7 @@
             "replybytes": "62220101",
             "deny_sds": [],
             "receivebyte_dataitems": {
-                "SOC в Ач": {
+                "SOC in Ah": {
                     "firstbyte": 4
                 }
             },
@@ -56,10 +56,10 @@
             "replybytes": "62220108",
             "deny_sds": [],
             "receivebyte_dataitems": {
-				"Датчик тока состояние": {
+				"Current sens type": {
                     "firstbyte": 4
                 },
-                "Потребление в А": {
+                "Current": {
                     "firstbyte": 6
                 }
             },
@@ -71,10 +71,10 @@
             "replybytes": "62220109",
             "deny_sds": [],
             "receivebyte_dataitems": {
-				"Датчик тока 1": {
+				"Current sens 1": {
                     "firstbyte": 4
                 },
-                "Датчик тока 2": {
+                "Current sens 2": {
                     "firstbyte": 6
                 }
             },
@@ -86,7 +86,7 @@
             "replybytes": "62220110",
             "deny_sds": [],
             "receivebyte_dataitems": {
-				"Напряжение включения контакторов": {
+				"Contactor ON voltage": {
                     "firstbyte": 4
                 }
             },
@@ -94,17 +94,29 @@
             "sentbytes": "220110"
 		}, 
 		{
+            "name": "03.22.01.11",
+            "replybytes": "62220111",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+				"IR sens voltage": {
+                    "firstbyte": 4
+                }
+            },
+            "minbytes": 4,
+            "sentbytes": "220111"
+		},
+		{
             "name": "03.22.01.31",
             "replybytes": "62220131",
             "deny_sds": [],
             "receivebyte_dataitems": {
-				"Тип селектора": {
+				"Type selector": {
                     "firstbyte": 5
                 },
-				"Тип кнопки старта": {
+				"Type start button": {
                     "firstbyte": 6
                 },
-				"Тип инвертора": {
+				"Type invertor": {
                     "firstbyte": 7
                 }
             },
@@ -116,7 +128,7 @@
             "deny_sds": [],
 			"manualsend": true,
             "sendbyte_dataitems": {
-				"Запись селектора": {
+				"Write selector": {
                     "firstbyte": 5
                 }
                 
@@ -129,7 +141,7 @@
             "deny_sds": [],
 			"manualsend": true,
             "sendbyte_dataitems": {
-				"Запись кнопки старта": {
+				"Write start button type": {
                     "firstbyte": 5
                 }
                 
@@ -142,7 +154,7 @@
             "deny_sds": [],
 			"manualsend": true,
             "sendbyte_dataitems": {
-				"Запись тип инвертора": {
+				"Write invertor type": {
                     "firstbyte": 5
                 }
                 
@@ -155,7 +167,7 @@
             "deny_sds": [],
 			"manualsend": true,
             "sendbyte_dataitems": {
-				"Запись тип датчика тока": {
+				"Write current sens type": {
                     "firstbyte": 4
                 }
                 
@@ -168,7 +180,7 @@
             "deny_sds": [],
 			"manualsend": true,
             "sendbyte_dataitems": {
-				"Запись момент в точке": {
+				"Write torq in point": {
                     "firstbyte": 5
                 }
                 
@@ -181,7 +193,7 @@
             "deny_sds": [],
 			"manualsend": true,
             "sendbyte_dataitems": {
-				"Запись положение педали в точке": {
+				"Write pedal position in point": {
                     "firstbyte": 5
                 }
                 
@@ -195,7 +207,7 @@
             "deny_sds": [],
 			"manualsend": true,
             "sendbyte_dataitems": {
-				"Запись момент холостого хода": {
+				"Write torq while pedal not press": {
                     "firstbyte": 5
                 }
                 
@@ -208,7 +220,7 @@
             "deny_sds": [],
 			"manualsend": true,
             "sendbyte_dataitems": {
-				"Запись положение отпущеной педали": {
+				"Write pedal position not press": {
                     "firstbyte": 4
                 }
                 
@@ -222,13 +234,13 @@
             "replybytes": "62220301",
             "deny_sds": [],
             "receivebyte_dataitems": {
-                "Напряжение на инверторе": {
+                "Invertor high voltage": {
                     "firstbyte": 4
                 },
-				"Старт": {
+				"Ready": {
                     "firstbyte": 6
                 },
-				"Статус": {
+				"Status": {
                     "firstbyte": 7
                 }
             },
@@ -240,16 +252,16 @@
             "replybytes": "62220302",
             "deny_sds": [],
             "receivebyte_dataitems": {
-                "Температура инвертора": {
+                "Invertor temperature": {
                     "firstbyte": 4
                 },
-				 "Температура мотора": {
+				 "Motor temperature": {
                     "firstbyte": 5
                 },
-				"Селектор": {
+				"Selector position": {
                     "firstbyte": 6
                 },
-				"Ошибка инвертора": {
+				"Invertor error": {
                     "firstbyte": 7
                 }
             },
@@ -261,10 +273,10 @@
             "replybytes": "62220303",
             "deny_sds": [],
             "receivebyte_dataitems": {
-                "Обороты мотора": {
+                "Motor RPM": {
                     "firstbyte": 4
                 },
-				"Положение педали газа": {
+				"Pedal position": {
                     "firstbyte": 6
                 }
             },
@@ -276,10 +288,10 @@
             "replybytes": "62220304",
             "deny_sds": [],
             "receivebyte_dataitems": {
-                "Максимум крутящего момента": {
+                "Max torque": {
                     "firstbyte": 4
                 },
-				"Запрос крутящего момента": {
+				"Torque request": {
                     "firstbyte": 6
                 }
 				
@@ -292,10 +304,10 @@
             "replybytes": "62220305",
             "deny_sds": [],
             "receivebyte_dataitems": {
-                "Мин. педали газа": {
+                "Pedal MIN position": {
                     "firstbyte": 4
                 },
-				"Макс. педали газа": {
+				"Pedal MAX position": {
                     "firstbyte": 6
                 }					
             },
@@ -307,10 +319,10 @@
             "replybytes": "62220306",
             "deny_sds": [],
             "receivebyte_dataitems": {
-                "Напряжение минимальной ячейки": {
+                "Cell MIN voltage": {
                     "firstbyte": 4
                 },
-				"Напряжение максимальной ячейки": {
+				"Cell MAX voltage": {
                     "firstbyte": 6
                 }					
             },
@@ -322,13 +334,13 @@
             "replybytes": "62220307",
             "deny_sds": [],
             "receivebyte_dataitems": {
-                "Момент в точке": {
+                "Torque in calibration point": {
                     "firstbyte": 4
                 },
-				"Положения педали в точке": {
+				"Pedal position in calibration point": {
                     "firstbyte": 5
                 },
-				"Момент холостого хода": {
+				"Torque while pedal not pressed": {
                     "firstbyte": 7
                 }	
             },
@@ -340,13 +352,13 @@
             "replybytes": "62220308",
             "deny_sds": [],
             "receivebyte_dataitems": {
-                "Положение отпущеной педали": {
+                "Not presed pedal position": {
                     "firstbyte": 4
                 },
-				"Номер мин ячейки": {
+				"MIN Cell number": {
                     "firstbyte": 6
                 },	
-				"Номер макс ячейки": {
+				"MAX Cell number": {
                     "firstbyte": 7
                 }	
             },
@@ -448,7 +460,7 @@
             "deny_sds": [],
 			"manualsend": true,
             "sendbyte_dataitems": {
-                "Запись максимум крутящего момента": {
+                "Write max torq": {
                     "firstbyte": 4
                 }
             },
@@ -460,7 +472,7 @@
             "deny_sds": [],
 			"manualsend": true,
             "sendbyte_dataitems": {
-				"Запись напряжение включения контакторов": {
+				"Write voltage ON contactor": {
                     "firstbyte": 4
                 }
             },
@@ -472,7 +484,7 @@
             "deny_sds": [],
 			"manualsend": true,
             "sendbyte_dataitems": {
-                "Запись окружности колеса": {
+                "Write wheel circumference": {
                     "firstbyte": 4
                 }
             },
@@ -484,7 +496,7 @@
             "deny_sds": [],
 			"manualsend": true,
             "sendbyte_dataitems": {
-                "Запись мин. педали": {
+                "Write min pedal position": {
                     "firstbyte": 4
                 }
             },
@@ -496,7 +508,7 @@
             "deny_sds": [],
 			"manualsend": true,
             "sendbyte_dataitems": {
-                "Запись макс. педали": {
+                "Write max pedal position": {
                     "firstbyte": 4
                 }
             },
@@ -529,7 +541,7 @@
             "deny_sds": [],
 			"manualsend": true,
             "sendbyte_dataitems": {
-				"Запись температуры помпы": {
+				"Write pump temp": {
                     "firstbyte": 4
                 }
                 
@@ -542,7 +554,7 @@
             "deny_sds": [],
 			"manualsend": true,
             "sendbyte_dataitems": {
-				"Запись температуры вентилятора": {
+				"Write temp fan high speed ": {
                     "firstbyte": 5
                 }
                 
@@ -551,11 +563,24 @@
             "sentbytes": "2e04140100"
         },
 		{
+            "name": "2e.04.14.04",
+            "deny_sds": [],
+			"manualsend": true,
+            "sendbyte_dataitems": {
+				"Write temp fan low speed ": {
+                    "firstbyte": 5
+                }
+                
+            },
+			"minbytes": 5,
+            "sentbytes": "2e04140400"
+        },
+		{
             "name": "2e.04.14.02",
             "deny_sds": [],
 			"manualsend": true,
             "sendbyte_dataitems": {
-				"Запись тип БМС": {
+				"Write BMS type": {
                     "firstbyte": 5
                 }
                 
@@ -609,7 +634,7 @@
             "deny_sds": [],
 			"manualsend": true,
             "sendbyte_dataitems": {
-				"Запись рекуперации": {
+				"Write requperation": {
                     "firstbyte": 4
                 }
                 
@@ -622,7 +647,7 @@
             "deny_sds": [],
 			"manualsend": true,
             "sendbyte_dataitems": {
-				"Запись выкл зарядки": {
+				"Write_off_charge": {
                     "firstbyte": 4
                 }
                 
@@ -635,7 +660,7 @@
             "deny_sds": [],
 			"manualsend": true,
             "sendbyte_dataitems": {
-				"Запись начала балансировки": {
+				"Write_start_balance": {
                     "firstbyte": 4
                 }
                 
@@ -648,7 +673,7 @@
             "deny_sds": [],
 			"manualsend": true,
             "sendbyte_dataitems": {
-				"Запись черепахи": {
+				"Write_tortle": {
                     "firstbyte": 4
                 }
                 
@@ -661,7 +686,7 @@
             "deny_sds": [],
 			"manualsend": true,
             "sendbyte_dataitems": {
-				"Запись выкл батареи": {
+				"Write_off_battery": {
                     "firstbyte": 4
                 }
                 
@@ -675,7 +700,7 @@
             "replybytes": "62220107",
             "deny_sds": [],
             "receivebyte_dataitems": {
-                "Напряжение батареи": {
+                "Battery voltage": {
                     "firstbyte": 4
                 }
             },
@@ -702,13 +727,13 @@
             "replybytes": "62220408",
             "deny_sds": [],
             "receivebyte_dataitems": {
-                "Температура вкл помпы": {
+                "Pump start temperature": {
                     "firstbyte": 4
                 },
-				"Балансировка": {
+				"Balancing ": {
                     "firstbyte": 5
                 },
-				"Рекуперация": {
+				"Recuperation": {
                     "firstbyte": 6
                 }
 				
@@ -721,10 +746,10 @@
             "replybytes": "62220409",
             "deny_sds": [],
             "receivebyte_dataitems": {
-                "Напряжение выкл зарядки": {
+                "Cell voltage off charging ": {
                     "firstbyte": 4
                 },
-				"Напряжение начала балансировки": {
+				"Cell voltage start balancing": {
                     "firstbyte": 6
                 }
 				
@@ -737,10 +762,10 @@
             "replybytes": "62220410",
             "deny_sds": [],
             "receivebyte_dataitems": {
-                "Напряжение черепахи": {
+                "Cell voltage on tortle": {
                     "firstbyte": 4
                 },
-				"Напряжение отключения батареи": {
+				"Cell voltage off battery ": {
                     "firstbyte": 6
                 }
 				
@@ -753,16 +778,16 @@
             "replybytes": "62220411",
             "deny_sds": [],
             "receivebyte_dataitems": {
-                "ШИМ пистолета": {
+                "PWM plug": {
                     "firstbyte": 4
                 },
-				"Статус пистолета": {
+				"Charge plug status": {
                     "firstbyte": 5
                 },
-				"Температура зарядного блока": {
+				"PDM temperature": {
                     "firstbyte": 6
                 },
-				"Ток зарядки": {
+				"AC charge current ": {
                     "firstbyte": 7
                 }
 				
@@ -775,15 +800,19 @@
             "replybytes": "62220414",
             "deny_sds": [],
             "receivebyte_dataitems": {
-                "Температура вкл вентилятора": {
+                "Temp fan ON high speed": {
                     "firstbyte": 4
                 },
-				"Тип БМС": {
+				"Type BMS": {
                     "firstbyte": 5
                 },
-				"Добивка": {
+				"Cut charge power when finishing charge": {
                     "firstbyte": 6
+                },
+				"Temp fan ON low speed": {
+                    "firstbyte": 7
                 }
+				
             },
             "minbytes": 4,
             "sentbytes": "220414"
@@ -793,16 +822,16 @@
             "replybytes": "62220415",
             "deny_sds": [],
             "receivebyte_dataitems": {
-                "A10 (Контактор +)": {
+                "A10 (Contactor +)": {
                     "firstbyte": 4
                 },
-				"А11 (Контактор -)": {
+				"А11 (Contactor -)": {
                     "firstbyte": 5
                 },
-				"D11 (Предзаряд)": {
+				"D11 (Precharge)": {
                     "firstbyte": 6
                 },
-				"D24 (Помпа охлаждения)": {
+				"D24 (Water pump)": {
                     "firstbyte": 7
                 }
             },
@@ -814,10 +843,10 @@
             "replybytes": "62220416",
             "deny_sds": [],
             "receivebyte_dataitems": {
-                "D9 (Вентилятор охлаждения)": {
+                "D9 (Fan high speed)": {
                     "firstbyte": 4
                 },
-				"DAC1 (Стоп)": {
+				"DAC1 (Brake light)": {
                     "firstbyte": 5
                 },
 				"D8  (Chademo out0)": {
@@ -840,17 +869,43 @@
                 },
 				"Booster status": {
                     "firstbyte": 4
+                },
+				"D26 (Fan low speed)": {
+                    "firstbyte": 5
                 }
+				
             },
             "minbytes": 4,
             "sentbytes": "220417"
+		},
+		{
+            "name": "03.22.05.01",
+            "replybytes": "62220501",
+            "deny_sds": [],
+            "receivebyte_dataitems": {
+                "Speed": {
+                    "firstbyte": 4
+                },
+				"Cruise set speed": {
+                    "firstbyte": 5
+                },
+				"Cruise control button": {
+                    "firstbyte": 6
+                },
+				"Cruise control status": {
+                    "firstbyte": 7
+                }
+			
+            },
+            "minbytes": 4,
+            "sentbytes": "220501"
 		},
 		{
             "name": "2e.04.15",
             "deny_sds": [],
 			"manualsend": true,
             "sendbyte_dataitems": {
-                "Тест выходов": {
+                "Test output": {
                     "firstbyte": 4
                 }
             },
@@ -935,7 +990,7 @@
 				"D5": {
                     "firstbyte": 6
                 },
-				"D6": {
+				"D6 (Brake light)": {
                     "firstbyte": 7
                 }
 				
@@ -990,7 +1045,7 @@
             "replybytes": "6222010c",
             "deny_sds": [],
             "receivebyte_dataitems": {
-                "Напряжение минимальной ячейки": {
+                "Cell MIN voltage": {
                     "firstbyte": 5
                 }
             },
@@ -1002,7 +1057,7 @@
             "replybytes": "6222010d",
             "deny_sds": [],
             "receivebyte_dataitems": {
-                "Напряжение максимальной ячейки": {
+                "Cell MAX voltage": {
                     "firstbyte": 5
                 }
             },
@@ -1014,13 +1069,8 @@
             "replybytes": "62220102",
             "deny_sds": [],
             "receivebyte_dataitems": {
-                "SOH в Ач": {
+                "SOH in Ah": {
                     "firstbyte": 4
-                }
-            },
-			"sendbyte_dataitems": {
-                "SOH в Ач": {
-                    "firstbyte": 2
                 }
             },
             "minbytes": 4,
@@ -1032,7 +1082,7 @@
             "replybytes": "62220105",
             "deny_sds": [],
             "receivebyte_dataitems": {
-                "SOС": {
+                "SOC": {
                     "firstbyte": 4
                 }
             },
@@ -1045,7 +1095,7 @@
             "replybytes": "62220101",
             "deny_sds": [],
             "receivebyte_dataitems": {
-                "SOС в Ач": {
+                "SOC in Ah": {
                     "firstbyte": 4
                 }
             },
@@ -1057,7 +1107,7 @@
             "replybytes": "62220901",
             "deny_sds": [],
             "receivebyte_dataitems": {
-                "Окружность колеса": {
+                "Wheel circumference": {
                     "firstbyte": 4
                 }
             },
@@ -1069,7 +1119,7 @@
             "deny_sds": [],
 			"manualsend": true,
             "sendbyte_dataitems": {
-                "SOC в Ач запись": {
+                "SOC in Ah Write": {
                     "firstbyte": 4
                 }
             },
@@ -1081,7 +1131,7 @@
             "deny_sds": [],
 			"manualsend": true,
             "sendbyte_dataitems": {
-                "SOH запись": {
+                "SOH Write": {
                     "firstbyte": 4
                 }
             },
@@ -1089,35 +1139,11 @@
             "sentbytes": "2e010200000000"
         },
 		{
-            "name": "2e.02.03",
-            "deny_sds": [],
-			"manualsend": true,
-            "sendbyte_dataitems": {
-                "Обнуление датчика ток": {
-                    "firstbyte": 4
-                }
-            },
-			"minbytes": 5,
-            "sentbytes": "2e020300"
-        },
-		{
-            "name": "2e.02.01",
-            "deny_sds": [],
-			"manualsend": true,
-            "sendbyte_dataitems": {
-                "Коррекция датчика ток": {
-                    "firstbyte": 4
-                }
-            },
-			"minbytes": 4,
-            "sentbytes": "2e02010000"
-        },
-		{
             "name": "2e.02.05",
             "deny_sds": [],
 			"manualsend": true,
             "sendbyte_dataitems": {
-                "Ток зарядки": {
+                "AC charge current ": {
                     "firstbyte": 4
                 }
             },
@@ -1136,90 +1162,15 @@
 			"minbytes": 5,
             "sentbytes": "2e06010000"
         },
-		{
-            "name": "22.02.01",
-            "replybytes": "62020100000000",
-            "deny_sds": [],
-            "receivebyte_dataitems": {
-                "22.02.01 Коррекция датчика тока": {
-                    "firstbyte": 4
-                }
-            },
-            "minbytes": 5,
-            "sentbytes": "220201"
-        },
-        {
-            "name": "22.02.02",
-            "replybytes": "62020200",
-            "deny_sds": [],
-            "receivebyte_dataitems": {
-                "22.02.02 Вычитывание ячеек": {
-                    "firstbyte": 4
-                }
-            },
-            "minbytes": 4,
-            "sentbytes": "220202"
-        },
-        {
-            "name": "22.02.03",
-            "replybytes": "62020300",
-            "deny_sds": [],
-            "receivebyte_dataitems": {
-                "22.02.03 Обнуление датчика тока в покое": {
-                    "firstbyte": 4
-                }
-            },
-            "minbytes": 4,
-            "sentbytes": "220203"
-        },
-        {
-            "name": "22.02.04",
-            "replybytes": "6202040000",
-            "deny_sds": [],
-            "receivebyte_dataitems": {
-                "22.02.04 Начало балансировки": {
-                    "firstbyte": 4
-                }
-            },
-            "minbytes": 5,
-            "sentbytes": "220204"
-        },
-        {
-            "name": "22.02.05",
-            "replybytes": "62020500",
-            "deny_sds": [],
-            "receivebyte_dataitems": {
-                "22.02.05 Максимальный ток зарядки": {
-                    "firstbyte": 4
-                },
-                "22.02.05 Максимальная мощность зарядки": {
-                    "firstbyte": 4
-                }
-            },
-            "minbytes": 4,
-            "sentbytes": "220205"
-        },
-        {
-            "name": "22.02.06",
-            "replybytes": "62020600",
-            "deny_sds": [],
-            "receivebyte_dataitems": {
-                "22.02.06 Полная последняя зарядка": {
-                    "firstbyte": 4
-                }
-            },
-            "minbytes": 4,
-            "sentbytes": "220206"
-        },
         {
             "name": "22.02.07",
             "replybytes": "62020700000000",
             "deny_sds": [],
             "receivebyte_dataitems": {
-                "Термодатчик 1": {
+                "Temperature sens 1": {
                     "firstbyte": 4
                 },
-				"Сопротивление 1": {
+				"Resistance 1": {
                     "firstbyte": 6
                 }
             },
@@ -1231,10 +1182,10 @@
             "replybytes": "62020800000000",
             "deny_sds": [],
             "receivebyte_dataitems": {
-                "Термодатчик 2": {
+                "Temperature sens 2": {
                     "firstbyte": 4
                 },
-				"Сопротивление 2": {
+				"Resistance 2": {
                     "firstbyte": 6
                 }
             },
@@ -1246,10 +1197,10 @@
             "replybytes": "62020900000000",
             "deny_sds": [],
             "receivebyte_dataitems": {
-                "Термодатчик 3": {
+                "Temperature sens 3": {
                     "firstbyte": 4
                 },
-				"Сопротивление 3": {
+				"Resistance 3": {
                     "firstbyte": 6
                 }
             },
@@ -1261,10 +1212,10 @@
             "replybytes": "62021000000000",
             "deny_sds": [],
             "receivebyte_dataitems": {
-                "Термодатчик 4": {
+                "Temperature sens 4": {
                     "firstbyte": 4
                 },
-				"Сопротивление 4": {
+				"Resistance 4": {
                     "firstbyte": 6
                 }
             },
@@ -1276,10 +1227,10 @@
             "replybytes": "6202110000",
             "deny_sds": [],
             "receivebyte_dataitems": {
-                "Термодатчик 5": {
+                "Temperature sens 5": {
                     "firstbyte": 4
                 },
-				"Сопротивление 5": {
+				"Resistance 5": {
                     "firstbyte": 6
                 }
             },
@@ -1291,10 +1242,10 @@
             "replybytes": "6202120000",
             "deny_sds": [],
             "receivebyte_dataitems": {
-                "Термодатчик 6": {
+                "Temperature sens 6": {
                     "firstbyte": 4
                 },
-				"Сопротивление 6": {
+				"Resistance 6": {
                     "firstbyte": 6
                 }
             },
@@ -1306,10 +1257,10 @@
             "replybytes": "6202130000",
             "deny_sds": [],
             "receivebyte_dataitems": {
-                "Термодатчик 7": {
+                "Temperature sens 7": {
                     "firstbyte": 4
                 },
-				"Сопротивление 7": {
+				"Resistance 7": {
                     "firstbyte": 6
                 }
             },
@@ -1321,10 +1272,10 @@
             "replybytes": "6202140000",
             "deny_sds": [],
             "receivebyte_dataitems": {
-                "Термодатчик 8": {
+                "Temperature sens 8": {
                     "firstbyte": 4
                 },
-				"Сопротивление 8": {
+				"Resistance 8": {
                     "firstbyte": 6
                 }
             },
@@ -1336,10 +1287,10 @@
             "replybytes": "6202150000",
             "deny_sds": [],
             "receivebyte_dataitems": {
-                "Термодатчик 9": {
+                "Temperature sens 9": {
                     "firstbyte": 4
                 },
-				"Сопротивление 9": {
+				"Resistance 9": {
                     "firstbyte": 6
                 }
             },
@@ -1351,10 +1302,10 @@
             "replybytes": "6202160000",
             "deny_sds": [],
             "receivebyte_dataitems": {
-                "Термодатчик 10": {
+                "Temperature sens 10": {
                     "firstbyte": 4
                 },
-				"Сопротивление 10": {
+				"Resistance 10": {
                     "firstbyte": 6
                 }
             },
@@ -1366,10 +1317,10 @@
             "replybytes": "6202170000",
             "deny_sds": [],
             "receivebyte_dataitems": {
-                "Термодатчик 11": {
+                "Temperature sens 11": {
                     "firstbyte": 4
                 },
-				"Сопротивление 11": {
+				"Resistance 11": {
                     "firstbyte": 6
                 }
             },
@@ -1381,10 +1332,10 @@
             "replybytes": "6202180000",
             "deny_sds": [],
             "receivebyte_dataitems": {
-                "Термодатчик 12": {
+                "Temperature sens 12": {
                     "firstbyte": 4
                 },
-				"Сопротивление 12": {
+				"Resistance 12": {
                     "firstbyte": 6
                 }
             },
@@ -1396,10 +1347,10 @@
             "replybytes": "6202190000",
             "deny_sds": [],
             "receivebyte_dataitems": {
-                "Термодатчик 13": {
+                "Temperature sens 13": {
                     "firstbyte": 4
                 },
-				"Сопротивление 13": {
+				"Resistance 13": {
                     "firstbyte": 6
                 }
             },
@@ -1411,10 +1362,10 @@
             "replybytes": "6202250000",
             "deny_sds": [],
             "receivebyte_dataitems": {
-                "Термодатчик 14": {
+                "Temperature sens 14": {
                     "firstbyte": 4
                 },
-				"Сопротивление 14": {
+				"Resistance 14": {
                     "firstbyte": 6
                 }
             },
@@ -1426,10 +1377,10 @@
             "replybytes": "6202260000",
             "deny_sds": [],
             "receivebyte_dataitems": {
-                "Термодатчик 15": {
+                "Temperature sens 15": {
                     "firstbyte": 4
                 },
-				"Сопротивление 15": {
+				"Resistance 15": {
                     "firstbyte": 6
                 }
             },
@@ -1441,68 +1392,16 @@
             "replybytes": "6202270000",
             "deny_sds": [],
             "receivebyte_dataitems": {
-                "Термодатчик 16": {
+                "Temperature sens 16": {
                     "firstbyte": 4
                 },
-				"Сопротивление 16": {
+				"Resistance 16": {
                     "firstbyte": 6
                 }
             },
             "minbytes": 7,
             "sentbytes": "220227"
-        },
-        {
-            "name": "22.02.0F",
-            "replybytes": "22020F00",
-            "deny_sds": [],
-            "receivebyte_dataitems": {
-                "22.02.0F Внутреннее сопротивление": {
-                    "firstbyte": 4
-                }
-            },
-            "minbytes": 4,
-            "sentbytes": "22020F"
-        },
-        
-        
-        {
-            "name": "22.02.20",
-            "replybytes": "6202200000",
-            "deny_sds": [],
-            "receivebyte_dataitems": {
-                "Напряжение в покое при 6%": {
-                    "firstbyte": 4
-                }
-            },
-            "minbytes": 5,
-            "sentbytes": "220220"
-        },
-        {
-            "name": "22.02.21",
-            "replybytes": "6202210000",
-            "deny_sds": [],
-            "receivebyte_dataitems": {
-                "Напряжение в покое при 0%": {
-                    "firstbyte": 4
-                }
-            },
-            "minbytes": 5,
-            "sentbytes": "220221"
-        },
-        {
-            "name": "22.02.22",
-            "replybytes": "6202220000",
-            "deny_sds": [],
-            "receivebyte_dataitems": {
-                "22.02.22 Максимум": {
-                    "firstbyte": 4
-                }
-            },
-            "minbytes": 5,
-            "sentbytes": "220222"
-        },
-		
-		
+        },		
 		{
             "name": "22.12.01",
             "replybytes": "6212010000",
@@ -2043,21 +1942,21 @@
 		
     ], 
     "data": {
-		"Напряжение на инверторе": {
+		"Invertor high voltage": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
-            "unit": "В"
+            "unit": "V"
         },
-		"Температура инвертора": {
+		"Invertor temperature": {
            "scaled": true,
-            "unit": "°C"
+            "unit": "C"
         },
-		"Температура мотора": {
+		"Motor temperature": {
             "scaled": true,
-            "unit": "°C"
+            "unit": "C"
         },
-		"Селектор": {
+		"Selector position": {
             "lists": {
                 "0": "N",
                 "1": "D",
@@ -2065,149 +1964,156 @@
 				"3": "P"
             }
         },
-		"Ошибка инвертора": {
+		"Invertor error": {
             "lists": {
-                "0": "Нет",
-                "1": "Да"				
+                "0": "No",
+                "1": "Yes"				
             }
         },
-		"Старт": {
+		"Ready": {
             "lists": {
-                "0": "Нет",
-                "1": "Да"				
+                "0": "No",
+                "1": "Yes"					
             }
         },
-		"Статус": {
+		"Status": {
             "lists": {
-                "0": "ОК",
-                "1": "Батарея разряжена, выкл",
-				"2": "Батарея разряжена, черепаха",
-				"3": "Ошибка предзаряда",
-				"4": "Вставлен AC пистолет",
-				"5": "AC Зарядка",
-				"6": "Вставлен DC пистолет",
-				"7": "DC Зарядка"
+                "0": "OK",
+                "1": "Battery discharge, OFF",
+				"2": "Battery discharge, Tortle",
+				"3": "Error Precharge",
+				"4": "Insert AC plug",
+				"5": "AC charging",
+				"6": "Insert DC plug",
+				"7": "DC charging"
 				
 				
             }
         },
-		"Обороты мотора": {
+		"Motor RPM": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
 			"signed": true,
             "unit": "rpm"
         },
-		"Положение педали газа": {
+		"Pedal position": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16
         },
-		"Мин. педали газа": {
+		"Pedal MIN position": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16
         },
-		"Запись мин. педали": {
+		"Write min pedal position": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16
         },
-		"Макс. педали газа": {
+		"Pedal MAX position": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16
         },
-		"Момент в точке": {
+		"Torque in calibration point": {
             "scaled": true,
             "bytescount": 1,
             "bitscount": 8
         },
-		"Положения педали в точке": {
+		"Pedal position in calibration point": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16
         },
-		"Положение отпущеной педали": {
+		"Not presed pedal position": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16
         },
-		"Окружность колеса": {
+		"Wheel circumference": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16
         },
-		"Запись окружности колеса": {
+		"Write wheel circumference": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16
         },
-		"Запись макс. педали": {
+		"Write max pedal position": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16
         },
-		"Запись максимум крутящего момента": {
+		"Write max torq": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
-            "unit": "Нм"
+            "unit": "Nm"
         },
-		"Максимум крутящего момента": {
+		"Max torque": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
-            "unit": "Нм"
+            "unit": "Nm"
         },
-		"Запрос крутящего момента": {
+		"Torque request": {
             "scaled": true,
 			"signed": true,
             "bytescount": 2,
             "bitscount":  16,
-            "unit": "Нм"
+            "unit": "Nm"
         },
-		"Момент холостого хода": {
+		"Torque while pedal not pressed": {
             "scaled": true,
 			"signed": true,
             "bytescount": 1,
             "bitscount":  8,
-            "unit": "Нм"
+            "unit": "Nm"
         },
-		"Запись момент холостого хода": {
+		"Write torq while pedal not press": {
             "scaled": true,
 			"signed": true,
             "bytescount": 1,
             "bitscount":  8,
-            "unit": "Нм"
+            "unit": "Nm"
         },
-		"Запись температуры помпы": {
+		"Write pump temp": {
             "scaled": true,
 			"signed ": true,
             "bytescount": 1,
             "bitscount":  8,
-            "unit": "°C"
+            "unit": "C"
         }, 
-		"Запись температуры вентилятора": {
+		"Write temp fan high speed ": {
             "scaled": true,
 			"signed": true,
             "bytescount": 1,
             "bitscount":  8,
-            "unit": "°C"
+            "unit": " C"
         }, 
-		"Запись момент в точке": {
+		"Write temp fan low speed ": {
+            "scaled": true,
+			"signed": true,
+            "bytescount": 1,
+            "bitscount":  8,
+            "unit": "C"
+        }, 
+		"Write torq in point": {
             "scaled": true,
 			"signed": true,
             "bytescount": 1,
             "bitscount":  8
         },
-		"Запись положение педали в точке": {
+		"Write pedal position in point": {
             "scaled": true,
 			"signed": true,
             "bytescount": 2,
             "bitscount":  16
         },
-		"Запись положение отпущеной педали": {
+		"Write pedal position not press": {
             "scaled": true,
 			"signed": true,
             "bytescount": 2,
@@ -2294,7 +2200,7 @@
                 "0": "Low"				
             }
         },
-		"D6": {
+		"D6 (Brake light)": {
             "lists": {
                 "1": "High",
                 "0": "Low"				
@@ -2330,37 +2236,43 @@
                 "0": "Low"				
             }
         },
-		"A10 (Контактор +)": {
+		"A10 (Contactor +)": {
             "lists": {
                 "1": "High",
                 "0": "Low"				
             }
         },
-		"А11 (Контактор -)": {
+		"А11 (Contactor -)": {
             "lists": {
                 "1": "High",
                 "0": "Low"				
             }
         },
-		"D11 (Предзаряд)": {
+		"D11 (Precharge)": {
             "lists": {
                 "1": "High",
                 "0": "Low"				
             }
         },
-		"D24 (Помпа охлаждения)": {
+		"D24 (Water pump)": {
             "lists": {
                 "1": "High",
                 "0": "Low"				
             }
         },
-		"D9 (Вентилятор охлаждения)": {
+		"D9 (Fan high speed)": {
             "lists": {
                 "1": "High",
                 "0": "Low"				
             }
         },
-		"DAC1 (Стоп)": {
+		"D26 (Fan low speed)": {
+            "lists": {
+                "1": "High",
+                "0": "Low"				
+            }
+        },
+		"DAC1 (Brake light)": {
             "lists": {
                 "1": "High",
                 "0": "Low"				
@@ -2384,16 +2296,17 @@
                 "0": "Low"				
             }
         },
-		"Тест выходов": {
+		"Test output": {
             "lists": {
-                "1": "A10 (Контактор +)", 
-                "2": "А11 (Контактор -)",
-				"3": "D11 (Предзаряд)",
-				"4": "D24 (Помпа охлаждения)",
-				"5": "D9 (Вентилятор охлаждения)",
-				"6": "DAC1 (Стоп)",
+                "1": "A10 (Contactor +)", 
+                "2": "А11 (COntactor -)",
+				"3": "D11 (Precharge)",
+				"4": "D24 (Water pump)",
+				"5": "D9 (Fan high speed)",
+				"6": "DAC1 (Brake light)",
 				"7": "D8  (Chademo out0)",
-				"8": "D12 (Chademo out1)"
+				"8": "D12 (Chademo out1)",
+				"9": "D9 (Fan low speed)" 
             }
         },
 		"Device ID": {
@@ -2500,613 +2413,522 @@
             "bytescount": 2,
             "bitscount": 16
         },
-		
-		
-		"Педаль мин": {
-            "scaled": true 
-        },
-		"Запись рекуперации": {
+		"Write requperation": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16
         },
-		"Запись выкл зарядки": {
+		"Write_off_charge": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16
         },
-		"Запись начала балансировки": {
+		"Write_start_balance": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16
         },
-		"Запись черепахи": {
+		"Write_tortle": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16
         },
-		"Запись выкл батареи": {
+		"Write_off_battery": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16
         },
-		
-		
-		
-		"Напряжение батареи": {
+		"Battery voltage": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
             "divideby": 100,
-            "unit": "В"
+            "unit": "V"
         },
 		
-		"ШИМ пистолета": {
+		"PWM plug": {
            "scaled": true,
-            "unit": "А"
+            "unit": "A"
         },
-		"Статус пистолета": {
+		"Charge plug status": {
            "lists": {
-                "136": "Вставлен",
-				"152": "Вставлен",
-				"132": "Вставлен + нажата кнопка",
-				"148": "Вставлен + нажата кнопка",
-                "144": "Не вставлен"  
+                "136": "Insert",
+				"152": "Insert",
+				"132": "Insert + press button",
+				"148": "Insert + press button",
+                "144": "Not insert"  
             }
         },
-		"Температура зарядного блока": {
+		"PDM temperature": {
            "scaled": true,
 		   "offset": -40,
-            "unit": "°C"
+            "unit": "C"
         },
-		"Ток зарядки": {
+		"AC charge current ": {
            "scaled": true,
             "unit": "А"
         },
-		"Температура вкл помпы": {
+		"Pump start temperature": {
            "scaled": true,
-            "unit": "°C"
+            "unit": " C"
         },
-		"Температура вкл вентилятора": {
+		"Temp fan ON high speed": {
            "scaled": true,
-            "unit": "°C"
+            "unit": " C"
         },
-		"Тип БМС": {
+		"Temp fan ON low speed": {
+           "scaled": true,
+            "unit": " C"
+        },
+		"Type BMS": {
            "lists": {
-                "0": "Нет",
+                "0": "OFF",
                 "1": "Volt Gen1",
 				"2": "Leaf",
 				"3": "Orion 2"
             }
           
         },
-		"Запись тип БМС": {
+		"Write BMS type": {
            "lists": {
 			    "1": "Volt Gen1",
-                "0": "Нет",
+                "0": "OFF",
 				"2": "Leaf",
 				"3": "Orion 2"
             }
           
         },
 		
-		"Балансировка": {
+		"Balancing ": {
             "lists": {
-                "0": "Нет",
-                "1": "Да"
+                "0": "OFF",
+                "1": "ON"
             }
         },
-		"Рекуперация": {
+		"Recuperation": {
            "scaled": true,
 		    "bytescount": 2,
             "bitscount": 16,
-            "unit": "Нм"
+            "unit": "Nm"
         },
-		"Добивка": {
+		"Cut charge power when finishing charge": {
            "lists": {
-                "0": "Нет",
-                "1": "Да"
+                "0": "No",
+                "1": "Yes"
             }
         },
-		"Напряжение выкл зарядки": {
+		"Cell voltage off charging ": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
             "divideby": 1000,
-            "unit": "В"
+            "unit": "V"
         },
-		"Напряжение начала балансировки": {
+		"Cell voltage start balancing": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
             "divideby": 1000,
-            "unit": "В"
+            "unit": "V"
         }, 
-		"Напряжение включения контакторов": {
+		"Contactor ON voltage": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
-            "unit": "В"
+            "unit": "V"
         },
-		"Запись напряжение включения контакторов": {
-            "scaled": true,
-            "bytescount": 2,
-            "bitscount": 16
-        },
-		"Напряжение черепахи": {
+		"Write voltage ON contactor": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
-            "divideby": 1000,
-            "unit": "В"
+			"unit": "V"
         },
-		"Напряжение отключения батареи": {
+		"Cell voltage on tortle": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
             "divideby": 1000,
-            "unit": "В"
+            "unit": "V"
+        },
+		"Cell voltage off battery ": {
+            "scaled": true,
+            "bytescount": 2,
+            "bitscount": 16,
+            "divideby": 1000,
+            "unit": "V"
         },		
-		"Напряжение минимальной ячейки": {
+		"Cell MIN voltage": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
             "divideby": 1000,
-            "unit": "В"
+            "unit": "V"
         },
-		"Номер мин ячейки": {
+		"MIN Cell number": {
             "scaled": true,
             "bytescount": 1,
             "bitscount": 8
         },
-		"Напряжение максимальной ячейки": {
+		"Cell MAX voltage": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
             "divideby": 1000,
-            "unit": "В"
+            "unit": "V"
         },
-		"Номер макс ячейки": {
+		"MAX Cell number": {
             "scaled": true,
             "bytescount": 1,
             "bitscount": 8
         },
-		"SOH в Ач": {
+		"SOH in Ah": {
             "scaled": true,
             "bytescount": 4,
             "bitscount": 32,
             "divideby": 1000000,
-            "unit": "Ач"
+            "unit": "Ah"
         },
-		"SOH запись": {
+		"SOH Write": {
             "scaled": true,
             "bytescount": 4,
             "bitscount": 32,
 			"divideby": 1000000,
-            "unit": "Ач"
+            "unit": "Ah"
         },
-		"SOС в Ач": {
+		"SOC in Ah": {
             "scaled": true,
             "bytescount": 4,
             "bitscount": 32,
             "divideby": 1000000,
-            "unit": "Ач"
+            "unit": "Ah"
         },
-		"SOC в Ач запись": {
+		"SOC in Ah Write": {
             "scaled": true,
             "bytescount": 4,
             "bitscount": 32,
             "divideby": 1000000,
-            "unit": "Ач"
+            "unit": "Ah"
         },
-		"Ток зарядки": {
+		"AC charge current ": {
             "scaled": true,
             "bytescount": 1,
             "bitscount": 8,
-            "unit": "А"
+            "unit": "A"
         },
-		"SOС": {
+		"SOC": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
             "divideby": 100,
             "unit": "%"
         },
-		"Тип селектора": {
+		"Type selector": {
             "lists": {
-                "0": "Кнопка",
+                "0": "Button",
                 "1": "Leaf",
 				"2": "PSA"
             }
         },
-		"Тип кнопки старта": {
+		"Type start button": {
            "lists": {
-                "0": "С фиксацией",
-                "1": "Без фиксации"
+                "0": "With fixation",
+                "1": "Without fixation"
             }
         }, 
-		"Запись селектора": {
+		"Write selector": {
             "lists": {
-                "0": "Кнопка",
+                "0": "Button",
                 "1": "Leaf",
 				"2": "PSA"
             }
         },
-		"Запись кнопки старта": {
+		"Write start button type": {
            "lists": {
-                "0": "С фиксацией",
-                "1": "Без фиксации"
+                "0": "With fixation",
+                "1": "Without fixation"
             }
         },
-		"Тип инвертора": {
-           "lists": {
-                "0": "AZE0",
-                "1": "ZE0",
-				"2": "ZE1"
-            }
-        },
-		"Запись тип инвертора": {
+		"Type invertor": {
            "lists": {
                 "0": "AZE0",
                 "1": "ZE0",
 				"2": "ZE1"
             }
         },
-		"Запись тип датчика тока": {
+		"Write invertor type": {
+           "lists": {
+                "0": "AZE0",
+                "1": "ZE0",
+				"2": "ZE1"
+            }
+        },
+		"Write current sens type": {
            "lists": {
                 "0": "Volt 1",
-                "1": "Выкл",
+                "1": "OFF",
 				"2": "Leaf"
             }
         },
-        "22.02.01 Коррекция датчика тока": {
-            "scaled": true,
-            "signed": true,
-            "bytescount": 2,
-            "bitscount": 16,
-            "unit": "А"
-        },
-		"Коррекция датчика ток": {
-            "scaled": true,
-			"signed": true,
-            "bytescount": 2,
-            "bitscount": 16,
-            "unit": "А"
-        },
-        "22.02.02 Вычитывание ячеек": {
-            "lists": {
-                "0": "отк (0)",
-                "1": "вкл (1)",
-                "2": "вкл (2)",
-                "3": "вкл (3)"
-            }
-        },
-        "22.02.03 Обнуление датчика тока в покое": {
-            "lists": {
-                "0": "отк (0)",
-                "1": "вкл (1)"
-            }
-        },
-        "22.02.04 Начало балансировки": {
-            "scaled": true,
-            "bytescount": 2,
-            "bitscount": 16,
-            "divideby": 1000,
-            "unit": "В"
-        },
-        "22.02.05 Максимальный ток зарядки": {
-            "scaled": true,
-            "unit": "А (?)"
-        },
-        "22.02.05 Максимальная мощность зарядки": {
-            "scaled": true,
-            "step": 380,
-            "divideby": 1000,
-            "unit": "кВт (?)"
-        },
-        "22.02.06 Полная последняя зарядка": {
-            "lists": {
-                "0": "нет (0)",
-                "1": "да (1)"
-            }
-        },
-		"Обнуление датчика ток": {
-            "lists": {
-                "1": "Вкл",
-                "0": "Выкл"
-				
-            }
-        },
-        "Термодатчик 1": {
+        "Temperature sens 1": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
 			"offset": -40,
-            "unit": "°C"
+            "unit": " C"
         },
-        "Термодатчик 2": {
+        "Temperature sens 2": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16, 
 			"offset": -40,
-            "unit": "°C"
+            "unit": " C"
         },
-        "Термодатчик 3": {
+        "Temperature sens 3": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
 			"offset": -40,
-            "unit": "°C"
+            "unit": " C"
         },
-        "Термодатчик 4": {
+        "Temperature sens 4": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
 			"offset": -40,
-            "unit": "°C"
+            "unit": " C"
         },
-        "Термодатчик 5": {
+        "Temperature sens 5": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
 			"offset": -40,
-            "unit": "°C"
+            "unit": " C"
         },
-        "Термодатчик 6": {
+        "Temperature sens 6": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
 			"offset": -40,
-            "unit": "°C"
+            "unit": " C"
         },
-        "Термодатчик 7": {
+        "Temperature sens 7": {
            "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
 			"offset": -40,
-            "unit": "°C"
+            "unit": " C"
         },
-        "Термодатчик 8": {
+        "Temperature sens 8": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
 			"offset": -40,
-            "unit": "°C"
+            "unit": " C"
         },
-		"Термодатчик 9": {
+		"Temperature sens 9": {
            "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
 			"offset": -40,
-            "unit": "°C"
+            "unit": " C"
         },
-		"Термодатчик 10": {
+		"Temperature sens 10": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
 			"offset": -40,
-            "unit": "°C"
+            "unit": " C"
         },
-		"Термодатчик 11": {
+		"Temperature sens 11": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
 			"offset": -40,
-            "unit": "°C"
+            "unit": " C"
         },
-		"Термодатчик 12": {
+		"Temperature sens 12": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
 			"offset": -40,
-            "unit": "°C"
+            "unit": " C"
         },
-		"Термодатчик 13": {
+		"Temperature sens 13": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
 			"offset": -40,
-            "unit": "°C"
+            "unit": " C"
         },
-		"Термодатчик 14": {
+		"Temperature sens 14": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
 			"offset": -40,
-            "unit": "°C"
+            "unit": " C"
         },
-		"Термодатчик 15": {
+		"Temperature sens 15": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
 			"offset": -40,
-            "unit": "°C"
+            "unit": " C"
         },
-		"Термодатчик 16": {
+		"Temperature sens 16": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
 			"offset": -40,
-            "unit": "°C"
+            "unit": " C"
         },
-		"Сопротивление 1": {
+		"Resistance 1": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
 			"step": 10,
-            "unit": "Ом"
+            "unit": "Om"
         },
-		"Сопротивление 2": {
+		"Resistance 2": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
 			"step": 10,
-            "unit": "Ом"
+            "unit": "Om"
         },
-		"Сопротивление 3": {
+		"Resistance 3": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
 			"step": 10,
-            "unit": "Ом"
+            "unit": "Om"
         },
-		"Сопротивление 4": {
+		"Resistance 4": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
 			"step": 10,
-            "unit": "Ом"
+            "unit": "Om"
         },
-		"Сопротивление 5": {
+		"Resistance 5": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
 			"step": 10,
-            "unit": "Ом"
+            "unit": "Om"
         },
-		"Сопротивление 6": {
+		"Resistance 6": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
 			"step": 10,
-            "unit": "Ом"
+            "unit": "Om"
         },
-		"Сопротивление 7": {
+		"Resistance 7": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
 			"step": 10,
-            "unit": "Ом"
+            "unit": "Om"
         },
-		"Сопротивление 8": {
+		"Resistance 8": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
 			"step": 10,
-            "unit": "Ом"
+            "unit": "Om"
         },
-		"Сопротивление 9": {
+		"Resistance 9": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
 			"step": 10,
-            "unit": "Ом"
+            "unit": "Om"
         },
-		"Сопротивление 10": {
+		"Resistance 10": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
 			"step": 10,
-            "unit": "Ом"
+            "unit": "Om"
         },
-		"Сопротивление 11": {
+		"Resistance 11": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
 			"step": 10,
-            "unit": "Ом"
+            "unit": "Om"
         },
-		"Сопротивление 12": {
+		"Resistance 12": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
 			"step": 10,
-            "unit": "Ом"
+            "unit": "Om"
         },
-		"Сопротивление 13": {
+		"Resistance 13": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
 			"step": 10,
-            "unit": "Ом"
+            "unit": "Om"
         },
-		"Сопротивление 14": {
+		"Resistance 14": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
 			"step": 10,
-            "unit": "Ом"
+            "unit": "Om"
         },
-		"Сопротивление 15": {
+		"Resistance 15": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
 			"step": 10,
-            "unit": "Ом"
+            "unit": "Om"
         },
-		"Сопротивление 16": {
+		"Resistance 16": {
             "scaled": true,
             "bytescount": 2,
             "bitscount": 16,
 			"step": 10,
-            "unit": "Ом"
+            "unit": "Om"
         },
-        "22.02.0F Внутреннее сопротивление": {
-            "scaled": true,
-            "unit": "Ом"
-        },
-        "Напряжение в покое при 6%": {
-            "scaled": true,
-            "bytescount": 2,
-            "bitscount": 16,
-            "divideby": 1000,
-            "unit": "В"
-        },
-        "Напряжение в покое при 0%": {
-            "scaled": true,
-            "bytescount": 2,
-            "bitscount": 16,
-            "divideby": 1000,
-            "unit": "В"
-        },
-        "22.02.22 Максимум": {
-            "scaled": true,
-            "bytescount": 2,
-            "bitscount": 16,
-            "divideby": 1000,
-            "unit": "В"
-        },
-        
-        
-        
-		
-        
-		
-        "8C Общая температура": {
-            "scaled": true,
-            "offset": -40,
-            "unit": "°C"
-        },
-		
-		"Потребление в А": {
+		"Current": {
             "scaled": true,
 			"signed": true,
             "bytescount": 2,
             "bitscount": 16,
-            "unit": "А"
+            "unit": "A"
         },		
 		
-		"Датчик тока состояние": {
+		"Current sens type": {
             "lists": {
-                "1": "Выкл",
+                "1": "OFF",
                 "0": "Volt 1",
 				"2": "Leaf"
 				
             }
         },		
-		"Датчик тока 1": {
+		"Current sens 1": {
             "scaled": true,
 			"signed": true,
             "bytescount": 2,
             "bitscount": 16,
-            "unit": "А"
+            "unit": "A"
         },		
-		"Датчик тока 2": {
+		"Current sens 2": {
             "scaled": true,
 			"signed": true,
             "bytescount": 2,
             "bitscount": 16,
-            "unit": "А"
+            "unit": "A"
+        },
+		"IR sens voltage": {
+            "scaled": true,
+			"signed": true,
+            "bytescount": 2,
+            "bitscount": 16,
+            "unit": "mV"
         },
 		
 		"Cell [01]": {
@@ -3965,14 +3787,14 @@
 			"bytescount": 1, 
 			"bitscount": 8, 
 			"offset": -40,
-            "unit": "°C"
+            "unit": " C"
 		},
 		"Evaporator temp": {
 			"scaled": true, 
 			"bytescount": 1, 
 			"bitscount": 8, 
 			"offset": -40,
-            "unit": "°C"
+            "unit": " C"
 		},
 		"Heater power": {
 			"scaled": true, 
@@ -4026,6 +3848,33 @@
 			"bytescount": 2, 
 			"bitscount": 16, 
 			"unit": "V"
+		},
+		"Speed": {
+			"scaled": true, 
+			"bytescount": 1, 
+			"bitscount": 8, 
+			"unit": "Kmh"
+		},
+		"Cruise set speed": {
+			"scaled": true, 
+			"bytescount": 1, 
+			"bitscount": 8, 
+			"unit": "Kmh"
+		},
+		"Cruise control button": {
+			"lists": {
+                "0": "OFF",
+				"1": "ON",
+                "3": "CANCEL cruise",
+				"5": " - ",
+				"9": " + "
+			}
+		},
+		"Cruise control status": {
+			"lists": {
+                "0": "OFF",
+                "1": "ON"
+			}
 		}
     }
 }
